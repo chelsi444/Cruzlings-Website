@@ -474,20 +474,19 @@ export default function HomePage() {
               {/* Brand Section */}
               <div className="lg:col-span-2">
                 <div className="flex items-center gap-2 mb-6">
-                  <Compass className="w-6 h-6" />
-                  <span className="text-xl font-semibold">Son Doong Expeditions</span>
+                  <Leaf className="w-6 h-6" />
+                  <span className="text-xl font-semibold">Cruzlings</span>
                 </div>
                 <p className="text-white/80 leading-relaxed text-pretty">
-                  The official tour operator for expeditions into Son Doong, the world's largest cave. We are dedicated
-                  to safety, conservation, and unforgettable adventures.
+                  A UCSC gardening club dedicated to connecting the community with nature through planter boxes and environmental education.
                 </p>
               </div>
 
-              {/* Expedition Links */}
+              {/* Quick Links */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">EXPEDITION</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">QUICK LINKS</h3>
                 <ul className="space-y-3">
-                  {["Itinerary", "Pricing", "Gear List", "Photo Gallery"].map((item) => (
+                  {["About Us", "Our Goal", "Meet the Team", "Contact"].map((item) => (
                     <li key={item}>
                       <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
                         {item}
@@ -497,11 +496,11 @@ export default function HomePage() {
                 </ul>
               </div>
 
-              {/* About Links */}
+              {/* Get Involved */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">ABOUT</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">GET INVOLVED</h3>
                 <ul className="space-y-3">
-                  {["Our Mission", "Safety Standards", "Our Team", "Conservation"].map((item) => (
+                  {["Donate", "Volunteer", "Join Us", "Events"].map((item) => (
                     <li key={item}>
                       <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
                         {item}
