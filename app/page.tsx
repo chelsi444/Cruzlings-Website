@@ -181,8 +181,8 @@ export default function HomePage() {
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                 {[
                   { name: "Surabhi Kuchibhotla", role: "CEO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Leading Cruzlings with passion for environmental education." },
-                  { name: "Member 2", role: "Title", image: null, bio: "Bio coming soon." },
-                  { name: "Member 3", role: "Title", image: null, bio: "Bio coming soon." },
+                  { name: "Jorge Flores", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%201.40.58%E2%80%AFAM-SNYkuQIQxW4qWUyo7sDUreaKRszcmi.png", bio: "Managing finances and resources for Cruzlings." },
+                  { name: "Chelsi Vaghela", role: "CTO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SAM_0346-dUGNKhySHTtqBLiS1ynuv00rZwkcVg.jpg", bio: "Leading technology initiatives for Cruzlings." },
                   { name: "Member 4", role: "Title", image: null, bio: "Bio coming soon." },
                   { name: "Member 5", role: "Title", image: null, bio: "Bio coming soon." },
                   { name: "Member 6", role: "Title", image: null, bio: "Bio coming soon." },
