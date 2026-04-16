@@ -1,6 +1,6 @@
 "use client"
 
-import { Compass, Sparkles, ShieldCheck, Wallet, Leaf, Plus, Minus, Mail } from "lucide-react"
+import { Sparkles, ShieldCheck, Wallet, Leaf, Plus, Minus, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 
@@ -49,15 +49,9 @@ export default function HomePage() {
         </div>
 
         {/* Navigation */}
-        <nav className="relative z-10 flex items-center justify-between p-6">
-          {/* Logo */}
-          <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
-            <Compass className="w-5 h-5" />
-            <span className="font-medium text-balance">Son Doong Expeditions</span>
-          </div>
-
+        <nav className="relative z-10 flex items-center justify-center p-6">
           {/* Navigation Links */}
-          <nav className="hidden md:flex items-center gap-1">
+          <div className="flex items-center gap-1">
             {[
               { label: "About Us", href: "#about-us" },
               { label: "Our Fundraising Goal", href: "#fundraising-goal" },
@@ -73,17 +67,6 @@ export default function HomePage() {
                 {item.label}
               </a>
             ))}
-          </nav>
-
-          {/* Action Buttons */}
-          <div className="flex items-center gap-3">
-            <a
-              href="#"
-              className="px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full hover:bg-black/50 transition-colors"
-            >
-              Login
-            </a>
-            <Button className="bg-white text-black hover:bg-white/90 rounded-full px-6">Book Now</Button>
           </div>
         </nav>
 
