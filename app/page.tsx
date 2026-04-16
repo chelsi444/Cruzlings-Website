@@ -1,6 +1,6 @@
 "use client"
 
-import { Compass, Lock, Sparkles, ShieldCheck, Wallet, Leaf, Plus, Minus, Mail } from "lucide-react"
+import { Compass, Sparkles, ShieldCheck, Wallet, Leaf, Plus, Minus, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 
@@ -89,39 +89,13 @@ export default function HomePage() {
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
-          {/* Badge */}
-          <div className="mb-6 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
-            <span className="text-sm font-medium">Limited Group Expeditions</span>
-          </div>
-
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-balance">Enter a Lost World.</h1>
+          <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-balance">Cruzlings</h1>
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-white/90 max-w-4xl mb-12 leading-relaxed text-pretty">
-            Explore the colossal chambers of Son Doong Cave in Vietnam, a unique ecosystem with its own jungle and
-            weather system, on a fully-guided 4-day expedition.
+            Where Education Takes Root
           </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <Button size="lg" className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-4 text-lg">
-              Book Your Expedition
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-black/40 ring-1 ring-white/20 backdrop-blur border-0 text-white hover:bg-black/50 rounded-full px-8 py-4 text-lg"
-            >
-              View Itinerary
-            </Button>
-          </div>
-
-          {/* Footer Note */}
-          <div className="flex items-center gap-2 px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full">
-            <Lock className="w-4 h-4" />
-            <span className="text-sm font-medium">Safety is our Priority</span>
-          </div>
         </div>
       </div>
 
@@ -178,10 +152,10 @@ export default function HomePage() {
                   <span className="text-xl font-semibold">$6,125</span>
                 </div>
               </div>
-              <div className="h-6 bg-black/30 rounded-full ring-1 ring-white/20 overflow-hidden">
+              <div className="h-8 bg-white/10 rounded-full ring-1 ring-white/30 overflow-hidden p-1">
                 <div 
-                  className="h-full bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-full"
-                  style={{ width: '13.06%' }}
+                  className="h-full bg-emerald-500 rounded-full"
+                  style={{ width: '13.06%', minWidth: '20px' }}
                 />
               </div>
               <p className="text-center text-white/60 mt-3 text-sm">13% of our goal reached</p>
