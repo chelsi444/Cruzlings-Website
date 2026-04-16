@@ -165,6 +165,28 @@ export default function HomePage() {
                 Support our efforts to protect and study this natural wonder for generations to come.
               </p>
             </div>
+
+            {/* Fundraising Progress Bar */}
+            <div className="max-w-3xl mx-auto mb-12">
+              <div className="flex justify-between items-end mb-3">
+                <div>
+                  <span className="text-3xl font-bold">$800</span>
+                  <span className="text-white/60 ml-2">raised</span>
+                </div>
+                <div className="text-right">
+                  <span className="text-white/60">Goal: </span>
+                  <span className="text-xl font-semibold">$6,125</span>
+                </div>
+              </div>
+              <div className="h-4 bg-white/10 rounded-full ring-1 ring-white/20 overflow-hidden">
+                <div 
+                  className="h-full bg-gradient-to-r from-emerald-500 to-emerald-400 rounded-full transition-all duration-500"
+                  style={{ width: '13%' }}
+                />
+              </div>
+              <p className="text-center text-white/60 mt-3 text-sm">13% of our goal reached</p>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
