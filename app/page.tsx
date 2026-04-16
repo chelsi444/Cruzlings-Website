@@ -57,8 +57,8 @@ export default function HomePage() {
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-1">
-            {["The Expedition", "Safety", "Gallery", "FAQ", "Contact"].map((item) => (
+          <nav className="hidden md:flex items-center gap-1">
+            {["About Us", "Our Fundraising Goal", "Meet Our Team", "FAQ", "Contact"].map((item) => (
               <a
                 key={item}
                 href="#"
@@ -67,7 +67,7 @@ export default function HomePage() {
                 {item}
               </a>
             ))}
-          </div>
+          </nav>
 
           {/* Action Buttons */}
           <div className="flex items-center gap-3">
