@@ -178,10 +178,10 @@ export default function HomePage() {
                   <span className="text-xl font-semibold">$6,125</span>
                 </div>
               </div>
-              <div className="h-4 bg-white/10 rounded-full ring-1 ring-white/20 overflow-hidden">
+              <div className="h-6 bg-black/30 rounded-full ring-1 ring-white/20 overflow-hidden">
                 <div 
-                  className="h-full bg-gradient-to-r from-emerald-500 to-emerald-400 rounded-full transition-all duration-500"
-                  style={{ width: '13%' }}
+                  className="h-full bg-gradient-to-r from-emerald-600 to-emerald-400 rounded-full"
+                  style={{ width: '13.06%' }}
                 />
               </div>
               <p className="text-center text-white/60 mt-3 text-sm">13% of our goal reached</p>
