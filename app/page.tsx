@@ -171,21 +171,42 @@ export default function HomePage() {
             <div className="text-center mb-12">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Meet Our Team</h2>
               <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
-                Get to know the passionate experts behind our expeditions.
+                Get to know the passionate people behind Cruzlings.
               </p>
             </div>
 
             {/* Executive Board */}
             <div className="mb-16">
               <h3 className="text-2xl font-semibold mb-8 text-center">Executive Board</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                {[1, 2, 3, 4, 5, 6].map((member) => (
-                  <div key={member} className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-4 text-center">
-                    <div className="aspect-square rounded-xl bg-white/10 ring-1 ring-white/20 mb-4 flex items-center justify-center">
-                      <span className="text-white/40 text-sm">Photo</span>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                {[
+                  { name: "Surabhi Kuchibhotla", role: "CEO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Leading Cruzlings with passion for environmental education." },
+                  { name: "Member 2", role: "Title", image: null, bio: "Bio coming soon." },
+                  { name: "Member 3", role: "Title", image: null, bio: "Bio coming soon." },
+                  { name: "Member 4", role: "Title", image: null, bio: "Bio coming soon." },
+                  { name: "Member 5", role: "Title", image: null, bio: "Bio coming soon." },
+                  { name: "Member 6", role: "Title", image: null, bio: "Bio coming soon." },
+                ].map((member, index) => (
+                  <div key={index} className="group relative text-center">
+                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/20 mb-4 aspect-square">
+                      {member.image ? (
+                        <img 
+                          src={member.image} 
+                          alt={member.name}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-white/10 flex items-center justify-center">
+                          <span className="text-white/40 text-sm">Photo</span>
+                        </div>
+                      )}
+                      {/* Hover overlay with bio */}
+                      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                        <p className="text-sm text-white/90 text-center">{member.bio}</p>
+                      </div>
                     </div>
-                    <p className="text-sm font-medium">Member {member}</p>
-                    <p className="text-xs text-white/60">Title</p>
+                    <p className="font-semibold text-lg">{member.name}</p>
+                    <p className="text-sm text-white/60">{member.role}</p>
                   </div>
                 ))}
               </div>
@@ -194,14 +215,39 @@ export default function HomePage() {
             {/* Members */}
             <div>
               <h3 className="text-2xl font-semibold mb-8 text-center">Members</h3>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((member) => (
-                  <div key={member} className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-4 text-center">
-                    <div className="aspect-square rounded-xl bg-white/10 ring-1 ring-white/20 mb-4 flex items-center justify-center">
-                      <span className="text-white/40 text-sm">Photo</span>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+                {[
+                  { name: "Member 1", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Member 2", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Member 3", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Member 4", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Member 5", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Member 6", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Member 7", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Member 8", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Member 9", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Member 10", role: "Member", image: null, bio: "Bio coming soon." },
+                ].map((member, index) => (
+                  <div key={index} className="group relative text-center">
+                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/20 mb-4 aspect-square">
+                      {member.image ? (
+                        <img 
+                          src={member.image} 
+                          alt={member.name}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-white/10 flex items-center justify-center">
+                          <span className="text-white/40 text-sm">Photo</span>
+                        </div>
+                      )}
+                      {/* Hover overlay with bio */}
+                      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                        <p className="text-sm text-white/90 text-center">{member.bio}</p>
+                      </div>
                     </div>
-                    <p className="text-sm font-medium">Member {member}</p>
-                    <p className="text-xs text-white/60">Role</p>
+                    <p className="font-semibold text-lg">{member.name}</p>
+                    <p className="text-sm text-white/60">{member.role}</p>
                   </div>
                 ))}
               </div>
