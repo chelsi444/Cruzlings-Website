@@ -58,13 +58,19 @@ export default function HomePage() {
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-1">
-            {["About Us", "Our Fundraising Goal", "Meet Our Team", "FAQ", "Contact"].map((item) => (
+            {[
+              { label: "About Us", href: "#about-us" },
+              { label: "Our Fundraising Goal", href: "#fundraising-goal" },
+              { label: "Meet Our Team", href: "#meet-the-team" },
+              { label: "FAQ", href: "#faq" },
+              { label: "Contact", href: "#contact" },
+            ].map((item) => (
               <a
-                key={item}
-                href="#"
+                key={item.label}
+                href={item.href}
                 className="px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full hover:bg-black/50 transition-colors"
               >
-                {item}
+                {item.label}
               </a>
             ))}
           </nav>
@@ -120,7 +126,7 @@ export default function HomePage() {
       </div>
 
       {/* Features Section */}
-      <section className="relative z-10 py-24 px-6">
+      <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
             {/* About Us */}
@@ -142,7 +148,7 @@ export default function HomePage() {
             </div>
 
             {/* Help Us Fundraise */}
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
+            <div id="fundraising-goal" className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center scroll-mt-20">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Wallet className="w-6 h-6" />
               </div>
@@ -151,7 +157,7 @@ export default function HomePage() {
             </div>
 
             {/* Meet the Team */}
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
+            <div id="meet-the-team" className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center scroll-mt-20">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Leaf className="w-6 h-6" />
               </div>
@@ -239,7 +245,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="relative z-10 py-24 px-6">
+      <section id="faq" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -286,7 +292,7 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section className="relative z-10 py-24 px-6">
+      <section id="contact" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-12">
             {/* Section Header */}
