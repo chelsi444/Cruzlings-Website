@@ -89,7 +89,7 @@ export default function HomePage() {
             <div className="text-center mb-12">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">About Us</h2>
               <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
-                Learn about our mission to explore and preserve Son Doong Cave, one of the world&apos;s most extraordinary natural wonders.
+                We are a gardening club dedicated to connecting our community with nature. We&apos;re building planter boxes so UCSC students and the greater Santa Cruz community can plant, grow, and learn about environmental sustainability.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -98,14 +98,14 @@ export default function HomePage() {
                   <Sparkles className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
-                <p className="text-white/80 leading-relaxed">We are dedicated to providing safe, educational, and transformative expeditions into Son Doong Cave while preserving its pristine ecosystem for future generations.</p>
+                <p className="text-white/80 leading-relaxed">We aim to foster a love for gardening and environmental stewardship by providing hands-on opportunities for students and community members to engage with nature.</p>
               </div>
               <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Our Values</h3>
-                <p className="text-white/80 leading-relaxed">Conservation, education, and sustainable exploration guide everything we do. We believe in responsible tourism that benefits both visitors and the local community.</p>
+                <p className="text-white/80 leading-relaxed">Sustainability, education, and community are at the heart of everything we do. We believe in nurturing both plants and people through meaningful environmental experiences.</p>
               </div>
             </div>
           </div>
