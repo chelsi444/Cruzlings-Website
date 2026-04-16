@@ -123,40 +123,40 @@ export default function HomePage() {
       <section className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-            {/* Expert-Led Tours */}
+            {/* About Us */}
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Sparkles className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Expert-Led Tours</h3>
-              <p className="text-white/80 leading-relaxed">Guided by geologists, cavers, and local experts.</p>
+              <h3 className="text-xl font-semibold mb-4">About Us</h3>
+              <p className="text-white/80 leading-relaxed">Learn about our mission to explore and preserve Son Doong Cave.</p>
             </div>
 
-            {/* World-Class Safety */}
+            {/* Our Goal */}
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <ShieldCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">World-Class Safety</h3>
-              <p className="text-white/80 leading-relaxed">Rigorous protocols and modern equipment.</p>
+              <h3 className="text-xl font-semibold mb-4">Our Goal</h3>
+              <p className="text-white/80 leading-relaxed">Dedicated to conservation, education, and sustainable exploration.</p>
             </div>
 
-            {/* All-Inclusive Package */}
+            {/* Help Us Fundraise */}
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Wallet className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">All-Inclusive Package</h3>
-              <p className="text-white/80 leading-relaxed">Permits, gear, meals, and transport are covered.</p>
+              <h3 className="text-xl font-semibold mb-4">Help Us Fundraise</h3>
+              <p className="text-white/80 leading-relaxed">Support our efforts to protect and study this natural wonder.</p>
             </div>
 
-            {/* Eco-Friendly Caving */}
+            {/* Meet the Team */}
             <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
                 <Leaf className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Eco-Friendly Caving</h3>
-              <p className="text-white/80 leading-relaxed">We are committed to preserving the cave's ecosystem.</p>
+              <h3 className="text-xl font-semibold mb-4">Meet the Team</h3>
+              <p className="text-white/80 leading-relaxed">Get to know the passionate experts behind our expeditions.</p>
             </div>
           </div>
         </div>
