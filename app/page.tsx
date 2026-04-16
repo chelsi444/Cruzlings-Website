@@ -125,44 +125,107 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Features Section */}
+      {/* About Us Section */}
       <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-            {/* About Us */}
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                <Sparkles className="w-6 h-6" />
+          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+            <div className="text-center mb-12">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">About Us</h2>
+              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+                Learn about our mission to explore and preserve Son Doong Cave, one of the world&apos;s most extraordinary natural wonders.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+                  <Sparkles className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
+                <p className="text-white/80 leading-relaxed">We are dedicated to providing safe, educational, and transformative expeditions into Son Doong Cave while preserving its pristine ecosystem for future generations.</p>
               </div>
-              <h3 className="text-xl font-semibold mb-4">About Us</h3>
-              <p className="text-white/80 leading-relaxed">Learn about our mission to explore and preserve Son Doong Cave.</p>
+              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+                  <ShieldCheck className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Our Values</h3>
+                <p className="text-white/80 leading-relaxed">Conservation, education, and sustainable exploration guide everything we do. We believe in responsible tourism that benefits both visitors and the local community.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Fundraising Goal Section */}
+      <section id="fundraising-goal" className="relative z-10 py-24 px-6 scroll-mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+            <div className="text-center mb-12">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Our Fundraising Goal</h2>
+              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+                Support our efforts to protect and study this natural wonder for generations to come.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+                  <Wallet className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Help Us Fundraise</h3>
+                <p className="text-white/80 leading-relaxed">Your contributions directly support cave conservation research, local community development, and educational programs that teach the next generation about protecting our natural heritage.</p>
+              </div>
+              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
+                  <Leaf className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Where Your Funds Go</h3>
+                <p className="text-white/80 leading-relaxed">Every donation helps fund scientific research, trail maintenance, safety equipment upgrades, and community outreach programs in the Phong Nha region.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Our Team Section */}
+      <section id="meet-the-team" className="relative z-10 py-24 px-6 scroll-mt-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+            <div className="text-center mb-12">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Meet Our Team</h2>
+              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+                Get to know the passionate experts behind our expeditions.
+              </p>
             </div>
 
-            {/* Our Goal */}
-            <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                <ShieldCheck className="w-6 h-6" />
+            {/* Executive Board */}
+            <div className="mb-16">
+              <h3 className="text-2xl font-semibold mb-8 text-center">Executive Board</h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                {[1, 2, 3, 4, 5, 6].map((member) => (
+                  <div key={member} className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-4 text-center">
+                    <div className="aspect-square rounded-xl bg-white/10 ring-1 ring-white/20 mb-4 flex items-center justify-center">
+                      <span className="text-white/40 text-sm">Photo</span>
+                    </div>
+                    <p className="text-sm font-medium">Member {member}</p>
+                    <p className="text-xs text-white/60">Title</p>
+                  </div>
+                ))}
               </div>
-              <h3 className="text-xl font-semibold mb-4">Our Goal</h3>
-              <p className="text-white/80 leading-relaxed">Dedicated to conservation, education, and sustainable exploration.</p>
             </div>
 
-            {/* Help Us Fundraise */}
-            <div id="fundraising-goal" className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center scroll-mt-20">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                <Wallet className="w-6 h-6" />
+            {/* Members */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-8 text-center">Members</h3>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((member) => (
+                  <div key={member} className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-4 text-center">
+                    <div className="aspect-square rounded-xl bg-white/10 ring-1 ring-white/20 mb-4 flex items-center justify-center">
+                      <span className="text-white/40 text-sm">Photo</span>
+                    </div>
+                    <p className="text-sm font-medium">Member {member}</p>
+                    <p className="text-xs text-white/60">Role</p>
+                  </div>
+                ))}
               </div>
-              <h3 className="text-xl font-semibold mb-4">Help Us Fundraise</h3>
-              <p className="text-white/80 leading-relaxed">Support our efforts to protect and study this natural wonder.</p>
-            </div>
-
-            {/* Meet the Team */}
-            <div id="meet-the-team" className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8 text-center scroll-mt-20">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                <Leaf className="w-6 h-6" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">Meet the Team</h3>
-              <p className="text-white/80 leading-relaxed">Get to know the passionate experts behind our expeditions.</p>
             </div>
           </div>
         </div>
