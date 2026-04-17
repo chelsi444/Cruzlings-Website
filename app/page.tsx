@@ -226,7 +226,6 @@ export default function HomePage() {
                   { name: "Member 7", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TwWOvcPMprlkf9qpizrPpyMGClJ8Ar.png", bio: "Bio coming soon." },
                   { name: "Member 8", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yIlFYbaN1nVv78P3JoT5jkL37kaAnc.png", bio: "Bio coming soon." },
                   { name: "Member 9", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Bio coming soon." },
-                  { name: "Member 10", role: "Member", image: null, bio: "Bio coming soon." },
                 ].map((member, index) => (
                   <div key={index} className="group relative text-center">
                     <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/20 mb-4 aspect-square">
