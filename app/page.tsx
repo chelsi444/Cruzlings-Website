@@ -217,12 +217,12 @@ export default function HomePage() {
               <h3 className="text-2xl font-semibold mb-8 text-center">Members</h3>
               <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
                 {[
-                  { name: "Sarah Wei", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Bio coming soon." },
+                  { name: "Member 1", role: "Member", image: null, bio: "Bio coming soon." },
                   { name: "Jayden", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%201.40.58%E2%80%AFAM-lprQA7mw1ztEwGIGwYfm1E6rVfGRCh.png", bio: "Bio coming soon." },
-                  { name: "Rebecca", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HNo9A5RtbF42GIGPo9atJeWrM0mFWe.png", bio: "Bio coming soon." },
-                  { name: "Member 4", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Member 3", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Sarah Wei", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Bio coming soon." },
                   { name: "Member 5", role: "Member", image: null, bio: "Bio coming soon." },
-                  { name: "Member 6", role: "Member", image: null, bio: "Bio coming soon." },
+                  { name: "Rebecca", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HNo9A5RtbF42GIGPo9atJeWrM0mFWe.png", bio: "Bio coming soon." },
                   { name: "Member 7", role: "Member", image: null, bio: "Bio coming soon." },
                   { name: "Member 8", role: "Member", image: null, bio: "Bio coming soon." },
                   { name: "Member 9", role: "Member", image: null, bio: "Bio coming soon." },
