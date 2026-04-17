@@ -245,7 +245,7 @@ export default function HomePage() {
                         <p className="text-sm text-white/90 text-center">{member.bio}</p>
                       </div>
                     </div>
-                    <p className="font-semibold text-lg">{member.name}</p>
+                    <p className="font-bold text-lg text-white mt-2">{member.name}</p>
                   </div>
                 ))}
               </div>
