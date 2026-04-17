@@ -215,7 +215,7 @@ export default function HomePage() {
             {/* Members */}
             <div>
               <h3 className="text-2xl font-semibold mb-8 text-center">Members</h3>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+              <div className="flex flex-wrap justify-center gap-8">
                 {[
                   { name: "Member 1", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i3x4jch72QxWk8iSBvMLPCM0ALqDrH.png", bio: "Bio coming soon." },
                   { name: "Member 2", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1Wx6bqjxa0WHMso3cqmHwIcCbYAbXO.png", bio: "Bio coming soon." },
@@ -227,7 +227,7 @@ export default function HomePage() {
                   { name: "Member 8", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yIlFYbaN1nVv78P3JoT5jkL37kaAnc.png", bio: "Bio coming soon." },
                   { name: "Member 9", role: "Member", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Bio coming soon." },
                 ].map((member, index) => (
-                  <div key={index} className="group relative text-center">
+                  <div key={index} className="group relative text-center w-40 md:w-44">
                     <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/20 mb-4 aspect-square">
                       {member.image ? (
                         <img 
