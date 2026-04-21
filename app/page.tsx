@@ -474,131 +474,94 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ & Contact Section */}
       <section id="faq" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              {/* Left Column - Title and Description */}
-              <div>
-                <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">
-                  Frequently Asked Questions
-                </h2>
-                <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
-                  Everything you need to know about joining Cruzlings, from meetings to getting involved with our gardening initiatives.
-                </p>
-              </div>
-
-              {/* Right Column - FAQ Accordion */}
-              <div className="space-y-4">
-                {faqs.map((faq, index) => (
-                  <div
-                    key={index}
-                    className="rounded-2xl bg-secondary ring-1 ring-border overflow-hidden hover:shadow-md transition-shadow duration-300"
-                  >
-                    <button
-                      onClick={() => toggleFaq(index)}
-                      className="w-full p-6 text-left flex items-center justify-between hover:bg-primary/10 transition-colors"
-                    >
-                      <h3 className="text-lg font-semibold pr-4 text-foreground">{faq.question}</h3>
-                      {openFaq === index ? (
-                        <Minus className="w-5 h-5 flex-shrink-0 text-primary" />
-                      ) : (
-                        <Plus className="w-5 h-5 flex-shrink-0 text-primary" />
-                      )}
-                    </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6">
-                        <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="relative z-10 py-24 px-6 scroll-mt-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
             {/* Section Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Contact Our Team</h2>
+            <div className="text-center mb-12">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">
+                FAQ & Contact
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+                Everything you need to know about joining Cruzlings, and how to get in touch with us.
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              {/* Left Column - Contact Form */}
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 shadow-lg">
-                <h3 className="text-2xl font-bold mb-6 text-foreground">Send an Inquiry</h3>
-                <form className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full px-4 py-3 rounded-lg bg-secondary ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full px-4 py-3 rounded-lg bg-secondary ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      rows={5}
-                      className="w-full px-4 py-3 rounded-lg bg-secondary ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none resize-none"
-                      placeholder="Tell us about your expedition interests..."
-                    />
-                  </div>
-                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg py-3 font-normal text-base">
-                    Send Message
-                  </Button>
-                </form>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Left Column - FAQ Accordion */}
+              <div>
+                <h3 className="text-2xl font-bold mb-6 text-foreground">Frequently Asked Questions</h3>
+                <div className="space-y-4">
+                  {faqs.map((faq, index) => (
+                    <div
+                      key={index}
+                      className="rounded-2xl bg-secondary ring-1 ring-border overflow-hidden hover:shadow-md transition-shadow duration-300"
+                    >
+                      <button
+                        onClick={() => toggleFaq(index)}
+                        className="w-full p-6 text-left flex items-center justify-between hover:bg-primary/10 transition-colors"
+                      >
+                        <h3 className="text-lg font-semibold pr-4 text-foreground">{faq.question}</h3>
+                        {openFaq === index ? (
+                          <Minus className="w-5 h-5 flex-shrink-0 text-primary" />
+                        ) : (
+                          <Plus className="w-5 h-5 flex-shrink-0 text-primary" />
+                        )}
+                      </button>
+                      {openFaq === index && (
+                        <div className="px-6 pb-6">
+                          <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              {/* Right Column - Contact Info */}
-              <div className="space-y-8">
-                <div>
-                  <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
-                    For questions about private tours, partnerships, or media inquiries, please get in touch. We reply
-                    within one business day.
-                  </p>
-                </div>
-
-                {/* Profile Card */}
-                <div className="rounded-2xl bg-secondary ring-1 ring-border p-6 shadow-lg">
-                  <div className="flex items-center gap-4 mb-4">
-                    <img
-                      src="https://www.elledecoration.vn/wp-content/uploads/2025/03/edam-garden.jpg"
-                      alt="David Luong"
-                      className="w-16 h-16 rounded-full object-cover ring-2 ring-primary/50"
-                    />
+              {/* Right Column - Contact Form */}
+              <div id="contact" className="scroll-mt-20">
+                <h3 className="text-2xl font-bold mb-6 text-foreground">Contact Us</h3>
+                <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 shadow-lg">
+                  <form className="space-y-6">
                     <div>
-                      <h4 className="text-lg font-semibold text-foreground">David Luong</h4>
-                      <p className="text-muted-foreground">Lead Expedition Guide</p>
+                      <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
+                        Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        className="w-full px-4 py-3 rounded-lg bg-card ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+                        placeholder="Your full name"
+                      />
                     </div>
-                  </div>
-                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg flex items-center justify-center gap-2">
-                    <Mail className="w-4 h-4" />
-                    Email
-                  </Button>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        className="w-full px-4 py-3 rounded-lg bg-card ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+                        placeholder="your.email@example.com"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
+                        Message
+                      </label>
+                      <textarea
+                        id="message"
+                        rows={4}
+                        className="w-full px-4 py-3 rounded-lg bg-card ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none resize-none"
+                        placeholder="How can we help you?"
+                      />
+                    </div>
+                    <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg py-3 font-normal text-base flex items-center justify-center gap-2">
+                      <Mail className="w-4 h-4" />
+                      Send Message
+                    </Button>
+                  </form>
                 </div>
               </div>
             </div>
