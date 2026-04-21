@@ -40,163 +40,120 @@ export default function HomePage() {
       {/* Hero Section */}
       <div className="relative min-h-screen overflow-hidden">
         {/* Soft Green Background with Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#f5f9f5] via-[#e8f0e8] to-[#dceadc]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#e8f0e8] via-[#dceadc] to-[#c5d8c5]" />
         
-        {/* Decorative Shape - Top Right */}
-        <div className="absolute top-0 right-0 w-1/2 h-2/3">
-          <svg viewBox="0 0 500 400" className="w-full h-full" preserveAspectRatio="xMaxYMin slice">
-            <path
-              d="M200,0 Q350,50 400,150 Q450,250 380,350 Q350,400 500,400 L500,0 Z"
-              fill="#c8dcc8"
-              opacity="0.5"
-            />
+        {/* Decorative clouds */}
+        <div className="absolute top-20 left-1/4 opacity-40">
+          <svg width="120" height="50" viewBox="0 0 120 50">
+            <ellipse cx="30" cy="30" rx="25" ry="15" fill="#b8d4b8" />
+            <ellipse cx="55" cy="25" rx="30" ry="18" fill="#b8d4b8" />
+            <ellipse cx="85" cy="30" rx="25" ry="15" fill="#b8d4b8" />
+          </svg>
+        </div>
+        <div className="absolute top-32 right-1/3 opacity-30">
+          <svg width="100" height="40" viewBox="0 0 100 40">
+            <ellipse cx="25" cy="25" rx="20" ry="12" fill="#c8dcc8" />
+            <ellipse cx="50" cy="20" rx="25" ry="15" fill="#c8dcc8" />
+            <ellipse cx="75" cy="25" rx="20" ry="12" fill="#c8dcc8" />
           </svg>
         </div>
 
-        {/* Plant 1 - Tall stem with alternating leaves (left side) */}
-        <div className="absolute bottom-0 left-8 md:left-16 lg:left-24 w-32 md:w-40 lg:w-48">
-          <svg viewBox="0 0 100 300" className="w-full h-auto">
-            {/* Main stem */}
-            <path d="M50,300 L50,40" fill="none" stroke="#6b8f71" strokeWidth="3" />
-            {/* Leaves alternating - bottom to top */}
-            <ellipse cx="25" cy="260" rx="25" ry="12" fill="#8fac91" opacity="0.9" transform="rotate(-20, 25, 260)" />
-            <path d="M50,260 Q35,258 25,260" fill="none" stroke="#6b8f71" strokeWidth="1" />
-            <ellipse cx="75" cy="220" rx="22" ry="10" fill="#9db89f" opacity="0.85" transform="rotate(20, 75, 220)" />
-            <path d="M50,220 Q65,218 75,220" fill="none" stroke="#6b8f71" strokeWidth="1" />
-            <ellipse cx="22" cy="180" rx="22" ry="10" fill="#8fac91" opacity="0.8" transform="rotate(-25, 22, 180)" />
-            <path d="M50,180 Q35,178 22,180" fill="none" stroke="#6b8f71" strokeWidth="1" />
-            <ellipse cx="78" cy="140" rx="20" ry="9" fill="#9db89f" opacity="0.75" transform="rotate(25, 78, 140)" />
-            <path d="M50,140 Q65,138 78,140" fill="none" stroke="#6b8f71" strokeWidth="1" />
-            <ellipse cx="25" cy="100" rx="18" ry="8" fill="#8fac91" opacity="0.7" transform="rotate(-20, 25, 100)" />
-            <path d="M50,100 Q38,98 25,100" fill="none" stroke="#6b8f71" strokeWidth="1" />
-            <ellipse cx="72" cy="65" rx="15" ry="7" fill="#9db89f" opacity="0.65" transform="rotate(20, 72, 65)" />
-            <path d="M50,65 Q62,63 72,65" fill="none" stroke="#6b8f71" strokeWidth="1" />
+        {/* Grass at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 md:h-32">
+          <svg viewBox="0 0 1440 120" className="w-full h-full" preserveAspectRatio="none">
+            <rect x="0" y="40" width="1440" height="80" fill="#5a8a5a" />
+            <path d="M0,40 Q20,20 40,40 Q60,60 80,40 Q100,20 120,40 Q140,60 160,40 Q180,20 200,40 Q220,60 240,40 Q260,20 280,40 Q300,60 320,40 Q340,20 360,40 Q380,60 400,40 Q420,20 440,40 Q460,60 480,40 Q500,20 520,40 Q540,60 560,40 Q580,20 600,40 Q620,60 640,40 Q660,20 680,40 Q700,60 720,40 Q740,20 760,40 Q780,60 800,40 Q820,20 840,40 Q860,60 880,40 Q900,20 920,40 Q940,60 960,40 Q980,20 1000,40 Q1020,60 1040,40 Q1060,20 1080,40 Q1100,60 1120,40 Q1140,20 1160,40 Q1180,60 1200,40 Q1220,20 1240,40 Q1260,60 1280,40 Q1300,20 1320,40 Q1340,60 1360,40 Q1380,20 1400,40 Q1420,60 1440,40 L1440,120 L0,120 Z" fill="#6b9a6b" />
           </svg>
         </div>
 
-        {/* Plant 2 - Fern-like leaves (left-center) */}
-        <div className="absolute bottom-0 left-28 md:left-44 lg:left-56 w-28 md:w-36 lg:w-44">
-          <svg viewBox="0 0 100 250" className="w-full h-auto">
-            {/* Multiple fronds */}
-            <g opacity="0.85">
-              {/* Center frond */}
-              <path d="M50,250 Q50,200 50,100 Q48,60 55,30" fill="none" stroke="#5a8a6a" strokeWidth="2" />
-              <path d="M50,220 Q35,210 25,220 M50,190 Q35,180 28,190 M50,160 Q38,150 32,160 M50,130 Q40,120 36,130 M50,100 Q42,92 40,100" fill="none" stroke="#5a8a6a" strokeWidth="1.5" />
-              <path d="M50,220 Q65,210 75,220 M50,190 Q65,180 72,190 M50,160 Q62,150 68,160 M50,130 Q60,120 64,130 M50,100 Q58,92 60,100" fill="none" stroke="#5a8a6a" strokeWidth="1.5" />
-              {/* Left frond */}
-              <path d="M45,250 Q30,200 20,120" fill="none" stroke="#6b9a7a" strokeWidth="2" />
-              <path d="M38,210 Q25,200 18,210 M32,175 Q22,165 18,175 M26,140 Q18,132 16,140" fill="none" stroke="#6b9a7a" strokeWidth="1.2" />
-              {/* Right frond */}
-              <path d="M55,250 Q70,200 80,120" fill="none" stroke="#6b9a7a" strokeWidth="2" />
-              <path d="M62,210 Q75,200 82,210 M68,175 Q78,165 82,175 M74,140 Q82,132 84,140" fill="none" stroke="#6b9a7a" strokeWidth="1.2" />
-            </g>
-          </svg>
-        </div>
-
-        {/* Plant 3 - Round succulent-style (bottom center-left) */}
-        <div className="absolute bottom-4 left-48 md:left-72 lg:left-96 w-20 md:w-24 lg:w-28">
-          <svg viewBox="0 0 80 80" className="w-full h-auto">
-            <ellipse cx="40" cy="55" rx="30" ry="18" fill="#7aa888" opacity="0.7" />
-            <ellipse cx="40" cy="45" rx="25" ry="15" fill="#8fac91" opacity="0.75" />
-            <ellipse cx="40" cy="38" rx="18" ry="12" fill="#9db89f" opacity="0.8" />
-            <ellipse cx="40" cy="32" rx="10" ry="8" fill="#a8c4aa" opacity="0.85" />
-          </svg>
-        </div>
-
-        {/* Gardening Scene - Integrated with gradient fade */}
-        <div className="absolute bottom-0 right-0 w-80 md:w-[28rem] lg:w-[36rem]">
-          <div className="relative">
-            {/* Gradient overlay to blend with background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#e8f0e8]/90 via-transparent to-transparent z-10 pointer-events-none" />
-            <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-[#e8f0e8]/60 z-10 pointer-events-none" />
-            <img 
-              src="/images/gardening-scene.png" 
-              alt="Person planting in garden"
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
-
-        {/* Plant 4 - Tall grass-like (right side, behind gardening scene) */}
-        <div className="absolute bottom-0 right-[22rem] md:right-[28rem] lg:right-[36rem] w-16 md:w-20 lg:w-24 z-0">
-          <svg viewBox="0 0 60 200" className="w-full h-auto">
-            <path d="M30,200 Q28,150 25,80 Q24,40 30,10" fill="none" stroke="#7aa888" strokeWidth="2" opacity="0.6" />
-            <path d="M35,200 Q40,160 38,100 Q36,60 42,20" fill="none" stroke="#8fac91" strokeWidth="2" opacity="0.5" />
-            <path d="M25,200 Q18,170 20,120 Q22,80 15,40" fill="none" stroke="#6b9a7a" strokeWidth="2" opacity="0.55" />
-            <path d="M40,200 Q50,180 48,140 Q45,100 55,60" fill="none" stroke="#9db89f" strokeWidth="1.5" opacity="0.45" />
-            <path d="M20,200 Q10,175 12,130 Q15,90 5,50" fill="none" stroke="#7aa888" strokeWidth="1.5" opacity="0.4" />
-          </svg>
-        </div>
-
-        {/* Plant 5 - Small accent plant (far left) */}
-        <div className="absolute bottom-0 left-0 w-20 md:w-24 lg:w-28">
-          <svg viewBox="0 0 80 120" className="w-full h-auto">
-            <path d="M40,120 L40,60" fill="none" stroke="#5a8a6a" strokeWidth="2.5" />
-            <ellipse cx="20" cy="90" rx="18" ry="10" fill="#7aa888" opacity="0.7" transform="rotate(-30, 20, 90)" />
-            <ellipse cx="60" cy="85" rx="16" ry="9" fill="#8fac91" opacity="0.65" transform="rotate(30, 60, 85)" />
-            <ellipse cx="25" cy="65" rx="14" ry="8" fill="#9db89f" opacity="0.6" transform="rotate(-25, 25, 65)" />
-            <ellipse cx="55" cy="55" rx="12" ry="7" fill="#a8c4aa" opacity="0.55" transform="rotate(25, 55, 55)" />
-          </svg>
+        {/* Gardening Scene - Right side, sitting on grass */}
+        <div className="absolute bottom-20 md:bottom-24 right-0 md:right-8 lg:right-16 w-[70%] md:w-[55%] lg:w-[50%] z-10">
+          <img 
+            src="/images/gardening-scene.png" 
+            alt="Person planting in garden"
+            className="w-full h-auto"
+          />
         </div>
 
         {/* Navigation */}
-        <nav className="relative z-20 flex items-center justify-end p-6">
+        <nav className="relative z-20 flex items-center justify-between px-6 md:px-12 py-6">
+          {/* Logo - Top Left */}
+          <div className="flex items-center gap-3">
+            <svg viewBox="0 0 50 50" className="w-12 h-12 md:w-14 md:h-14">
+              {/* Hands */}
+              <path d="M10,38 Q5,30 10,22 Q15,16 22,18 Q25,20 25,26 Q22,34 15,38 Q12,39 10,38" fill="#5a7a3a" />
+              <path d="M40,38 Q45,30 40,22 Q35,16 28,18 Q25,20 25,26 Q28,34 35,38 Q38,39 40,38" fill="#5a7a3a" />
+              {/* Soil */}
+              <ellipse cx="25" cy="35" rx="10" ry="5" fill="#4a6a2a" />
+              {/* Stem */}
+              <path d="M25,32 L25,14" fill="none" stroke="#5a7a3a" strokeWidth="2" />
+              {/* Flower petals */}
+              <ellipse cx="25" cy="8" rx="4" ry="6" fill="#6b8f45" />
+              <ellipse cx="20" cy="11" rx="4" ry="6" fill="#6b8f45" transform="rotate(-45, 20, 11)" />
+              <ellipse cx="30" cy="11" rx="4" ry="6" fill="#6b8f45" transform="rotate(45, 30, 11)" />
+              <ellipse cx="18" cy="16" rx="4" ry="6" fill="#6b8f45" transform="rotate(-90, 18, 16)" />
+              <ellipse cx="32" cy="16" rx="4" ry="6" fill="#6b8f45" transform="rotate(90, 32, 16)" />
+              {/* Center */}
+              <circle cx="25" cy="13" r="4" fill="#4a6a2a" />
+            </svg>
+            <div>
+              <span className="text-xl md:text-2xl font-bold text-[#2d5a2d]">Cruzlings</span>
+              <p className="text-xs text-[#4a7c4a]">UCSC Gardening Club</p>
+            </div>
+          </div>
+
           {/* Navigation Links */}
-          <div className="flex items-center gap-1 flex-wrap justify-end">
+          <div className="hidden md:flex items-center gap-6">
             {[
-              { label: "About Us", href: "#about-us" },
-              { label: "Our Fundraising Goal", href: "#fundraising-goal" },
-              { label: "Meet Our Team", href: "#meet-the-team" },
+              { label: "About", href: "#about-us" },
+              { label: "Fundraising", href: "#fundraising-goal" },
+              { label: "Team", href: "#meet-the-team" },
               { label: "FAQ", href: "#faq" },
               { label: "Contact", href: "#contact" },
             ].map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="px-4 py-2 bg-white/90 text-foreground ring-1 ring-primary/20 backdrop-blur-md rounded-full hover:bg-primary hover:text-primary-foreground hover:ring-primary transition-all duration-200 shadow-sm"
+                className="text-[#2d5a2d] hover:text-[#1a3a1a] font-medium transition-colors"
               >
                 {item.label}
               </a>
             ))}
           </div>
+
+          {/* Mobile menu button */}
+          <button className="md:hidden p-2 text-[#2d5a2d]">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M3 12h18M3 6h18M3 18h18" />
+            </svg>
+          </button>
         </nav>
 
-        {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
-          {/* SVG Logo - Flower with hands */}
-          <div className="mb-8">
-            <svg viewBox="0 0 120 120" className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48">
-              {/* Hands */}
-              <path d="M25,85 Q15,70 25,55 Q35,45 50,50 Q55,55 55,65 Q50,80 35,85 Q28,87 25,85" fill="#6b8f45" opacity="0.9" />
-              <path d="M95,85 Q105,70 95,55 Q85,45 70,50 Q65,55 65,65 Q70,80 85,85 Q92,87 95,85" fill="#6b8f45" opacity="0.9" />
-              {/* Soil mound */}
-              <ellipse cx="60" cy="82" rx="22" ry="10" fill="#5a7a3a" />
-              <circle cx="52" cy="80" r="2" fill="#4a6a2a" opacity="0.6" />
-              <circle cx="65" cy="83" r="1.5" fill="#4a6a2a" opacity="0.5" />
-              <circle cx="58" cy="85" r="1" fill="#4a6a2a" opacity="0.4" />
-              {/* Stem */}
-              <path d="M60,72 L60,35" fill="none" stroke="#6b8f45" strokeWidth="3" />
-              {/* Stem leaves */}
-              <ellipse cx="52" cy="55" rx="8" ry="4" fill="#7a9f55" transform="rotate(-30, 52, 55)" />
-              <ellipse cx="68" cy="50" rx="8" ry="4" fill="#7a9f55" transform="rotate(30, 68, 50)" />
-              {/* Flower petals */}
-              <ellipse cx="60" cy="18" rx="8" ry="12" fill="#8aaf55" />
-              <ellipse cx="48" cy="25" rx="8" ry="12" fill="#8aaf55" transform="rotate(-50, 48, 25)" />
-              <ellipse cx="72" cy="25" rx="8" ry="12" fill="#8aaf55" transform="rotate(50, 72, 25)" />
-              <ellipse cx="45" cy="35" rx="8" ry="12" fill="#8aaf55" transform="rotate(-90, 45, 35)" />
-              <ellipse cx="75" cy="35" rx="8" ry="12" fill="#8aaf55" transform="rotate(90, 75, 35)" />
-              {/* Flower center */}
-              <circle cx="60" cy="30" r="8" fill="#5a7a3a" />
-            </svg>
-          </div>
-
+        {/* Hero Content - Left aligned */}
+        <div className="relative z-10 flex flex-col items-start justify-center min-h-[calc(100vh-200px)] px-6 md:px-12 lg:px-20 max-w-2xl">
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-6 text-balance text-[#2d5a2d] drop-shadow-sm">Cruzlings</h1>
-
-          {/* Subheading */}
-          <p className="text-xl md:text-2xl text-[#3d6b3d] max-w-4xl mb-12 leading-relaxed text-pretty font-medium">
-            Where Education Takes Root
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight mb-2 text-[#2d5a2d]">
+            GROW WITH US
+          </h1>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-[#2d5a2d]">
+            BEAUTIFUL GARDENS
+          </h2>
+          <p className="text-lg md:text-xl font-semibold text-[#4a7c4a] mb-6 uppercase tracking-wide">
+            A Community Initiative
           </p>
+
+          {/* Description */}
+          <p className="text-base md:text-lg text-[#3d6b3d] mb-8 leading-relaxed max-w-md">
+            We are a gardening club dedicated to connecting our community with nature. Building planter boxes for UCSC students and the greater Santa Cruz community.
+          </p>
+
+          {/* CTA Button */}
+          <a
+            href="#about-us"
+            className="inline-flex items-center px-8 py-3 bg-[#2d5a2d] text-white font-medium rounded-full hover:bg-[#1a3a1a] transition-colors shadow-lg"
+          >
+            Learn More
+          </a>
         </div>
       </div>
 
