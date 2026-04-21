@@ -35,7 +35,7 @@ export default function HomePage() {
   ]
 
   return (
-    <div className="min-h-screen bg-[#0B0F12] text-white">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
       <div className="relative min-h-screen">
         {/* Background Image with Overlay */}
@@ -62,7 +62,7 @@ export default function HomePage() {
               <a
                 key={item.label}
                 href={item.href}
-                className="px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full hover:bg-black/50 transition-colors"
+                className="px-4 py-2 bg-secondary/80 ring-1 ring-primary/30 backdrop-blur rounded-full hover:bg-primary/20 hover:ring-primary/50 transition-colors"
               >
                 {item.label}
               </a>
@@ -85,27 +85,27 @@ export default function HomePage() {
       {/* About Us Section */}
       <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
             <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">About Us</h2>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">About Us</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
                 We are a gardening club dedicated to connecting our community with nature. We&apos;re building planter boxes so UCSC students and the greater Santa Cruz community can plant, grow, and learn about environmental sustainability.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                  <Sparkles className="w-6 h-6" />
+              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/20 ring-1 ring-primary/40 mb-6">
+                  <Sparkles className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
-                <p className="text-white/80 leading-relaxed">We aim to foster a love for gardening and environmental stewardship by providing hands-on opportunities for students and community members to engage with nature.</p>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Our Mission</h3>
+                <p className="text-muted-foreground leading-relaxed">We aim to foster a love for gardening and environmental stewardship by providing hands-on opportunities for students and community members to engage with nature.</p>
               </div>
-              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                  <ShieldCheck className="w-6 h-6" />
+              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/20 ring-1 ring-primary/40 mb-6">
+                  <ShieldCheck className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Our Values</h3>
-                <p className="text-white/80 leading-relaxed">Sustainability, education, and community are at the heart of everything we do. We believe in nurturing both plants and people through meaningful environmental experiences.</p>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Our Values</h3>
+                <p className="text-muted-foreground leading-relaxed">Sustainability, education, and community are at the heart of everything we do. We believe in nurturing both plants and people through meaningful environmental experiences.</p>
               </div>
             </div>
           </div>
@@ -115,10 +115,10 @@ export default function HomePage() {
       {/* Our Fundraising Goal Section */}
       <section id="fundraising-goal" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
             <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Our Fundraising Goal</h2>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Our Fundraising Goal</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
                 Support our efforts to protect and study this natural wonder for generations to come.
               </p>
             </div>
@@ -127,37 +127,37 @@ export default function HomePage() {
             <div className="max-w-3xl mx-auto mb-12">
               <div className="flex justify-between items-end mb-3">
                 <div>
-                  <span className="text-3xl font-bold">$800</span>
-                  <span className="text-white/60 ml-2">raised</span>
+                  <span className="text-3xl font-bold text-primary">$800</span>
+                  <span className="text-muted-foreground ml-2">raised</span>
                 </div>
                 <div className="text-right">
-                  <span className="text-white/60">Goal: </span>
-                  <span className="text-xl font-semibold">$6,125</span>
+                  <span className="text-muted-foreground">Goal: </span>
+                  <span className="text-xl font-semibold text-foreground">$6,125</span>
                 </div>
               </div>
-              <div className="h-8 bg-white/10 rounded-full ring-1 ring-white/30 overflow-hidden p-1">
+              <div className="h-8 bg-secondary rounded-full ring-1 ring-border overflow-hidden p-1">
                 <div 
-                  className="h-full bg-emerald-500 rounded-full"
+                  className="h-full bg-primary rounded-full"
                   style={{ width: '13.06%', minWidth: '20px' }}
                 />
               </div>
-              <p className="text-center text-white/60 mt-3 text-sm">13% of our goal reached</p>
+              <p className="text-center text-muted-foreground mt-3 text-sm">13% of our goal reached</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                  <Wallet className="w-6 h-6" />
+              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/20 ring-1 ring-primary/40 mb-6">
+                  <Wallet className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Help Us Fundraise</h3>
-                <p className="text-white/80 leading-relaxed">Your contributions directly support cave conservation research, local community development, and educational programs that teach the next generation about protecting our natural heritage.</p>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Help Us Fundraise</h3>
+                <p className="text-muted-foreground leading-relaxed">Your contributions directly support cave conservation research, local community development, and educational programs that teach the next generation about protecting our natural heritage.</p>
               </div>
-              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                  <Leaf className="w-6 h-6" />
+              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/20 ring-1 ring-primary/40 mb-6">
+                  <Leaf className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Where Your Funds Go</h3>
-                <p className="text-white/80 leading-relaxed">Every donation helps fund scientific research, trail maintenance, safety equipment upgrades, and community outreach programs in the Phong Nha region.</p>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Where Your Funds Go</h3>
+                <p className="text-muted-foreground leading-relaxed">Every donation helps fund scientific research, trail maintenance, safety equipment upgrades, and community outreach programs in the Phong Nha region.</p>
               </div>
             </div>
           </div>
@@ -167,10 +167,10 @@ export default function HomePage() {
       {/* Meet Our Team Section */}
       <section id="meet-the-team" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
             <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Meet Our Team</h2>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Meet Our Team</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
                 Get to know the passionate people behind Cruzlings.
               </p>
             </div>
@@ -188,7 +188,7 @@ export default function HomePage() {
                   { name: "Rebecca", role: "Secretary", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HNo9A5RtbF42GIGPo9atJeWrM0mFWe.png", bio: "Bio coming soon." },
                 ].map((member, index) => (
                   <div key={index} className="group relative text-center">
-                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/20 mb-4 aspect-square">
+                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square">
                       {member.image ? (
                         <img 
                           src={member.image} 
@@ -196,17 +196,17 @@ export default function HomePage() {
                           className="w-full h-full object-cover"
                         />
                       ) : (
-                        <div className="w-full h-full bg-white/10 flex items-center justify-center">
-                          <span className="text-white/40 text-sm">Photo</span>
+                        <div className="w-full h-full bg-secondary flex items-center justify-center">
+                          <span className="text-muted-foreground text-sm">Photo</span>
                         </div>
                       )}
                       {/* Hover overlay with bio */}
-                      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                        <p className="text-sm text-white/90 text-center">{member.bio}</p>
+                      <div className="absolute inset-0 bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                        <p className="text-sm text-foreground text-center">{member.bio}</p>
                       </div>
                     </div>
-                    <p className="font-semibold text-lg">{member.name}</p>
-                    <p className="text-sm text-white/60">{member.role}</p>
+                    <p className="font-semibold text-lg text-foreground">{member.name}</p>
+                    <p className="text-sm text-primary">{member.role}</p>
                   </div>
                 ))}
               </div>
@@ -228,7 +228,7 @@ export default function HomePage() {
                   { name: "Iryna Monastyrska", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Bio coming soon." },
                 ].map((member, index) => (
                   <div key={index} className="group relative text-center">
-                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/20 mb-4 aspect-square">
+                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square">
                       {member.image ? (
                         <img 
                           src={member.image} 
@@ -236,16 +236,16 @@ export default function HomePage() {
                           className="w-full h-full object-cover"
                         />
                       ) : (
-                        <div className="w-full h-full bg-white/10 flex items-center justify-center">
-                          <span className="text-white/40 text-sm">Photo</span>
+                        <div className="w-full h-full bg-secondary flex items-center justify-center">
+                          <span className="text-muted-foreground text-sm">Photo</span>
                         </div>
                       )}
                       {/* Hover overlay with bio */}
-                      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                        <p className="text-sm text-white/90 text-center">{member.bio}</p>
+                      <div className="absolute inset-0 bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                        <p className="text-sm text-foreground text-center">{member.bio}</p>
                       </div>
                     </div>
-                    <p className="font-bold text-lg text-white mt-2">{member.name}</p>
+                    <p className="font-bold text-lg text-foreground mt-2">{member.name}</p>
                   </div>
                 ))}
               </div>
@@ -257,35 +257,35 @@ export default function HomePage() {
       {/* Journey Section */}
       <section className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
             {/* Section Header */}
             <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Your Epic Journey</h2>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
-                From jungle treks to underground camps, here's what to expect.
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Your Epic Journey</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+                From jungle treks to underground camps, here&apos;s what to expect.
               </p>
             </div>
 
             {/* Journey Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
               {/* Phase 1: Briefing & Prep */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8 h-80 flex flex-col">
                 <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">01.</div>
-                  <h3 className="text-xl font-semibold mb-4">Briefing & Prep</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
-                    Your adventure begins in Phong Nha with a full safety briefing and equipment check to ensure you're
+                  <div className="text-3xl font-bold text-primary mb-4">01.</div>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Briefing & Prep</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
+                    Your adventure begins in Phong Nha with a full safety briefing and equipment check to ensure you&apos;re
                     ready for the trek.
                   </p>
                 </div>
               </div>
 
               {/* Phase 2: The Trek */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8 h-80 flex flex-col">
                 <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">02.</div>
-                  <h3 className="text-xl font-semibold mb-4">The Trek</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
+                  <div className="text-3xl font-bold text-primary mb-4">02.</div>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">The Trek</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     Hike through pristine jungle, cross rivers, and camp in remote locations on your way to the entrance
                     of Son Doong.
                   </p>
@@ -293,11 +293,11 @@ export default function HomePage() {
               </div>
 
               {/* Phase 3: Caving */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8 h-80 flex flex-col">
                 <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">03.</div>
-                  <h3 className="text-xl font-semibold mb-4">Caving</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
+                  <div className="text-3xl font-bold text-primary mb-4">03.</div>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Caving</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     Descend into the cave to witness colossal stalagmites, explore vast chambers, and see the unique
                     underground jungle.
                   </p>
@@ -305,11 +305,11 @@ export default function HomePage() {
               </div>
 
               {/* Phase 4: Base Camp */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8 h-80 flex flex-col">
                 <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">04.</div>
-                  <h3 className="text-xl font-semibold mb-4">Base Camp</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
+                  <div className="text-3xl font-bold text-primary mb-4">04.</div>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Base Camp</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     Spend nights at breathtaking campsites inside the cave, sharing stories with your group before
                     trekking back.
                   </p>
@@ -321,7 +321,7 @@ export default function HomePage() {
             <div className="text-center">
               <Button
                 size="lg"
-                className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-12 py-4 text-lg font-semibold"
               >
                 Check Availability
               </Button>
@@ -333,14 +333,14 @@ export default function HomePage() {
       {/* FAQ Section */}
       <section id="faq" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               {/* Left Column - Title and Description */}
               <div>
-                <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">
+                <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">
                   Frequently Asked Questions
                 </h2>
-                <p className="text-xl text-white/80 leading-relaxed text-pretty">
+                <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
                   Everything you need to know about the expedition, from physical requirements to booking your spot on
                   this exclusive adventure.
                 </p>
@@ -351,22 +351,22 @@ export default function HomePage() {
                 {faqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden"
+                    className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur overflow-hidden"
                   >
                     <button
                       onClick={() => toggleFaq(index)}
-                      className="w-full p-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
+                      className="w-full p-6 text-left flex items-center justify-between hover:bg-primary/10 transition-colors"
                     >
-                      <h3 className="text-lg font-semibold pr-4">{faq.question}</h3>
+                      <h3 className="text-lg font-semibold pr-4 text-foreground">{faq.question}</h3>
                       {openFaq === index ? (
-                        <Minus className="w-5 h-5 flex-shrink-0" />
+                        <Minus className="w-5 h-5 flex-shrink-0 text-primary" />
                       ) : (
-                        <Plus className="w-5 h-5 flex-shrink-0" />
+                        <Plus className="w-5 h-5 flex-shrink-0 text-primary" />
                       )}
                     </button>
                     {openFaq === index && (
                       <div className="px-6 pb-6">
-                        <p className="text-white/80 leading-relaxed">{faq.answer}</p>
+                        <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
                       </div>
                     )}
                   </div>
@@ -380,51 +380,51 @@ export default function HomePage() {
       {/* Contact Section */}
       <section id="contact" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
             {/* Section Header */}
             <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Contact Our Team</h2>
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Contact Our Team</h2>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               {/* Left Column - Contact Form */}
-              <div className="rounded-2xl bg-white/95 text-black p-8 shadow-2xl">
-                <h3 className="text-2xl font-bold mb-6">Send an Inquiry</h3>
+              <div className="rounded-2xl bg-primary/10 ring-1 ring-primary/30 p-8 shadow-2xl">
+                <h3 className="text-2xl font-bold mb-6 text-foreground">Send an Inquiry</h3>
                 <form className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
                       Name
                     </label>
                     <input
                       type="text"
                       id="name"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-lg bg-secondary ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
                       Email
                     </label>
                     <input
                       type="email"
                       id="email"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-lg bg-secondary ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
                       placeholder="your.email@example.com"
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
                       Message
                     </label>
                     <textarea
                       id="message"
                       rows={5}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+                      className="w-full px-4 py-3 rounded-lg bg-secondary ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none resize-none"
                       placeholder="Tell us about your expedition interests..."
                     />
                   </div>
-                  <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg py-3 font-normal text-base">
+                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg py-3 font-normal text-base">
                     Send Message
                   </Button>
                 </form>
@@ -433,26 +433,26 @@ export default function HomePage() {
               {/* Right Column - Contact Info */}
               <div className="space-y-8">
                 <div>
-                  <p className="text-xl text-white/90 leading-relaxed text-pretty">
+                  <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
                     For questions about private tours, partnerships, or media inquiries, please get in touch. We reply
                     within one business day.
                   </p>
                 </div>
 
                 {/* Profile Card */}
-                <div className="rounded-2xl bg-white/95 text-black p-6 shadow-2xl">
+                <div className="rounded-2xl bg-primary/10 ring-1 ring-primary/30 p-6 shadow-2xl">
                   <div className="flex items-center gap-4 mb-4">
                     <img
                       src="https://www.elledecoration.vn/wp-content/uploads/2025/03/edam-garden.jpg"
                       alt="David Luong"
-                      className="w-16 h-16 rounded-full object-cover"
+                      className="w-16 h-16 rounded-full object-cover ring-2 ring-primary/50"
                     />
                     <div>
-                      <h4 className="text-lg font-semibold">David Luong</h4>
-                      <p className="text-gray-600">Lead Expedition Guide</p>
+                      <h4 className="text-lg font-semibold text-foreground">David Luong</h4>
+                      <p className="text-muted-foreground">Lead Expedition Guide</p>
                     </div>
                   </div>
-                  <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg flex items-center justify-center gap-2">
+                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg flex items-center justify-center gap-2">
                     <Mail className="w-4 h-4" />
                     Email
                   </Button>
@@ -466,27 +466,27 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/[0.03] backdrop-blur-2xl ring-1 ring-white/10 p-12">
+          <div className="rounded-3xl bg-card backdrop-blur-2xl ring-1 ring-border p-12">
             {/* Main Footer Content */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
               {/* Brand Section */}
               <div className="lg:col-span-2">
                 <div className="flex items-center gap-2 mb-6">
-                  <Leaf className="w-6 h-6" />
-                  <span className="text-xl font-semibold">Cruzlings</span>
+                  <Leaf className="w-6 h-6 text-primary" />
+                  <span className="text-xl font-semibold text-foreground">Cruzlings</span>
                 </div>
-                <p className="text-white/80 leading-relaxed text-pretty">
+                <p className="text-muted-foreground leading-relaxed text-pretty">
                   A UCSC gardening club dedicated to connecting the community with nature through planter boxes and environmental education.
                 </p>
               </div>
 
               {/* Quick Links */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">QUICK LINKS</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-primary">QUICK LINKS</h3>
                 <ul className="space-y-3">
                   {["About Us", "Our Goal", "Meet the Team", "Contact"].map((item) => (
                     <li key={item}>
-                      <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
+                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm leading-relaxed">
                         {item}
                       </a>
                     </li>
@@ -496,11 +496,11 @@ export default function HomePage() {
 
               {/* Get Involved */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">GET INVOLVED</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-primary">GET INVOLVED</h3>
                 <ul className="space-y-3">
                   {["Donate", "Volunteer", "Join Us", "Events"].map((item) => (
                     <li key={item}>
-                      <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
+                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm leading-relaxed">
                         {item}
                       </a>
                     </li>
@@ -510,11 +510,11 @@ export default function HomePage() {
 
               {/* Resources Links */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">RESOURCES</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-primary">RESOURCES</h3>
                 <ul className="space-y-3">
                   {["Help Center", "Contact Us", "FAQ", "Terms & Conditions"].map((item) => (
                     <li key={item}>
-                      <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
+                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm leading-relaxed">
                         {item}
                       </a>
                     </li>
@@ -524,23 +524,23 @@ export default function HomePage() {
             </div>
 
             {/* Newsletter Section */}
-            <div className="border-t border-white/10 pt-12 mb-12">
+            <div className="border-t border-border pt-12 mb-12">
               <div className="max-w-md">
-                <h3 className="text-lg font-semibold mb-4">Get Expedition Updates</h3>
+                <h3 className="text-lg font-semibold mb-4 text-foreground">Get Expedition Updates</h3>
                 <div className="flex gap-3">
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="flex-1 px-4 py-3 rounded-lg bg-white/5 ring-1 ring-white/20 backdrop-blur border-0 text-white placeholder:text-white/50 focus:ring-2 focus:ring-white/30 focus:outline-none"
+                    className="flex-1 px-4 py-3 rounded-lg bg-secondary ring-1 ring-border backdrop-blur border-0 text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
                   />
-                  <Button className="bg-white text-black hover:bg-white/90 rounded-lg px-6 h-[50px]">Subscribe</Button>
+                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-6 h-[50px]">Subscribe</Button>
                 </div>
               </div>
             </div>
 
             {/* Sub-footer */}
-            <div className="border-t border-white/10 pt-8">
-              <p className="text-white/60 text-sm text-center">© 2025 Son Doong Expeditions</p>
+            <div className="border-t border-border pt-8">
+              <p className="text-muted-foreground text-sm text-center">© 2025 Cruzlings</p>
             </div>
           </div>
         </div>

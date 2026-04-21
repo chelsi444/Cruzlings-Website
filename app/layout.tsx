@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scroll-smooth bg-[#0B0F12]">
+    <html lang="en" className="scroll-smooth bg-background">
       <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable} antialiased`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
