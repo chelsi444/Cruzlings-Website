@@ -58,79 +58,26 @@ export default function HomePage() {
           </svg>
         </div>
 
-        {/* SVG Illustration - Woman gardening with planter boxes (right side) */}
-        <div className="absolute bottom-8 right-4 md:right-12 lg:right-20 w-[55%] md:w-[45%] lg:w-[40%] z-10">
-          <svg viewBox="0 0 500 400" className="w-full h-auto">
-            {/* Ground/soil area */}
-            <ellipse cx="250" cy="380" rx="220" ry="20" fill="#7a9a6a" opacity="0.5" />
-            
-            {/* Planter box 1 - left */}
-            <rect x="60" y="300" width="80" height="60" fill="#8B7355" rx="4" />
-            <rect x="55" y="290" width="90" height="15" fill="#A08060" rx="3" />
-            {/* Plants in box 1 */}
-            <path d="M80,290 Q75,260 80,230" stroke="#5a8a5a" strokeWidth="2" fill="none" />
-            <ellipse cx="80" cy="225" rx="12" ry="8" fill="#6b9a6b" />
-            <path d="M100,290 Q100,255 105,220" stroke="#5a8a5a" strokeWidth="2" fill="none" />
-            <ellipse cx="105" cy="215" rx="10" ry="7" fill="#7aa87a" />
-            <path d="M120,290 Q125,265 120,240" stroke="#5a8a5a" strokeWidth="2" fill="none" />
-            <ellipse cx="120" cy="235" rx="11" ry="7" fill="#6b9a6b" />
-            
-            {/* Planter box 2 - center */}
-            <rect x="180" y="320" width="70" height="50" fill="#8B7355" rx="4" />
-            <rect x="175" y="310" width="80" height="15" fill="#A08060" rx="3" />
-            {/* Flowers in box 2 */}
-            <path d="M200,310 L200,275" stroke="#5a8a5a" strokeWidth="2" />
-            <circle cx="200" cy="268" r="8" fill="#e8a0a0" />
-            <circle cx="200" cy="268" r="4" fill="#d4d86a" />
-            <path d="M225,310 L225,280" stroke="#5a8a5a" strokeWidth="2" />
-            <circle cx="225" cy="273" r="7" fill="#a0c8e8" />
-            <circle cx="225" cy="273" r="3" fill="#d4d86a" />
-            
-            {/* Planter box 3 - right */}
-            <rect x="340" y="310" width="90" height="55" fill="#8B7355" rx="4" />
-            <rect x="335" y="300" width="100" height="15" fill="#A08060" rx="3" />
-            {/* Tall plants in box 3 */}
-            <path d="M360,300 Q355,250 360,200" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
-            <ellipse cx="350" cy="240" rx="15" ry="8" fill="#6b9a6b" transform="rotate(-30, 350, 240)" />
-            <ellipse cx="370" cy="220" rx="15" ry="8" fill="#7aa87a" transform="rotate(20, 370, 220)" />
-            <ellipse cx="355" cy="200" rx="12" ry="6" fill="#8ab88a" transform="rotate(-20, 355, 200)" />
-            <path d="M400,300 Q405,260 400,220" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
-            <ellipse cx="410" cy="250" rx="14" ry="7" fill="#6b9a6b" transform="rotate(25, 410, 250)" />
-            <ellipse cx="392" cy="235" rx="14" ry="7" fill="#7aa87a" transform="rotate(-25, 392, 235)" />
-            
-            {/* Woman gardening */}
-            {/* Body */}
-            <ellipse cx="280" cy="290" rx="25" ry="15" fill="#4a7a5a" /> {/* Lower body/kneeling */}
-            <path d="M270,275 Q275,250 280,230" fill="none" stroke="#4a7a5a" strokeWidth="20" strokeLinecap="round" /> {/* Torso */}
-            {/* Head */}
-            <circle cx="285" cy="210" r="22" fill="#e8c8a8" />
-            {/* Hair */}
-            <path d="M265,200 Q260,180 275,175 Q290,172 300,185 Q305,195 300,210" fill="#3a2a1a" />
-            <ellipse cx="295" cy="225" rx="8" ry="12" fill="#3a2a1a" /> {/* Hair bun/ponytail */}
-            {/* Hat */}
-            <ellipse cx="283" cy="192" rx="25" ry="8" fill="#d4c8a8" />
-            <path d="M268,192 Q283,175 298,192" fill="#d4c8a8" />
-            {/* Arms */}
-            <path d="M265,245 Q240,260 230,280" stroke="#e8c8a8" strokeWidth="8" fill="none" strokeLinecap="round" />
-            <path d="M295,245 Q310,260 300,285" stroke="#e8c8a8" strokeWidth="8" fill="none" strokeLinecap="round" />
-            {/* Hands with gardening gloves */}
-            <circle cx="228" cy="283" r="8" fill="#8fac91" />
-            <circle cx="302" cy="288" r="8" fill="#8fac91" />
-            {/* Shirt */}
-            <path d="M260,235 Q275,240 295,235 Q300,250 295,270 Q275,275 260,270 Q255,250 260,235" fill="#5a9a7a" />
-            {/* Small pot she's holding */}
-            <ellipse cx="300" cy="300" rx="15" ry="10" fill="#c4846a" />
-            <ellipse cx="300" cy="295" rx="12" ry="6" fill="#6b9a6b" />
-            
-            {/* Watering can */}
-            <ellipse cx="150" cy="360" rx="25" ry="12" fill="#c8c8c8" />
-            <rect x="130" y="340" width="40" height="20" fill="#d4d4d4" rx="3" />
-            <path d="M170,345 Q190,340 200,350" stroke="#c8c8c8" strokeWidth="4" fill="none" />
-            
-            {/* Small trowel */}
-            <rect x="320" y="365" width="30" height="6" fill="#8B7355" rx="2" />
-            <path d="M350,368 L375,365 L375,371 L350,368" fill="#a0a0a0" />
-          </svg>
+        {/* Gardening Scene Image - Right side */}
+        <div className="absolute bottom-0 right-0 w-[65%] md:w-[55%] lg:w-[50%] z-10">
+          <div className="relative">
+            {/* Gradient overlay to blend with background */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#e8f0e8] via-transparent to-transparent z-10 pointer-events-none" />
+            <img 
+              src="/images/gardening-scene.png" 
+              alt="Person planting in garden with planter boxes"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+
+        {/* Logo - Bottom center-right area */}
+        <div className="absolute bottom-16 right-[52%] md:right-[48%] lg:right-[45%] w-24 md:w-32 lg:w-40 z-20 opacity-90">
+          <img 
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-20%20at%2011.24.30%E2%80%AFPM-5QiSIvox6gtFqt7Qb7MveciVBnVo09.png" 
+            alt="Cruzlings Logo"
+            className="w-full h-auto drop-shadow-lg"
+          />
         </div>
 
         {/* Decorative plants - bottom left */}
@@ -308,7 +255,7 @@ export default function HomePage() {
             <div className="max-w-3xl mx-auto mb-12">
               <div className="flex justify-between items-end mb-3">
                 <div>
-                  <span className="text-3xl font-bold text-primary">$800</span>
+                  <span className="text-3xl font-bold text-primary">$1,305</span>
                   <span className="text-muted-foreground ml-2">raised</span>
                 </div>
                 <div className="text-right">
@@ -319,10 +266,10 @@ export default function HomePage() {
               <div className="h-6 bg-secondary rounded-full ring-1 ring-border overflow-hidden">
                 <div 
                   className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-500"
-                  style={{ width: '13.06%', minWidth: '20px' }}
+                  style={{ width: '21.3%', minWidth: '20px' }}
                 />
               </div>
-              <p className="text-center text-muted-foreground mt-3 text-sm">13% of our goal reached</p>
+              <p className="text-center text-muted-foreground mt-3 text-sm">21% of our goal reached</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
