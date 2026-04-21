@@ -38,21 +38,43 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <div className="relative min-h-screen">
-        {/* Background Image with Overlay */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url(https://www.elledecoration.vn/wp-content/uploads/2025/03/1-son-doong.jpg)",
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/60 to-black/70" />
+      <div className="relative min-h-screen overflow-hidden">
+        {/* Soft Green Background with Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#e8f0e8] via-[#d4e5d4] to-[#c5dbc5]" />
+        
+        {/* Decorative Shape - Top Right */}
+        <div className="absolute top-0 right-0 w-1/2 h-2/3">
+          <svg viewBox="0 0 500 400" className="w-full h-full" preserveAspectRatio="xMaxYMin slice">
+            <path
+              d="M200,0 Q350,50 400,150 Q450,250 380,350 Q350,400 500,400 L500,0 Z"
+              fill="#b8d4b8"
+              opacity="0.6"
+            />
+          </svg>
+        </div>
+
+        {/* Plant Design - Bottom Left */}
+        <div className="absolute bottom-0 left-0 w-64 md:w-80 lg:w-96">
+          <img 
+            src="/images/plant-design.png" 
+            alt="Decorative plant illustration"
+            className="w-full h-auto"
+          />
+        </div>
+
+        {/* Additional Plant - Bottom Right (mirrored for balance) */}
+        <div className="absolute bottom-0 right-0 w-48 md:w-64 lg:w-80 transform scale-x-[-1] opacity-60">
+          <img 
+            src="/images/plant-design.png" 
+            alt="Decorative plant illustration"
+            className="w-full h-auto"
+          />
         </div>
 
         {/* Navigation */}
         <nav className="relative z-10 flex items-center justify-center p-6">
           {/* Navigation Links */}
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 flex-wrap justify-center">
             {[
               { label: "About Us", href: "#about-us" },
               { label: "Our Fundraising Goal", href: "#fundraising-goal" },
@@ -73,41 +95,161 @@ export default function HomePage() {
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
+          {/* Logo */}
+          <div className="mb-8">
+            <img 
+              src="/images/cruzlings-logo.png" 
+              alt="Cruzlings Logo"
+              className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain"
+            />
+          </div>
+
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-balance text-white drop-shadow-lg">Cruzlings</h1>
+          <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-6 text-balance text-[#2d5a2d] drop-shadow-sm">Cruzlings</h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-white max-w-4xl mb-12 leading-relaxed text-pretty drop-shadow-md">
+          <p className="text-xl md:text-2xl text-[#3d6b3d] max-w-4xl mb-12 leading-relaxed text-pretty font-medium">
             Where Education Takes Root
           </p>
         </div>
       </div>
 
       {/* About Us Section */}
-      <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20">
+      <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20 overflow-hidden">
+        {/* Decorative SVG Plants - Hanging Planters */}
+        <div className="absolute top-0 left-8 md:left-16 opacity-40">
+          <svg width="80" height="120" viewBox="0 0 80 120" className="text-primary">
+            <line x1="40" y1="0" x2="40" y2="30" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M25,30 Q25,45 40,50 Q55,45 55,30 Z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M30,35 Q28,50 35,60" fill="none" stroke="currentColor" strokeWidth="1" />
+            <path d="M35,60 L32,70 M35,60 L38,68" stroke="currentColor" strokeWidth="1" />
+            <path d="M50,35 Q52,50 45,60" fill="none" stroke="currentColor" strokeWidth="1" />
+            <path d="M45,60 L42,70 M45,60 L48,68" stroke="currentColor" strokeWidth="1" />
+            <path d="M40,45 Q40,55 40,65" fill="none" stroke="currentColor" strokeWidth="1" />
+            <path d="M40,65 L37,75 M40,65 L43,75" stroke="currentColor" strokeWidth="1" />
+          </svg>
+        </div>
+
+        <div className="absolute top-0 left-32 md:left-48 opacity-30">
+          <svg width="60" height="100" viewBox="0 0 60 100" className="text-primary">
+            <line x1="30" y1="0" x2="30" y2="25" stroke="currentColor" strokeWidth="1.5" />
+            <ellipse cx="30" cy="35" rx="20" ry="12" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M20,40 Q18,55 25,65 M25,65 L22,72 M25,65 L28,70" stroke="currentColor" strokeWidth="1" />
+            <path d="M40,40 Q42,55 35,65 M35,65 L32,72 M35,65 L38,70" stroke="currentColor" strokeWidth="1" />
+          </svg>
+        </div>
+
+        <div className="absolute top-0 right-8 md:right-16 opacity-40">
+          <svg width="80" height="120" viewBox="0 0 80 120" className="text-primary">
+            <line x1="40" y1="0" x2="40" y2="30" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M20,30 L60,30 L55,45 L25,45 Z" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M30,45 Q25,60 30,80" fill="none" stroke="currentColor" strokeWidth="1" />
+            <ellipse cx="30" cy="85" rx="8" ry="5" fill="none" stroke="currentColor" strokeWidth="1" />
+            <path d="M50,45 Q55,60 50,80" fill="none" stroke="currentColor" strokeWidth="1" />
+            <ellipse cx="50" cy="85" rx="8" ry="5" fill="none" stroke="currentColor" strokeWidth="1" />
+            <path d="M40,45 Q40,55 38,70 M42,50 Q42,60 44,75" stroke="currentColor" strokeWidth="1" />
+          </svg>
+        </div>
+
+        <div className="absolute top-0 right-32 md:right-48 opacity-30">
+          <svg width="70" height="110" viewBox="0 0 70 110" className="text-primary">
+            <line x1="35" y1="0" x2="35" y2="28" stroke="currentColor" strokeWidth="1.5" />
+            <circle cx="35" cy="38" r="12" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M25,45 Q20,60 25,75" fill="none" stroke="currentColor" strokeWidth="1" />
+            <path d="M25,75 L22,82 M25,75 L28,80" stroke="currentColor" strokeWidth="1" />
+            <path d="M45,45 Q50,60 45,75" fill="none" stroke="currentColor" strokeWidth="1" />
+            <path d="M45,75 L42,82 M45,75 L48,80" stroke="currentColor" strokeWidth="1" />
+          </svg>
+        </div>
+
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
-            <div className="text-center mb-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12 relative">
+            {/* Gardening Scene Illustration */}
+            <div className="absolute -right-4 md:right-8 top-8 w-48 md:w-64 lg:w-80 opacity-80 hidden lg:block">
+              <img 
+                src="/images/gardening-scene.png" 
+                alt="Gardening illustration"
+                className="w-full h-auto rounded-2xl"
+              />
+            </div>
+
+            <div className="text-center mb-12 lg:pr-72">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">About Us</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
                 We are a gardening club dedicated to connecting our community with nature. We&apos;re building planter boxes so UCSC students and the greater Santa Cruz community can plant, grow, and learn about environmental sustainability.
               </p>
             </div>
+
+            {/* Decorative Planter Boxes SVG */}
+            <div className="flex justify-center mb-8 opacity-60">
+              <svg width="400" height="60" viewBox="0 0 400 60" className="text-primary">
+                {/* Planter Box 1 */}
+                <rect x="20" y="35" width="80" height="25" fill="none" stroke="currentColor" strokeWidth="1.5" rx="3" />
+                <rect x="25" y="30" width="70" height="8" fill="none" stroke="currentColor" strokeWidth="1" rx="2" />
+                {/* Plants in box 1 */}
+                <ellipse cx="40" cy="25" rx="8" ry="6" fill="currentColor" opacity="0.3" />
+                <ellipse cx="55" cy="22" rx="6" ry="5" fill="currentColor" opacity="0.25" />
+                <ellipse cx="70" cy="24" rx="7" ry="5" fill="currentColor" opacity="0.3" />
+                <path d="M45,28 L45,18 M50,28 L50,20 M60,28 L60,22" stroke="currentColor" strokeWidth="1" />
+
+                {/* Planter Box 2 - Taller */}
+                <rect x="160" y="25" width="80" height="35" fill="none" stroke="currentColor" strokeWidth="1.5" rx="3" />
+                <rect x="165" y="20" width="70" height="8" fill="none" stroke="currentColor" strokeWidth="1" rx="2" />
+                {/* Cacti */}
+                <ellipse cx="185" cy="15" rx="5" ry="8" fill="none" stroke="currentColor" strokeWidth="1" />
+                <ellipse cx="200" cy="12" rx="4" ry="10" fill="none" stroke="currentColor" strokeWidth="1" />
+                <ellipse cx="215" cy="14" rx="5" ry="9" fill="none" stroke="currentColor" strokeWidth="1" />
+
+                {/* Planter Box 3 */}
+                <rect x="300" y="35" width="80" height="25" fill="none" stroke="currentColor" strokeWidth="1.5" rx="3" />
+                <rect x="305" y="30" width="70" height="8" fill="none" stroke="currentColor" strokeWidth="1" rx="2" />
+                {/* Leafy plants */}
+                <path d="M320,28 Q315,20 320,10 Q325,20 320,28" fill="none" stroke="currentColor" strokeWidth="1" />
+                <path d="M340,28 Q335,18 340,8 Q345,18 340,28" fill="none" stroke="currentColor" strokeWidth="1" />
+                <path d="M360,28 Q355,22 360,12 Q365,22 360,28" fill="none" stroke="currentColor" strokeWidth="1" />
+              </svg>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300 relative overflow-hidden">
+                {/* Small plant decoration */}
+                <div className="absolute -bottom-2 -right-2 opacity-20">
+                  <svg width="60" height="60" viewBox="0 0 60 60" className="text-primary">
+                    <path d="M30,60 Q25,45 30,30 Q35,45 30,60" fill="currentColor" />
+                    <path d="M30,35 Q20,30 15,40" fill="none" stroke="currentColor" strokeWidth="2" />
+                    <path d="M30,35 Q40,30 45,40" fill="none" stroke="currentColor" strokeWidth="2" />
+                  </svg>
+                </div>
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
                   <Sparkles className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">We aim to foster a love for gardening and environmental stewardship by providing hands-on opportunities for students and community members to engage with nature.</p>
               </div>
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300 relative overflow-hidden">
+                {/* Small plant decoration */}
+                <div className="absolute -bottom-2 -right-2 opacity-20">
+                  <svg width="60" height="60" viewBox="0 0 60 60" className="text-primary">
+                    <path d="M30,60 Q25,45 30,30 Q35,45 30,60" fill="currentColor" />
+                    <path d="M30,40 Q22,35 18,42" fill="none" stroke="currentColor" strokeWidth="2" />
+                    <path d="M30,40 Q38,35 42,42" fill="none" stroke="currentColor" strokeWidth="2" />
+                  </svg>
+                </div>
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
                   <ShieldCheck className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Our Values</h3>
                 <p className="text-muted-foreground leading-relaxed">Sustainability, education, and community are at the heart of everything we do. We believe in nurturing both plants and people through meaningful environmental experiences.</p>
               </div>
+            </div>
+
+            {/* Mobile gardening scene */}
+            <div className="mt-8 flex justify-center lg:hidden">
+              <img 
+                src="/images/gardening-scene.png" 
+                alt="Gardening illustration"
+                className="w-full max-w-md h-auto rounded-2xl opacity-80"
+              />
             </div>
           </div>
         </div>
