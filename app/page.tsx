@@ -42,6 +42,24 @@ export default function HomePage() {
         {/* Soft Green Background with Gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#e8f0e8] via-[#dceadc] to-[#c5d8c5]" />
         
+        {/* Sun */}
+        <div className="absolute top-12 right-16 md:right-24 lg:right-32">
+          <svg width="100" height="100" viewBox="0 0 100 100" className="w-20 h-20 md:w-24 md:h-24">
+            {/* Sun rays */}
+            <line x1="50" y1="5" x2="50" y2="20" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="50" y1="80" x2="50" y2="95" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="5" y1="50" x2="20" y2="50" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="80" y1="50" x2="95" y2="50" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="18" y1="18" x2="28" y2="28" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="72" y1="72" x2="82" y2="82" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="18" y1="82" x2="28" y2="72" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="72" y1="28" x2="82" y2="18" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            {/* Sun circle */}
+            <circle cx="50" cy="50" r="25" fill="#f9e076" />
+            <circle cx="50" cy="50" r="20" fill="#f4d03f" />
+          </svg>
+        </div>
+
         {/* Decorative clouds */}
         <div className="absolute top-20 left-1/4 opacity-40">
           <svg width="120" height="50" viewBox="0 0 120 50">
@@ -242,16 +260,10 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
-                  <Leaf className="w-6 h-6 text-primary" />
-                </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">We aim to foster a love for gardening and environmental stewardship by providing hands-on opportunities for students and community members to engage with nature.</p>
               </div>
               <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
-                  <ShieldCheck className="w-6 h-6 text-primary" />
-                </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Our Values</h3>
                 <p className="text-muted-foreground leading-relaxed">Sustainability, education, and community are at the heart of everything we do. We believe in nurturing both plants and people through meaningful environmental experiences.</p>
               </div>
