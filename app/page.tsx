@@ -43,20 +43,30 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#e8f0e8] via-[#dceadc] to-[#c5d8c5]" />
         
         {/* Sun */}
-        <div className="absolute top-12 right-16 md:right-24 lg:right-32">
-          <svg width="100" height="100" viewBox="0 0 100 100" className="w-20 h-20 md:w-24 md:h-24">
-            {/* Sun rays */}
-            <line x1="50" y1="5" x2="50" y2="20" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="50" y1="80" x2="50" y2="95" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="5" y1="50" x2="20" y2="50" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="80" y1="50" x2="95" y2="50" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="18" y1="18" x2="28" y2="28" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="72" y1="72" x2="82" y2="82" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="18" y1="82" x2="28" y2="72" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="72" y1="28" x2="82" y2="18" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+        <div className="absolute top-8 right-12 md:right-20 lg:right-28">
+          <svg width="160" height="160" viewBox="0 0 160 160" className="w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52">
+            {/* Sun rays - 16 rays around the sun */}
+            <line x1="80" y1="5" x2="80" y2="28" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="80" y1="132" x2="80" y2="155" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="5" y1="80" x2="28" y2="80" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="132" y1="80" x2="155" y2="80" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            {/* Diagonal rays at 45 degrees */}
+            <line x1="22" y1="22" x2="40" y2="40" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="120" y1="120" x2="138" y2="138" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="22" y1="138" x2="40" y2="120" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="120" y1="40" x2="138" y2="22" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            {/* Additional rays at 22.5 degree angles */}
+            <line x1="42" y1="10" x2="52" y2="30" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="118" y1="10" x2="108" y2="30" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="10" y1="42" x2="30" y2="52" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="150" y1="42" x2="130" y2="52" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="10" y1="118" x2="30" y2="108" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="150" y1="118" x2="130" y2="108" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="42" y1="150" x2="52" y2="130" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="118" y1="150" x2="108" y2="130" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
             {/* Sun circle */}
-            <circle cx="50" cy="50" r="25" fill="#f9e076" />
-            <circle cx="50" cy="50" r="20" fill="#f4d03f" />
+            <circle cx="80" cy="80" r="42" fill="#f9e076" />
+            <circle cx="80" cy="80" r="34" fill="#f4d03f" />
           </svg>
         </div>
 
