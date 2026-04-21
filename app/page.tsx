@@ -257,20 +257,20 @@ export default function HomePage() {
 
         <div className="max-w-7xl mx-auto">
           <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12 relative">
-            {/* Gardening Scene Illustration */}
-            <div className="absolute -right-4 md:right-8 top-8 w-48 md:w-64 lg:w-80 opacity-90 hidden lg:block">
-              <img 
-                src="/images/gardening-scene.png" 
-                alt="Gardening illustration"
-                className="w-full h-auto rounded-2xl"
-              />
-            </div>
-
-            <div className="text-center mb-12 lg:pr-72">
+            <div className="text-center mb-12">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">About Us</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
                 We are a gardening club dedicated to connecting our community with nature. We&apos;re building planter boxes so UCSC students and the greater Santa Cruz community can plant, grow, and learn about environmental sustainability.
               </p>
+            </div>
+
+            {/* Team Group Photo */}
+            <div className="mb-12 flex justify-center">
+              <img 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7662.JPG-qcb6hUb7HnDmBR9Th76u1Ki1mFSneU.jpeg" 
+                alt="Cruzlings team group photo"
+                className="w-full max-w-4xl h-auto rounded-2xl ring-1 ring-border shadow-lg"
+              />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -288,15 +288,6 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Our Values</h3>
                 <p className="text-muted-foreground leading-relaxed">Sustainability, education, and community are at the heart of everything we do. We believe in nurturing both plants and people through meaningful environmental experiences.</p>
               </div>
-            </div>
-
-            {/* Mobile gardening scene */}
-            <div className="mt-8 flex justify-center lg:hidden">
-              <img 
-                src="/images/gardening-scene.png" 
-                alt="Gardening illustration"
-                className="w-full max-w-md h-auto rounded-2xl opacity-90"
-              />
             </div>
           </div>
         </div>
@@ -405,7 +396,7 @@ export default function HomePage() {
             {/* Members */}
             <div>
               <h3 className="text-2xl font-semibold mb-8 text-center">Members</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-5xl mx-auto">
+              <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
                 {[
                   { name: "Sahasra Chada", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i3x4jch72QxWk8iSBvMLPCM0ALqDrH.png", bio: "Bio coming soon." },
                   { name: "Haatim Ali", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1Wx6bqjxa0WHMso3cqmHwIcCbYAbXO.png", bio: "Bio coming soon." },
@@ -416,7 +407,7 @@ export default function HomePage() {
                   { name: "Sanika Yadav", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yIlFYbaN1nVv78P3JoT5jkL37kaAnc.png", bio: "Bio coming soon." },
                   { name: "Iryna Monastyrska", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Bio coming soon." },
                 ].map((member, index) => (
-                  <div key={index} className="group relative text-center">
+                  <div key={index} className="group relative text-center w-36 md:w-40">
                     <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square">
                       {member.image ? (
                         <img 
