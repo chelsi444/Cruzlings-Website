@@ -325,7 +325,7 @@ export default function HomePage() {
               <p className="text-center text-muted-foreground mt-3 text-sm">13% of our goal reached</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
                   <Wallet className="w-6 h-6 text-primary" />
@@ -339,6 +339,35 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Where Your Funds Go</h3>
                 <p className="text-muted-foreground leading-relaxed">Every donation helps fund supplies, tools, seeds, soil, and community workshops that bring gardening to more UCSC students.</p>
+              </div>
+            </div>
+
+            {/* Social Media Buttons */}
+            <div className="text-center">
+              <p className="text-lg text-muted-foreground mb-6">Follow us on social media to stay updated!</p>
+              <div className="flex justify-center gap-4">
+                <a
+                  href="https://www.tiktok.com/@cruzlings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#000000] text-white font-medium rounded-full hover:bg-[#1a1a1a] transition-colors shadow-lg"
+                >
+                  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                  </svg>
+                  TikTok
+                </a>
+                <a
+                  href="https://www.instagram.com/cruzlings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-white font-medium rounded-full hover:opacity-90 transition-opacity shadow-lg"
+                >
+                  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                  Instagram
+                </a>
               </div>
             </div>
           </div>
@@ -429,78 +458,6 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Journey Section */}
-      <section className="relative z-10 py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
-            {/* Section Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Your Gardening Journey</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-                From seedling to harvest, here&apos;s how you can grow with us.
-              </p>
-            </div>
-
-            {/* Journey Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              {/* Phase 1: Join Us */}
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col hover:shadow-lg transition-shadow duration-300">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-primary mb-4">01.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Join Us</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    Your journey begins by joining Cruzlings. Attend our meetings and connect with fellow plant enthusiasts on campus.
-                  </p>
-                </div>
-              </div>
-
-              {/* Phase 2: Learn */}
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col hover:shadow-lg transition-shadow duration-300">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-primary mb-4">02.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Learn</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    Participate in workshops about sustainable gardening, composting, and plant care from experienced members.
-                  </p>
-                </div>
-              </div>
-
-              {/* Phase 3: Grow */}
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col hover:shadow-lg transition-shadow duration-300">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-primary mb-4">03.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Grow</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    Get hands-on experience planting seeds, nurturing plants, and watching your garden come to life in our planter boxes.
-                  </p>
-                </div>
-              </div>
-
-              {/* Phase 4: Share */}
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col hover:shadow-lg transition-shadow duration-300">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-primary mb-4">04.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Share</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">
-                    Harvest your produce, share with the community, and spread the joy of gardening to others on campus.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Get Involved Button */}
-            <div className="text-center">
-              <Button
-                size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-12 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                Get Involved
-              </Button>
             </div>
           </div>
         </div>
