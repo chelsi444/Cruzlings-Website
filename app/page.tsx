@@ -73,10 +73,10 @@ export default function HomePage() {
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-balance">Cruzlings</h1>
+          <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-balance text-white drop-shadow-lg">Cruzlings</h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mb-12 leading-relaxed text-pretty">
+          <p className="text-xl md:text-2xl text-white max-w-4xl mb-12 leading-relaxed text-pretty drop-shadow-md">
             Where Education Takes Root
           </p>
         </div>
