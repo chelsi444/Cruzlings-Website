@@ -3,7 +3,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
-:root {
+/* Force light mode - no dark variant */
+:root, .dark {
   --background: oklch(0.985 0.002 110);
   --foreground: oklch(0.205 0.02 150);
   --card: oklch(1 0 0);
