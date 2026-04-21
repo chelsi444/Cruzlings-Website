@@ -16,7 +16,7 @@ export default function HomePage() {
     {
       question: "How do I join Cruzlings?",
       answer:
-        "Joining is easy! Attend one of our weekly meetings or reach out through our contact form. All UCSC students are welcome regardless of gardening experience. We provide all the guidance and tools you need to get started.",
+        "Currently we're not onboarding new members, but if you want to get involved feel free to email or DM us!",
     },
     {
       question: "Do I need gardening experience?",
@@ -58,26 +58,63 @@ export default function HomePage() {
           </svg>
         </div>
 
-        {/* Gardening Scene Image - Right side */}
-        <div className="absolute bottom-0 right-0 w-[65%] md:w-[55%] lg:w-[50%] z-10">
-          <div className="relative">
-            {/* Gradient overlay to blend with background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#e8f0e8] via-transparent to-transparent z-10 pointer-events-none" />
-            <img 
-              src="/images/gardening-scene.png" 
-              alt="Person planting in garden with planter boxes"
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
-
-        {/* Logo - Bottom center-right area */}
-        <div className="absolute bottom-16 right-[52%] md:right-[48%] lg:right-[45%] w-24 md:w-32 lg:w-40 z-20 opacity-90">
-          <img 
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-20%20at%2011.24.30%E2%80%AFPM-5QiSIvox6gtFqt7Qb7MveciVBnVo09.png" 
-            alt="Cruzlings Logo"
-            className="w-full h-auto drop-shadow-lg"
-          />
+        {/* SVG Planter Boxes with Plants - Right side */}
+        <div className="absolute bottom-0 right-4 md:right-12 lg:right-20 w-[60%] md:w-[50%] lg:w-[45%] z-10">
+          <svg viewBox="0 0 500 350" className="w-full h-auto">
+            {/* Ground/grass area */}
+            <ellipse cx="250" cy="340" rx="240" ry="15" fill="#7a9a6a" opacity="0.4" />
+            
+            {/* Planter box 1 - left */}
+            <rect x="40" y="260" width="100" height="70" fill="#8B7355" rx="4" />
+            <rect x="35" y="250" width="110" height="15" fill="#A08060" rx="3" />
+            {/* Plants in box 1 - tall leafy plants */}
+            <path d="M70,250 Q65,200 70,150" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="50" cy="200" rx="20" ry="10" fill="#6b9a6b" opacity="0.9" transform="rotate(-25, 50, 200)" />
+            <ellipse cx="90" cy="180" rx="18" ry="9" fill="#7aa87a" opacity="0.85" transform="rotate(20, 90, 180)" />
+            <ellipse cx="55" cy="160" rx="16" ry="8" fill="#8ab88a" opacity="0.8" transform="rotate(-20, 55, 160)" />
+            <path d="M110,250 Q115,210 110,170" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
+            <ellipse cx="125" cy="200" rx="15" ry="8" fill="#6b9a6b" opacity="0.85" transform="rotate(25, 125, 200)" />
+            <ellipse cx="100" cy="185" rx="14" ry="7" fill="#7aa87a" opacity="0.8" transform="rotate(-15, 100, 185)" />
+            
+            {/* Planter box 2 - center */}
+            <rect x="180" y="270" width="90" height="60" fill="#8B7355" rx="4" />
+            <rect x="175" y="260" width="100" height="15" fill="#A08060" rx="3" />
+            {/* Flowers in box 2 */}
+            <path d="M210,260 L210,210" stroke="#5a8a5a" strokeWidth="2.5" />
+            <circle cx="210" cy="200" r="12" fill="#e8a0a0" />
+            <circle cx="210" cy="200" r="5" fill="#d4d86a" />
+            <path d="M245,260 L245,220" stroke="#5a8a5a" strokeWidth="2.5" />
+            <circle cx="245" cy="210" r="10" fill="#a0c8e8" />
+            <circle cx="245" cy="210" r="4" fill="#d4d86a" />
+            <path d="M225,260 L225,230" stroke="#5a8a5a" strokeWidth="2" />
+            <circle cx="225" cy="222" r="8" fill="#c8a0e8" />
+            <circle cx="225" cy="222" r="3" fill="#d4d86a" />
+            
+            {/* Planter box 3 - right, larger */}
+            <rect x="320" y="250" width="130" height="80" fill="#8B7355" rx="4" />
+            <rect x="315" y="240" width="140" height="15" fill="#A08060" rx="3" />
+            {/* Tall plants in box 3 */}
+            <path d="M350,240 Q345,180 350,120" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="330" cy="180" rx="22" ry="11" fill="#6b9a6b" opacity="0.9" transform="rotate(-30, 330, 180)" />
+            <ellipse cx="370" cy="160" rx="20" ry="10" fill="#7aa87a" opacity="0.85" transform="rotate(25, 370, 160)" />
+            <ellipse cx="340" cy="140" rx="18" ry="9" fill="#8ab88a" opacity="0.8" transform="rotate(-20, 340, 140)" />
+            <ellipse cx="365" cy="125" rx="15" ry="7" fill="#9ac89a" opacity="0.75" transform="rotate(15, 365, 125)" />
+            <path d="M410,240 Q415,190 410,140" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="430" cy="190" rx="20" ry="10" fill="#6b9a6b" opacity="0.85" transform="rotate(30, 430, 190)" />
+            <ellipse cx="395" cy="170" rx="18" ry="9" fill="#7aa87a" opacity="0.8" transform="rotate(-25, 395, 170)" />
+            <ellipse cx="420" cy="155" rx="16" ry="8" fill="#8ab88a" opacity="0.75" transform="rotate(20, 420, 155)" />
+            
+            {/* Small pot on ground */}
+            <ellipse cx="290" cy="330" rx="20" ry="8" fill="#c4846a" />
+            <ellipse cx="290" cy="320" rx="18" ry="12" fill="#d49a7a" />
+            <path d="M290,320 L290,295" stroke="#5a8a5a" strokeWidth="2" />
+            <ellipse cx="290" cy="292" rx="10" ry="6" fill="#7aa87a" />
+            
+            {/* Watering can */}
+            <ellipse cx="160" cy="325" rx="20" ry="10" fill="#a8c8a8" />
+            <rect x="145" y="305" width="30" height="20" fill="#b8d8b8" rx="3" />
+            <path d="M175,310 Q190,305 200,315" stroke="#a8c8a8" strokeWidth="3" fill="none" />
+          </svg>
         </div>
 
         {/* Decorative plants - bottom left */}
@@ -107,25 +144,8 @@ export default function HomePage() {
 
         {/* Navigation */}
         <nav className="relative z-20 flex items-center justify-between px-6 md:px-12 py-6">
-          {/* Logo - Top Left */}
-          <div className="flex items-center gap-3">
-            <svg viewBox="0 0 50 50" className="w-12 h-12 md:w-14 md:h-14">
-              {/* Hands */}
-              <path d="M10,38 Q5,30 10,22 Q15,16 22,18 Q25,20 25,26 Q22,34 15,38 Q12,39 10,38" fill="#5a7a3a" />
-              <path d="M40,38 Q45,30 40,22 Q35,16 28,18 Q25,20 25,26 Q28,34 35,38 Q38,39 40,38" fill="#5a7a3a" />
-              {/* Soil */}
-              <ellipse cx="25" cy="35" rx="10" ry="5" fill="#4a6a2a" />
-              {/* Stem */}
-              <path d="M25,32 L25,14" fill="none" stroke="#5a7a3a" strokeWidth="2" />
-              {/* Flower petals */}
-              <ellipse cx="25" cy="8" rx="4" ry="6" fill="#6b8f45" />
-              <ellipse cx="20" cy="11" rx="4" ry="6" fill="#6b8f45" transform="rotate(-45, 20, 11)" />
-              <ellipse cx="30" cy="11" rx="4" ry="6" fill="#6b8f45" transform="rotate(45, 30, 11)" />
-              <ellipse cx="18" cy="16" rx="4" ry="6" fill="#6b8f45" transform="rotate(-90, 18, 16)" />
-              <ellipse cx="32" cy="16" rx="4" ry="6" fill="#6b8f45" transform="rotate(90, 32, 16)" />
-              {/* Center */}
-              <circle cx="25" cy="13" r="4" fill="#4a6a2a" />
-            </svg>
+          {/* Site Title - Top Left */}
+          <div className="flex items-center">
             <div>
               <span className="text-xl md:text-2xl font-bold text-[#2d5a2d]">Cruzlings</span>
               <p className="text-xs text-[#4a7c4a]">UCSC Gardening Club</p>
