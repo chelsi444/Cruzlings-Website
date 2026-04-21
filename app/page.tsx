@@ -1,5 +1,6 @@
 "use client"
 
+// Cruzlings - UCSC Gardening Club Website
 import { Sparkles, ShieldCheck, Wallet, Leaf, Plus, Minus, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
