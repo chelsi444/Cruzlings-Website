@@ -58,21 +58,104 @@ export default function HomePage() {
           </svg>
         </div>
 
-        {/* Grass at bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 md:h-32">
-          <svg viewBox="0 0 1440 120" className="w-full h-full" preserveAspectRatio="none">
-            <rect x="0" y="40" width="1440" height="80" fill="#5a8a5a" />
-            <path d="M0,40 Q20,20 40,40 Q60,60 80,40 Q100,20 120,40 Q140,60 160,40 Q180,20 200,40 Q220,60 240,40 Q260,20 280,40 Q300,60 320,40 Q340,20 360,40 Q380,60 400,40 Q420,20 440,40 Q460,60 480,40 Q500,20 520,40 Q540,60 560,40 Q580,20 600,40 Q620,60 640,40 Q660,20 680,40 Q700,60 720,40 Q740,20 760,40 Q780,60 800,40 Q820,20 840,40 Q860,60 880,40 Q900,20 920,40 Q940,60 960,40 Q980,20 1000,40 Q1020,60 1040,40 Q1060,20 1080,40 Q1100,60 1120,40 Q1140,20 1160,40 Q1180,60 1200,40 Q1220,20 1240,40 Q1260,60 1280,40 Q1300,20 1320,40 Q1340,60 1360,40 Q1380,20 1400,40 Q1420,60 1440,40 L1440,120 L0,120 Z" fill="#6b9a6b" />
+        {/* SVG Illustration - Woman gardening with planter boxes (right side) */}
+        <div className="absolute bottom-8 right-4 md:right-12 lg:right-20 w-[55%] md:w-[45%] lg:w-[40%] z-10">
+          <svg viewBox="0 0 500 400" className="w-full h-auto">
+            {/* Ground/soil area */}
+            <ellipse cx="250" cy="380" rx="220" ry="20" fill="#7a9a6a" opacity="0.5" />
+            
+            {/* Planter box 1 - left */}
+            <rect x="60" y="300" width="80" height="60" fill="#8B7355" rx="4" />
+            <rect x="55" y="290" width="90" height="15" fill="#A08060" rx="3" />
+            {/* Plants in box 1 */}
+            <path d="M80,290 Q75,260 80,230" stroke="#5a8a5a" strokeWidth="2" fill="none" />
+            <ellipse cx="80" cy="225" rx="12" ry="8" fill="#6b9a6b" />
+            <path d="M100,290 Q100,255 105,220" stroke="#5a8a5a" strokeWidth="2" fill="none" />
+            <ellipse cx="105" cy="215" rx="10" ry="7" fill="#7aa87a" />
+            <path d="M120,290 Q125,265 120,240" stroke="#5a8a5a" strokeWidth="2" fill="none" />
+            <ellipse cx="120" cy="235" rx="11" ry="7" fill="#6b9a6b" />
+            
+            {/* Planter box 2 - center */}
+            <rect x="180" y="320" width="70" height="50" fill="#8B7355" rx="4" />
+            <rect x="175" y="310" width="80" height="15" fill="#A08060" rx="3" />
+            {/* Flowers in box 2 */}
+            <path d="M200,310 L200,275" stroke="#5a8a5a" strokeWidth="2" />
+            <circle cx="200" cy="268" r="8" fill="#e8a0a0" />
+            <circle cx="200" cy="268" r="4" fill="#d4d86a" />
+            <path d="M225,310 L225,280" stroke="#5a8a5a" strokeWidth="2" />
+            <circle cx="225" cy="273" r="7" fill="#a0c8e8" />
+            <circle cx="225" cy="273" r="3" fill="#d4d86a" />
+            
+            {/* Planter box 3 - right */}
+            <rect x="340" y="310" width="90" height="55" fill="#8B7355" rx="4" />
+            <rect x="335" y="300" width="100" height="15" fill="#A08060" rx="3" />
+            {/* Tall plants in box 3 */}
+            <path d="M360,300 Q355,250 360,200" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
+            <ellipse cx="350" cy="240" rx="15" ry="8" fill="#6b9a6b" transform="rotate(-30, 350, 240)" />
+            <ellipse cx="370" cy="220" rx="15" ry="8" fill="#7aa87a" transform="rotate(20, 370, 220)" />
+            <ellipse cx="355" cy="200" rx="12" ry="6" fill="#8ab88a" transform="rotate(-20, 355, 200)" />
+            <path d="M400,300 Q405,260 400,220" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
+            <ellipse cx="410" cy="250" rx="14" ry="7" fill="#6b9a6b" transform="rotate(25, 410, 250)" />
+            <ellipse cx="392" cy="235" rx="14" ry="7" fill="#7aa87a" transform="rotate(-25, 392, 235)" />
+            
+            {/* Woman gardening */}
+            {/* Body */}
+            <ellipse cx="280" cy="290" rx="25" ry="15" fill="#4a7a5a" /> {/* Lower body/kneeling */}
+            <path d="M270,275 Q275,250 280,230" fill="none" stroke="#4a7a5a" strokeWidth="20" strokeLinecap="round" /> {/* Torso */}
+            {/* Head */}
+            <circle cx="285" cy="210" r="22" fill="#e8c8a8" />
+            {/* Hair */}
+            <path d="M265,200 Q260,180 275,175 Q290,172 300,185 Q305,195 300,210" fill="#3a2a1a" />
+            <ellipse cx="295" cy="225" rx="8" ry="12" fill="#3a2a1a" /> {/* Hair bun/ponytail */}
+            {/* Hat */}
+            <ellipse cx="283" cy="192" rx="25" ry="8" fill="#d4c8a8" />
+            <path d="M268,192 Q283,175 298,192" fill="#d4c8a8" />
+            {/* Arms */}
+            <path d="M265,245 Q240,260 230,280" stroke="#e8c8a8" strokeWidth="8" fill="none" strokeLinecap="round" />
+            <path d="M295,245 Q310,260 300,285" stroke="#e8c8a8" strokeWidth="8" fill="none" strokeLinecap="round" />
+            {/* Hands with gardening gloves */}
+            <circle cx="228" cy="283" r="8" fill="#8fac91" />
+            <circle cx="302" cy="288" r="8" fill="#8fac91" />
+            {/* Shirt */}
+            <path d="M260,235 Q275,240 295,235 Q300,250 295,270 Q275,275 260,270 Q255,250 260,235" fill="#5a9a7a" />
+            {/* Small pot she's holding */}
+            <ellipse cx="300" cy="300" rx="15" ry="10" fill="#c4846a" />
+            <ellipse cx="300" cy="295" rx="12" ry="6" fill="#6b9a6b" />
+            
+            {/* Watering can */}
+            <ellipse cx="150" cy="360" rx="25" ry="12" fill="#c8c8c8" />
+            <rect x="130" y="340" width="40" height="20" fill="#d4d4d4" rx="3" />
+            <path d="M170,345 Q190,340 200,350" stroke="#c8c8c8" strokeWidth="4" fill="none" />
+            
+            {/* Small trowel */}
+            <rect x="320" y="365" width="30" height="6" fill="#8B7355" rx="2" />
+            <path d="M350,368 L375,365 L375,371 L350,368" fill="#a0a0a0" />
           </svg>
         </div>
 
-        {/* Gardening Scene - Right side, sitting on grass */}
-        <div className="absolute bottom-20 md:bottom-24 right-0 md:right-8 lg:right-16 w-[70%] md:w-[55%] lg:w-[50%] z-10">
-          <img 
-            src="/images/gardening-scene.png" 
-            alt="Person planting in garden"
-            className="w-full h-auto"
-          />
+        {/* Decorative plants - bottom left */}
+        <div className="absolute bottom-0 left-0 w-40 md:w-56 lg:w-64">
+          <svg viewBox="0 0 200 250" className="w-full h-auto">
+            {/* Tall plant with alternating leaves */}
+            <path d="M100,250 L100,50" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="70" cy="200" rx="25" ry="12" fill="#7aa87a" opacity="0.9" transform="rotate(-20, 70, 200)" />
+            <ellipse cx="130" cy="170" rx="22" ry="10" fill="#6b9a6b" opacity="0.85" transform="rotate(20, 130, 170)" />
+            <ellipse cx="65" cy="140" rx="22" ry="10" fill="#7aa87a" opacity="0.8" transform="rotate(-25, 65, 140)" />
+            <ellipse cx="135" cy="110" rx="20" ry="9" fill="#8ab88a" opacity="0.75" transform="rotate(25, 135, 110)" />
+            <ellipse cx="70" cy="80" rx="18" ry="8" fill="#7aa87a" opacity="0.7" transform="rotate(-20, 70, 80)" />
+            <ellipse cx="125" cy="55" rx="15" ry="7" fill="#9ac89a" opacity="0.65" transform="rotate(20, 125, 55)" />
+          </svg>
+        </div>
+
+        {/* Decorative plants - bottom right corner */}
+        <div className="absolute bottom-0 right-0 w-24 md:w-32">
+          <svg viewBox="0 0 100 150" className="w-full h-auto">
+            <path d="M50,150 L50,60" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
+            <ellipse cx="30" cy="120" rx="18" ry="9" fill="#6b9a6b" opacity="0.8" transform="rotate(-30, 30, 120)" />
+            <ellipse cx="70" cy="100" rx="16" ry="8" fill="#7aa87a" opacity="0.75" transform="rotate(30, 70, 100)" />
+            <ellipse cx="35" cy="80" rx="14" ry="7" fill="#8ab88a" opacity="0.7" transform="rotate(-25, 35, 80)" />
+            <ellipse cx="65" cy="65" rx="12" ry="6" fill="#9ac89a" opacity="0.65" transform="rotate(25, 65, 65)" />
+          </svg>
         </div>
 
         {/* Navigation */}
@@ -132,14 +215,11 @@ export default function HomePage() {
         {/* Hero Content - Left aligned */}
         <div className="relative z-10 flex flex-col items-start justify-center min-h-[calc(100vh-200px)] px-6 md:px-12 lg:px-20 max-w-2xl">
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-tight mb-2 text-[#2d5a2d]">
-            GROW WITH US
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 text-[#2d5a2d]">
+            Cruzlings
           </h1>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-[#2d5a2d]">
-            BEAUTIFUL GARDENS
-          </h2>
-          <p className="text-lg md:text-xl font-semibold text-[#4a7c4a] mb-6 uppercase tracking-wide">
-            A Community Initiative
+          <p className="text-xl md:text-2xl font-medium text-[#4a7c4a] mb-6 italic">
+            Where Education Takes Root
           </p>
 
           {/* Description */}
@@ -291,7 +371,7 @@ export default function HomePage() {
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                 {[
                   { name: "Surabhi Kuchibhotla", role: "CEO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Leading Cruzlings with passion for environmental education." },
-                  { name: "Jorge Flores", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%201.40.58%E2%80%AFAM-SNYkuQIQxW4qWUyo7sDUreaKRszcmi.png", bio: "Managing finances and resources for Cruzlings." },
+                  { name: "Kyle Bradford", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bxQMOuHVseWpvXVUfU1ILNyCGdq3zA.png", bio: "Managing finances and resources for Cruzlings." },
                   { name: "Chelsi Vaghela", role: "CTO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SAM_0346-dUGNKhySHTtqBLiS1ynuv00rZwkcVg.jpg", bio: "Leading technology initiatives for Cruzlings." },
                   { name: "Sarah Wei", role: "CMO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Bio coming soon." },
                   { name: "Jayden", role: "PR", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%204.12.07%E2%80%AFPM-JfiOct7BJkPCuAiGb6CQAeIUJLZ4XW.png", bio: "Bio coming soon." },
@@ -330,7 +410,6 @@ export default function HomePage() {
                   { name: "Sahasra Chada", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i3x4jch72QxWk8iSBvMLPCM0ALqDrH.png", bio: "Bio coming soon." },
                   { name: "Haatim Ali", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1Wx6bqjxa0WHMso3cqmHwIcCbYAbXO.png", bio: "Bio coming soon." },
                   { name: "Eobii Brow", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MN8Ct7WKXWYD6iLVfK4GdN597wcTGr.png", bio: "Bio coming soon." },
-                  { name: "Kyle Bradford", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bxQMOuHVseWpvXVUfU1ILNyCGdq3zA.png", bio: "Bio coming soon." },
                   { name: "Jose Nunez", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Cmakfn9BSyL8wvMFnOHMWzxsendIlz.png", bio: "Bio coming soon." },
                   { name: "Adam Lee", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CmpDb42N1s9J5zTct9u8LG98n4uJQX.png", bio: "Bio coming soon." },
                   { name: "Chintan Patwardhan", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TwWOvcPMprlkf9qpizrPpyMGClJ8Ar.png", bio: "Bio coming soon." },
