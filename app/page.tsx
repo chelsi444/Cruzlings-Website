@@ -13,24 +13,24 @@ export default function HomePage() {
 
   const faqs = [
     {
-      question: "How physically demanding is the tour?",
+      question: "How do I join Cruzlings?",
       answer:
-        "The Son Doong expedition requires excellent physical fitness. You'll trek 15+ kilometers through jungle terrain, rappel down 80-meter drops, and navigate underground rivers. Participants must be able to carry a 15kg backpack and have prior caving or trekking experience.",
+        "Joining is easy! Attend one of our weekly meetings or reach out through our contact form. All UCSC students are welcome regardless of gardening experience. We provide all the guidance and tools you need to get started.",
     },
     {
-      question: "What is included in the tour price?",
+      question: "Do I need gardening experience?",
       answer:
-        "Your expedition includes all permits, professional guides, safety equipment, camping gear, meals during the expedition, transportation from Phong Nha, and emergency evacuation insurance. Personal items like clothing and toiletries are not included.",
+        "Not at all! We welcome complete beginners and experienced gardeners alike. Our workshops cover everything from basic plant care to advanced sustainable gardening techniques. Learning together is what makes our community special.",
     },
     {
-      question: "Is it safe to explore Son Doong Cave?",
+      question: "What kind of plants do you grow?",
       answer:
-        "Safety is our absolute priority. All guides are certified cave rescue specialists, we use professional-grade equipment, maintain constant communication with base camp, and have comprehensive emergency protocols. Weather conditions are monitored continuously.",
+        "We grow a variety of vegetables, herbs, and flowers suited to the Santa Cruz climate. Popular choices include tomatoes, lettuce, basil, succulents, and native California plants. Members can suggest new plants to try each season.",
     },
     {
-      question: "How do I book a spot?",
+      question: "How are the funds used?",
       answer:
-        "Expeditions are limited to 10 people per group and run only during dry season (February-August). Book 6-12 months in advance through our website. A 50% deposit secures your spot, with final payment due 30 days before departure.",
+        "Your donations go directly toward building planter boxes, purchasing seeds and soil, acquiring gardening tools, and hosting educational workshops. We provide full transparency on how every dollar supports our community garden initiatives.",
     },
   ]
 
@@ -45,7 +45,7 @@ export default function HomePage() {
             backgroundImage: "url(https://www.elledecoration.vn/wp-content/uploads/2025/03/1-son-doong.jpg)",
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-white" />
         </div>
 
         {/* Navigation */}
@@ -62,7 +62,7 @@ export default function HomePage() {
               <a
                 key={item.label}
                 href={item.href}
-                className="px-4 py-2 bg-secondary/80 ring-1 ring-primary/30 backdrop-blur rounded-full hover:bg-primary/20 hover:ring-primary/50 transition-colors"
+                className="px-4 py-2 bg-white/90 text-foreground ring-1 ring-primary/20 backdrop-blur-md rounded-full hover:bg-primary hover:text-primary-foreground hover:ring-primary transition-all duration-200 shadow-sm"
               >
                 {item.label}
               </a>
@@ -85,7 +85,7 @@ export default function HomePage() {
       {/* About Us Section */}
       <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
             <div className="text-center mb-12">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">About Us</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
@@ -93,15 +93,15 @@ export default function HomePage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/20 ring-1 ring-primary/40 mb-6">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
                   <Sparkles className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">We aim to foster a love for gardening and environmental stewardship by providing hands-on opportunities for students and community members to engage with nature.</p>
               </div>
-              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/20 ring-1 ring-primary/40 mb-6">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
                   <ShieldCheck className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Our Values</h3>
@@ -115,7 +115,7 @@ export default function HomePage() {
       {/* Our Fundraising Goal Section */}
       <section id="fundraising-goal" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
             <div className="text-center mb-12">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Our Fundraising Goal</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
@@ -135,9 +135,9 @@ export default function HomePage() {
                   <span className="text-xl font-semibold text-foreground">$6,125</span>
                 </div>
               </div>
-              <div className="h-8 bg-secondary rounded-full ring-1 ring-border overflow-hidden p-1">
+              <div className="h-6 bg-secondary rounded-full ring-1 ring-border overflow-hidden">
                 <div 
-                  className="h-full bg-primary rounded-full"
+                  className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-500"
                   style={{ width: '13.06%', minWidth: '20px' }}
                 />
               </div>
@@ -145,19 +145,19 @@ export default function HomePage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/20 ring-1 ring-primary/40 mb-6">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
                   <Wallet className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Help Us Fundraise</h3>
-                <p className="text-muted-foreground leading-relaxed">Your contributions directly support cave conservation research, local community development, and educational programs that teach the next generation about protecting our natural heritage.</p>
+                <p className="text-muted-foreground leading-relaxed">Your contributions directly support our gardening initiatives, planter box construction, and educational programs that teach students about sustainable growing.</p>
               </div>
-              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/20 ring-1 ring-primary/40 mb-6">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
                   <Leaf className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-foreground">Where Your Funds Go</h3>
-                <p className="text-muted-foreground leading-relaxed">Every donation helps fund scientific research, trail maintenance, safety equipment upgrades, and community outreach programs in the Phong Nha region.</p>
+                <p className="text-muted-foreground leading-relaxed">Every donation helps fund supplies, tools, seeds, soil, and community workshops that bring gardening to more UCSC students.</p>
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ export default function HomePage() {
       {/* Meet Our Team Section */}
       <section id="meet-the-team" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
             <div className="text-center mb-12">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Meet Our Team</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
@@ -201,12 +201,12 @@ export default function HomePage() {
                         </div>
                       )}
                       {/* Hover overlay with bio */}
-                      <div className="absolute inset-0 bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                        <p className="text-sm text-foreground text-center">{member.bio}</p>
+                      <div className="absolute inset-0 bg-primary/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                        <p className="text-sm text-primary-foreground text-center">{member.bio}</p>
                       </div>
                     </div>
                     <p className="font-semibold text-lg text-foreground">{member.name}</p>
-                    <p className="text-sm text-primary">{member.role}</p>
+                    <p className="text-sm text-primary font-medium">{member.role}</p>
                   </div>
                 ))}
               </div>
@@ -241,8 +241,8 @@ export default function HomePage() {
                         </div>
                       )}
                       {/* Hover overlay with bio */}
-                      <div className="absolute inset-0 bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                        <p className="text-sm text-foreground text-center">{member.bio}</p>
+                      <div className="absolute inset-0 bg-primary/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                        <p className="text-sm text-primary-foreground text-center">{member.bio}</p>
                       </div>
                     </div>
                     <p className="font-bold text-lg text-foreground mt-2">{member.name}</p>
@@ -257,73 +257,69 @@ export default function HomePage() {
       {/* Journey Section */}
       <section className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
             {/* Section Header */}
             <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Your Epic Journey</h2>
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Your Gardening Journey</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-                From jungle treks to underground camps, here&apos;s what to expect.
+                From seedling to harvest, here&apos;s how you can grow with us.
               </p>
             </div>
 
             {/* Journey Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              {/* Phase 1: Briefing & Prep */}
-              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8 h-80 flex flex-col">
+              {/* Phase 1: Join Us */}
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col hover:shadow-lg transition-shadow duration-300">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-primary mb-4">01.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Briefing & Prep</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Join Us</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">
-                    Your adventure begins in Phong Nha with a full safety briefing and equipment check to ensure you&apos;re
-                    ready for the trek.
+                    Your journey begins by joining Cruzlings. Attend our meetings and connect with fellow plant enthusiasts on campus.
                   </p>
                 </div>
               </div>
 
-              {/* Phase 2: The Trek */}
-              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8 h-80 flex flex-col">
+              {/* Phase 2: Learn */}
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col hover:shadow-lg transition-shadow duration-300">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-primary mb-4">02.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">The Trek</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Learn</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">
-                    Hike through pristine jungle, cross rivers, and camp in remote locations on your way to the entrance
-                    of Son Doong.
+                    Participate in workshops about sustainable gardening, composting, and plant care from experienced members.
                   </p>
                 </div>
               </div>
 
-              {/* Phase 3: Caving */}
-              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8 h-80 flex flex-col">
+              {/* Phase 3: Grow */}
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col hover:shadow-lg transition-shadow duration-300">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-primary mb-4">03.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Caving</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Grow</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">
-                    Descend into the cave to witness colossal stalagmites, explore vast chambers, and see the unique
-                    underground jungle.
+                    Get hands-on experience planting seeds, nurturing plants, and watching your garden come to life in our planter boxes.
                   </p>
                 </div>
               </div>
 
-              {/* Phase 4: Base Camp */}
-              <div className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur p-8 h-80 flex flex-col">
+              {/* Phase 4: Share */}
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 h-80 flex flex-col hover:shadow-lg transition-shadow duration-300">
                 <div className="flex-1">
                   <div className="text-3xl font-bold text-primary mb-4">04.</div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">Base Camp</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">Share</h3>
                   <p className="text-muted-foreground leading-relaxed text-sm">
-                    Spend nights at breathtaking campsites inside the cave, sharing stories with your group before
-                    trekking back.
+                    Harvest your produce, share with the community, and spread the joy of gardening to others on campus.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Check Availability Button */}
+            {/* Get Involved Button */}
             <div className="text-center">
               <Button
                 size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-12 py-4 text-lg font-semibold"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-12 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                Check Availability
+                Get Involved
               </Button>
             </div>
           </div>
@@ -333,7 +329,7 @@ export default function HomePage() {
       {/* FAQ Section */}
       <section id="faq" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               {/* Left Column - Title and Description */}
               <div>
@@ -341,8 +337,7 @@ export default function HomePage() {
                   Frequently Asked Questions
                 </h2>
                 <p className="text-xl text-muted-foreground leading-relaxed text-pretty">
-                  Everything you need to know about the expedition, from physical requirements to booking your spot on
-                  this exclusive adventure.
+                  Everything you need to know about joining Cruzlings, from meetings to getting involved with our gardening initiatives.
                 </p>
               </div>
 
@@ -351,7 +346,7 @@ export default function HomePage() {
                 {faqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="rounded-2xl bg-secondary ring-1 ring-border backdrop-blur overflow-hidden"
+                    className="rounded-2xl bg-secondary ring-1 ring-border overflow-hidden hover:shadow-md transition-shadow duration-300"
                   >
                     <button
                       onClick={() => toggleFaq(index)}
@@ -380,7 +375,7 @@ export default function HomePage() {
       {/* Contact Section */}
       <section id="contact" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
             {/* Section Header */}
             <div className="text-center mb-16">
               <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Contact Our Team</h2>
@@ -388,7 +383,7 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               {/* Left Column - Contact Form */}
-              <div className="rounded-2xl bg-primary/10 ring-1 ring-primary/30 p-8 shadow-2xl">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 shadow-lg">
                 <h3 className="text-2xl font-bold mb-6 text-foreground">Send an Inquiry</h3>
                 <form className="space-y-6">
                   <div>
@@ -440,7 +435,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Profile Card */}
-                <div className="rounded-2xl bg-primary/10 ring-1 ring-primary/30 p-6 shadow-2xl">
+                <div className="rounded-2xl bg-secondary ring-1 ring-border p-6 shadow-lg">
                   <div className="flex items-center gap-4 mb-4">
                     <img
                       src="https://www.elledecoration.vn/wp-content/uploads/2025/03/edam-garden.jpg"
@@ -466,7 +461,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card backdrop-blur-2xl ring-1 ring-border p-12">
+          <div className="rounded-3xl bg-primary/5 ring-1 ring-primary/20 shadow-xl p-12">
             {/* Main Footer Content */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
               {/* Brand Section */}
@@ -526,7 +521,7 @@ export default function HomePage() {
             {/* Newsletter Section */}
             <div className="border-t border-border pt-12 mb-12">
               <div className="max-w-md">
-                <h3 className="text-lg font-semibold mb-4 text-foreground">Get Expedition Updates</h3>
+                <h3 className="text-lg font-semibold mb-4 text-foreground">Get Cruzlings Updates</h3>
                 <div className="flex gap-3">
                   <input
                     type="email"
