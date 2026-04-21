@@ -105,10 +105,10 @@ export default function HomePage() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-balance text-primary drop-shadow-sm">Cruzlings</h1>
+          <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-6 text-balance text-[#2d5a2d] drop-shadow-sm">Cruzlings</h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-foreground/80 max-w-4xl mb-12 leading-relaxed text-pretty">
+          <p className="text-xl md:text-2xl text-[#3d6b3d] max-w-4xl mb-12 leading-relaxed text-pretty font-medium">
             Where Education Takes Root
           </p>
         </div>
