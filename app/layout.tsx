@@ -30,8 +30,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className="scroll-smooth bg-background light" style={{ colorScheme: 'light' }}>
+      <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable} antialiased`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>

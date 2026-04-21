@@ -1,6 +1,7 @@
 "use client"
 
-import { Sparkles, ShieldCheck, Wallet, Leaf, Plus, Minus, Mail } from "lucide-react"
+// Cruzlings - UCSC Gardening Club Website
+import { ShieldCheck, Wallet, Leaf, Plus, Minus, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 
@@ -13,99 +14,268 @@ export default function HomePage() {
 
   const faqs = [
     {
-      question: "How physically demanding is the tour?",
+      question: "How do I join Cruzlings?",
       answer:
-        "The Son Doong expedition requires excellent physical fitness. You'll trek 15+ kilometers through jungle terrain, rappel down 80-meter drops, and navigate underground rivers. Participants must be able to carry a 15kg backpack and have prior caving or trekking experience.",
+        "Currently we're not onboarding new members, but if you want to get involved feel free to email or DM us!",
     },
     {
-      question: "What is included in the tour price?",
+      question: "Do I need gardening experience?",
       answer:
-        "Your expedition includes all permits, professional guides, safety equipment, camping gear, meals during the expedition, transportation from Phong Nha, and emergency evacuation insurance. Personal items like clothing and toiletries are not included.",
+        "Not at all! We welcome complete beginners and experienced gardeners alike. Our workshops cover everything from basic plant care to advanced sustainable gardening techniques. Learning together is what makes our community special.",
     },
     {
-      question: "Is it safe to explore Son Doong Cave?",
+      question: "What kind of plants do you grow?",
       answer:
-        "Safety is our absolute priority. All guides are certified cave rescue specialists, we use professional-grade equipment, maintain constant communication with base camp, and have comprehensive emergency protocols. Weather conditions are monitored continuously.",
+        "We grow a variety of vegetables, herbs, and flowers suited to the Santa Cruz climate. Popular choices include tomatoes, lettuce, basil, succulents, and native California plants. Members can suggest new plants to try each season.",
     },
     {
-      question: "How do I book a spot?",
+      question: "How are the funds used?",
       answer:
-        "Expeditions are limited to 10 people per group and run only during dry season (February-August). Book 6-12 months in advance through our website. A 50% deposit secures your spot, with final payment due 30 days before departure.",
+        "Your donations go directly toward building planter boxes, purchasing seeds and soil, acquiring gardening tools, and hosting educational workshops. We provide full transparency on how every dollar supports our community garden initiatives.",
     },
   ]
 
   return (
-    <div className="min-h-screen bg-[#0B0F12] text-white">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <div className="relative min-h-screen">
-        {/* Background Image with Overlay */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url(https://www.elledecoration.vn/wp-content/uploads/2025/03/1-son-doong.jpg)",
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/80" />
+      <div className="relative min-h-screen overflow-hidden">
+        {/* Soft Green Background with Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#e8f0e8] via-[#dceadc] to-[#c5d8c5]" />
+        
+        {/* Sun */}
+        <div className="absolute top-8 right-12 md:right-20 lg:right-28">
+          <svg width="160" height="160" viewBox="0 0 160 160" className="w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52">
+            {/* Sun rays - 16 rays around the sun */}
+            <line x1="80" y1="5" x2="80" y2="28" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="80" y1="132" x2="80" y2="155" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="5" y1="80" x2="28" y2="80" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="132" y1="80" x2="155" y2="80" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            {/* Diagonal rays at 45 degrees */}
+            <line x1="22" y1="22" x2="40" y2="40" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="120" y1="120" x2="138" y2="138" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="22" y1="138" x2="40" y2="120" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            <line x1="120" y1="40" x2="138" y2="22" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
+            {/* Additional rays at 22.5 degree angles */}
+            <line x1="42" y1="10" x2="52" y2="30" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="118" y1="10" x2="108" y2="30" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="10" y1="42" x2="30" y2="52" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="150" y1="42" x2="130" y2="52" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="10" y1="118" x2="30" y2="108" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="150" y1="118" x2="130" y2="108" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="42" y1="150" x2="52" y2="130" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            <line x1="118" y1="150" x2="108" y2="130" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
+            {/* Sun circle */}
+            <circle cx="80" cy="80" r="42" fill="#f9e076" />
+            <circle cx="80" cy="80" r="34" fill="#f4d03f" />
+          </svg>
+        </div>
+
+        {/* Decorative clouds */}
+        <div className="absolute top-20 left-1/4 opacity-40">
+          <svg width="120" height="50" viewBox="0 0 120 50">
+            <ellipse cx="30" cy="30" rx="25" ry="15" fill="#b8d4b8" />
+            <ellipse cx="55" cy="25" rx="30" ry="18" fill="#b8d4b8" />
+            <ellipse cx="85" cy="30" rx="25" ry="15" fill="#b8d4b8" />
+          </svg>
+        </div>
+        <div className="absolute top-32 right-1/3 opacity-30">
+          <svg width="100" height="40" viewBox="0 0 100 40">
+            <ellipse cx="25" cy="25" rx="20" ry="12" fill="#c8dcc8" />
+            <ellipse cx="50" cy="20" rx="25" ry="15" fill="#c8dcc8" />
+            <ellipse cx="75" cy="25" rx="20" ry="12" fill="#c8dcc8" />
+          </svg>
+        </div>
+
+        {/* SVG Planter Boxes with Plants - Right side */}
+        <div className="absolute bottom-0 right-4 md:right-12 lg:right-20 w-[60%] md:w-[50%] lg:w-[45%] z-10">
+          <svg viewBox="0 0 500 350" className="w-full h-auto">
+            {/* Ground/grass area */}
+            <ellipse cx="250" cy="340" rx="240" ry="15" fill="#7a9a6a" opacity="0.4" />
+            
+            {/* Planter box 1 - left */}
+            <rect x="40" y="260" width="100" height="70" fill="#8B7355" rx="4" />
+            <rect x="35" y="250" width="110" height="15" fill="#A08060" rx="3" />
+            {/* Plants in box 1 - tall leafy plants */}
+            <path d="M70,250 Q65,200 70,150" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="50" cy="200" rx="20" ry="10" fill="#6b9a6b" opacity="0.9" transform="rotate(-25, 50, 200)" />
+            <ellipse cx="90" cy="180" rx="18" ry="9" fill="#7aa87a" opacity="0.85" transform="rotate(20, 90, 180)" />
+            <ellipse cx="55" cy="160" rx="16" ry="8" fill="#8ab88a" opacity="0.8" transform="rotate(-20, 55, 160)" />
+            <path d="M110,250 Q115,210 110,170" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
+            <ellipse cx="125" cy="200" rx="15" ry="8" fill="#6b9a6b" opacity="0.85" transform="rotate(25, 125, 200)" />
+            <ellipse cx="100" cy="185" rx="14" ry="7" fill="#7aa87a" opacity="0.8" transform="rotate(-15, 100, 185)" />
+            
+            {/* Planter box 2 - center */}
+            <rect x="180" y="270" width="90" height="60" fill="#8B7355" rx="4" />
+            <rect x="175" y="260" width="100" height="15" fill="#A08060" rx="3" />
+            {/* Flowers in box 2 */}
+            <path d="M210,260 L210,210" stroke="#5a8a5a" strokeWidth="2.5" />
+            <circle cx="210" cy="200" r="12" fill="#e8a0a0" />
+            <circle cx="210" cy="200" r="5" fill="#d4d86a" />
+            <path d="M245,260 L245,220" stroke="#5a8a5a" strokeWidth="2.5" />
+            <circle cx="245" cy="210" r="10" fill="#a0c8e8" />
+            <circle cx="245" cy="210" r="4" fill="#d4d86a" />
+            <path d="M225,260 L225,230" stroke="#5a8a5a" strokeWidth="2" />
+            <circle cx="225" cy="222" r="8" fill="#c8a0e8" />
+            <circle cx="225" cy="222" r="3" fill="#d4d86a" />
+            
+            {/* Planter box 3 - right, larger */}
+            <rect x="320" y="250" width="130" height="80" fill="#8B7355" rx="4" />
+            <rect x="315" y="240" width="140" height="15" fill="#A08060" rx="3" />
+            {/* Tall plants in box 3 */}
+            <path d="M350,240 Q345,180 350,120" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="330" cy="180" rx="22" ry="11" fill="#6b9a6b" opacity="0.9" transform="rotate(-30, 330, 180)" />
+            <ellipse cx="370" cy="160" rx="20" ry="10" fill="#7aa87a" opacity="0.85" transform="rotate(25, 370, 160)" />
+            <ellipse cx="340" cy="140" rx="18" ry="9" fill="#8ab88a" opacity="0.8" transform="rotate(-20, 340, 140)" />
+            <ellipse cx="365" cy="125" rx="15" ry="7" fill="#9ac89a" opacity="0.75" transform="rotate(15, 365, 125)" />
+            <path d="M410,240 Q415,190 410,140" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="430" cy="190" rx="20" ry="10" fill="#6b9a6b" opacity="0.85" transform="rotate(30, 430, 190)" />
+            <ellipse cx="395" cy="170" rx="18" ry="9" fill="#7aa87a" opacity="0.8" transform="rotate(-25, 395, 170)" />
+            <ellipse cx="420" cy="155" rx="16" ry="8" fill="#8ab88a" opacity="0.75" transform="rotate(20, 420, 155)" />
+            
+            {/* Small pot on ground */}
+            <ellipse cx="290" cy="330" rx="20" ry="8" fill="#c4846a" />
+            <ellipse cx="290" cy="320" rx="18" ry="12" fill="#d49a7a" />
+            <path d="M290,320 L290,295" stroke="#5a8a5a" strokeWidth="2" />
+            <ellipse cx="290" cy="292" rx="10" ry="6" fill="#7aa87a" />
+            
+            {/* Watering can */}
+            <ellipse cx="160" cy="325" rx="20" ry="10" fill="#a8c8a8" />
+            <rect x="145" y="305" width="30" height="20" fill="#b8d8b8" rx="3" />
+            <path d="M175,310 Q190,305 200,315" stroke="#a8c8a8" strokeWidth="3" fill="none" />
+          </svg>
+        </div>
+
+        {/* Decorative plants - bottom left */}
+        <div className="absolute bottom-0 left-0 w-40 md:w-56 lg:w-64">
+          <svg viewBox="0 0 200 250" className="w-full h-auto">
+            {/* Tall plant with alternating leaves */}
+            <path d="M100,250 L100,50" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="70" cy="200" rx="25" ry="12" fill="#7aa87a" opacity="0.9" transform="rotate(-20, 70, 200)" />
+            <ellipse cx="130" cy="170" rx="22" ry="10" fill="#6b9a6b" opacity="0.85" transform="rotate(20, 130, 170)" />
+            <ellipse cx="65" cy="140" rx="22" ry="10" fill="#7aa87a" opacity="0.8" transform="rotate(-25, 65, 140)" />
+            <ellipse cx="135" cy="110" rx="20" ry="9" fill="#8ab88a" opacity="0.75" transform="rotate(25, 135, 110)" />
+            <ellipse cx="70" cy="80" rx="18" ry="8" fill="#7aa87a" opacity="0.7" transform="rotate(-20, 70, 80)" />
+            <ellipse cx="125" cy="55" rx="15" ry="7" fill="#9ac89a" opacity="0.65" transform="rotate(20, 125, 55)" />
+          </svg>
+        </div>
+
+        {/* Decorative plants - bottom right corner */}
+        <div className="absolute bottom-0 right-0 w-24 md:w-32">
+          <svg viewBox="0 0 100 150" className="w-full h-auto">
+            <path d="M50,150 L50,60" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
+            <ellipse cx="30" cy="120" rx="18" ry="9" fill="#6b9a6b" opacity="0.8" transform="rotate(-30, 30, 120)" />
+            <ellipse cx="70" cy="100" rx="16" ry="8" fill="#7aa87a" opacity="0.75" transform="rotate(30, 70, 100)" />
+            <ellipse cx="35" cy="80" rx="14" ry="7" fill="#8ab88a" opacity="0.7" transform="rotate(-25, 35, 80)" />
+            <ellipse cx="65" cy="65" rx="12" ry="6" fill="#9ac89a" opacity="0.65" transform="rotate(25, 65, 65)" />
+          </svg>
         </div>
 
         {/* Navigation */}
-        <nav className="relative z-10 flex items-center justify-center p-6">
+        <nav className="relative z-20 flex items-center justify-between px-6 md:px-12 py-6">
+          {/* Site Title - Top Left */}
+          <div className="flex items-center">
+            <div>
+              <span className="text-xl md:text-2xl font-bold text-[#2d5a2d]">Cruzlings</span>
+              <p className="text-xs text-[#4a7c4a]">UCSC Gardening Club</p>
+            </div>
+          </div>
+
           {/* Navigation Links */}
-          <div className="flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-6">
             {[
-              { label: "About Us", href: "#about-us" },
-              { label: "Our Fundraising Goal", href: "#fundraising-goal" },
-              { label: "Meet Our Team", href: "#meet-the-team" },
+              { label: "About", href: "#about-us" },
+              { label: "Fundraising", href: "#fundraising-goal" },
+              { label: "Team", href: "#meet-the-team" },
               { label: "FAQ", href: "#faq" },
               { label: "Contact", href: "#contact" },
             ].map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="px-4 py-2 bg-black/40 ring-1 ring-white/20 backdrop-blur rounded-full hover:bg-black/50 transition-colors"
+                className="text-[#2d5a2d] hover:text-[#1a3a1a] font-medium transition-colors"
               >
                 {item.label}
               </a>
             ))}
           </div>
+
+          {/* Mobile menu button */}
+          <button className="md:hidden p-2 text-[#2d5a2d]">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M3 12h18M3 6h18M3 18h18" />
+            </svg>
+          </button>
         </nav>
 
-        {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-120px)] px-6 text-center">
+        {/* Hero Content - Left aligned */}
+        <div className="relative z-10 flex flex-col items-start justify-center min-h-[calc(100vh-200px)] px-6 md:px-12 lg:px-20 max-w-2xl">
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-8xl font-light tracking-tight mb-6 text-balance">Cruzlings</h1>
-
-          {/* Subheading */}
-          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mb-12 leading-relaxed text-pretty">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 text-[#2d5a2d]">
+            Cruzlings
+          </h1>
+          <p className="text-xl md:text-2xl font-medium text-[#4a7c4a] mb-6 italic">
             Where Education Takes Root
           </p>
+
+          {/* Description */}
+          <p className="text-base md:text-lg text-[#3d6b3d] mb-8 leading-relaxed max-w-md">
+            We are a gardening club dedicated to connecting our community with nature. Building planter boxes for UCSC students and the greater Santa Cruz community.
+          </p>
+
+          {/* CTA Button */}
+          <a
+            href="#about-us"
+            className="inline-flex items-center px-8 py-3 bg-[#2d5a2d] text-white font-medium rounded-full hover:bg-[#1a3a1a] transition-colors shadow-lg"
+          >
+            Learn More
+          </a>
         </div>
       </div>
 
       {/* About Us Section */}
-      <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20">
+      <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20 overflow-hidden">
+        {/* Subtle leaf accent - top left */}
+        <div className="absolute top-8 left-8 opacity-20">
+          <svg width="120" height="80" viewBox="0 0 120 80" className="text-primary">
+            <path d="M60,70 Q30,50 20,20 Q50,35 60,70" fill="currentColor" />
+            <path d="M60,70 Q40,45 20,20" fill="none" stroke="currentColor" strokeWidth="1" />
+          </svg>
+        </div>
+
+        {/* Subtle leaf accent - top right */}
+        <div className="absolute top-8 right-8 opacity-20">
+          <svg width="120" height="80" viewBox="0 0 120 80" className="text-primary">
+            <path d="M60,70 Q90,50 100,20 Q70,35 60,70" fill="currentColor" />
+            <path d="M60,70 Q80,45 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
+          </svg>
+        </div>
+
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12 relative">
             <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">About Us</h2>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">About Us</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
                 We are a gardening club dedicated to connecting our community with nature. We&apos;re building planter boxes so UCSC students and the greater Santa Cruz community can plant, grow, and learn about environmental sustainability.
               </p>
             </div>
+
+            {/* Team Group Photo */}
+            <div className="mb-12 flex justify-center">
+              <img 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7662.JPG-qcb6hUb7HnDmBR9Th76u1Ki1mFSneU.jpeg" 
+                alt="Cruzlings team group photo"
+                className="w-full max-w-4xl h-auto rounded-2xl ring-1 ring-border shadow-lg"
+              />
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                  <Sparkles className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
-                <p className="text-white/80 leading-relaxed">We aim to foster a love for gardening and environmental stewardship by providing hands-on opportunities for students and community members to engage with nature.</p>
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Our Mission</h3>
+                <p className="text-muted-foreground leading-relaxed">We aim to foster a love for gardening and environmental stewardship by providing hands-on opportunities for students and community members to engage with nature.</p>
               </div>
-              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                  <ShieldCheck className="w-6 h-6" />
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Our Values</h3>
-                <p className="text-white/80 leading-relaxed">Sustainability, education, and community are at the heart of everything we do. We believe in nurturing both plants and people through meaningful environmental experiences.</p>
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Our Values</h3>
+                <p className="text-muted-foreground leading-relaxed">Sustainability, education, and community are at the heart of everything we do. We believe in nurturing both plants and people through meaningful environmental experiences.</p>
               </div>
             </div>
           </div>
@@ -115,10 +285,10 @@ export default function HomePage() {
       {/* Our Fundraising Goal Section */}
       <section id="fundraising-goal" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
             <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Our Fundraising Goal</h2>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Our Fundraising Goal</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
                 Support our efforts to protect and study this natural wonder for generations to come.
               </p>
             </div>
@@ -127,37 +297,77 @@ export default function HomePage() {
             <div className="max-w-3xl mx-auto mb-12">
               <div className="flex justify-between items-end mb-3">
                 <div>
-                  <span className="text-3xl font-bold">$800</span>
-                  <span className="text-white/60 ml-2">raised</span>
+                  <span className="text-3xl font-bold text-primary">$1,305</span>
+                  <span className="text-muted-foreground ml-2">raised</span>
                 </div>
                 <div className="text-right">
-                  <span className="text-white/60">Goal: </span>
-                  <span className="text-xl font-semibold">$6,125</span>
+                  <span className="text-muted-foreground">Goal: </span>
+                  <span className="text-xl font-semibold text-foreground">$6,125</span>
                 </div>
               </div>
-              <div className="h-8 bg-white/10 rounded-full ring-1 ring-white/30 overflow-hidden p-1">
+              <div className="h-6 bg-secondary rounded-full ring-1 ring-border overflow-hidden">
                 <div 
-                  className="h-full bg-emerald-500 rounded-full"
-                  style={{ width: '13.06%', minWidth: '20px' }}
+                  className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-500"
+                  style={{ width: '21.3%', minWidth: '20px' }}
                 />
               </div>
-              <p className="text-center text-white/60 mt-3 text-sm">13% of our goal reached</p>
+              <p className="text-center text-muted-foreground mt-3 text-sm">21% of our goal reached</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                  <Wallet className="w-6 h-6" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
+                  <Wallet className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Help Us Fundraise</h3>
-                <p className="text-white/80 leading-relaxed">Your contributions directly support cave conservation research, local community development, and educational programs that teach the next generation about protecting our natural heritage.</p>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Help Us Fundraise</h3>
+                <p className="text-muted-foreground leading-relaxed">Your contributions directly support our gardening initiatives, planter box construction, and educational programs that teach students about sustainable growing.</p>
               </div>
-              <div className="rounded-2xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-black/30 ring-1 ring-white/20 mb-6">
-                  <Leaf className="w-6 h-6" />
+              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 ring-1 ring-primary/30 mb-6">
+                  <Leaf className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4">Where Your Funds Go</h3>
-                <p className="text-white/80 leading-relaxed">Every donation helps fund scientific research, trail maintenance, safety equipment upgrades, and community outreach programs in the Phong Nha region.</p>
+                <h3 className="text-xl font-semibold mb-4 text-foreground">Where Your Funds Go</h3>
+                <p className="text-muted-foreground leading-relaxed">Every donation helps fund supplies, tools, seeds, soil, and community workshops that bring gardening to more UCSC students.</p>
+              </div>
+            </div>
+
+            {/* Social Media Buttons */}
+            <div className="text-center">
+              <p className="text-lg text-muted-foreground mb-6">Follow us on social media to stay updated!</p>
+              <div className="flex justify-center gap-4">
+                <a
+                  href="https://www.tiktok.com/@cruzlings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#000000] text-white font-medium rounded-full hover:bg-[#1a1a1a] transition-colors shadow-lg"
+                >
+                  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                  </svg>
+                  TikTok
+                </a>
+                <a
+                  href="https://www.instagram.com/cruzlings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-white font-medium rounded-full hover:opacity-90 transition-opacity shadow-lg"
+                >
+                  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                  Instagram
+                </a>
+                <a
+                  href="https://linktr.ee/cruzlings.ucsc?utm_source=linktree_profile_share&ltsid=dcbdf735-b880-426f-8e1f-0c7a4b78a348"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#43e660] text-black font-medium rounded-full hover:bg-[#3bd456] transition-colors shadow-lg"
+                >
+                  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                    <path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.517.316.97.712 1.345.317.243.633.324 1.029.324.554 0 1.029-.243 1.345-.649.23-.405.23-.81.08-1.296-.08-.243-.237-.405-.396-.567-.237-.163-.396-.324-.634-.405l-.554-.243c-.158-.081-.316-.162-.395-.324-.08-.162-.08-.405 0-.567.079-.163.237-.324.475-.324.316 0 .554.161.633.567h1.108c-.079-.486-.237-.891-.554-1.135-.316-.243-.712-.405-1.187-.405-.475 0-.87.162-1.187.405-.316.243-.554.73-.554 1.216 0 .405.08.729.317 1.053.158.243.396.486.712.648l.87.405c.158.081.316.162.475.324.158.162.237.324.237.567s-.079.486-.316.648c-.158.163-.396.244-.633.244-.237 0-.554-.081-.712-.325-.08-.162-.158-.405-.158-.648l-1.187.081zm-3.478-5.676L6.448 7.02l1.108 1.107.87-.891L7.24 6.048l1.265-1.107-.87-.81L6.368 5.32 5.34 4.212l-.87.81 1.108 1.188L4.395 7.34l.87.891.87-.891.08.08-.87 1.78h1.187l.395-1.053 1.345 1.053v-1.377l-1.029-.81.632-1.053.158-.243c.08-.081.08-.162.08-.243 0-.162-.08-.243-.158-.324-.08-.082-.237-.163-.396-.163-.316 0-.633.163-.87.405l-.158.162c-.08.162-.158.324-.237.486v.081l-.08.162-.871 1.377-1.503-1.377-.554.567 1.978 1.862v2.269h1.029v-1.62l.949.729h1.266l-1.345-1.053.633-1.053.158-.243c.08-.081.08-.162.08-.243 0-.162-.08-.243-.158-.324-.08-.082-.237-.163-.396-.163-.158 0-.316.081-.475.162l-1.424 2.269H4.554l-.08.081zm11.139.081l1.029-1.62V6.534l1.503 1.377.554-.567-1.978-1.862v-.729h-1.03v1.135l-.79-.73h-1.424l1.503 1.135-.633 1.053-.158.243c-.08.081-.08.162-.08.324 0 .081.08.243.158.324.08.081.237.162.396.162.158 0 .316-.081.475-.162l.395-.567.316.243v.891h-3.557v1.135h1.424l-.712 1.944h1.187l.712-1.944h1.503v.648c0 .162-.08.324-.237.405-.08.081-.316.162-.475.162H14.73v1.053h.87c.396 0 .792-.081 1.108-.324.316-.243.554-.567.633-.972l.08-.162v-.81h1.503v-1.135h-3.636l.396-1.134z"/>
+                  </svg>
+                  Linktree
+                </a>
               </div>
             </div>
           </div>
@@ -167,10 +377,10 @@ export default function HomePage() {
       {/* Meet Our Team Section */}
       <section id="meet-the-team" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
             <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Meet Our Team</h2>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">Meet Our Team</h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
                 Get to know the passionate people behind Cruzlings.
               </p>
             </div>
@@ -181,14 +391,14 @@ export default function HomePage() {
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                 {[
                   { name: "Surabhi Kuchibhotla", role: "CEO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Leading Cruzlings with passion for environmental education." },
-                  { name: "Jorge Flores", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%201.40.58%E2%80%AFAM-SNYkuQIQxW4qWUyo7sDUreaKRszcmi.png", bio: "Managing finances and resources for Cruzlings." },
+                  { name: "Kyle Bradford", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bxQMOuHVseWpvXVUfU1ILNyCGdq3zA.png", bio: "Managing finances and resources for Cruzlings." },
                   { name: "Chelsi Vaghela", role: "CTO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SAM_0346-dUGNKhySHTtqBLiS1ynuv00rZwkcVg.jpg", bio: "Leading technology initiatives for Cruzlings." },
                   { name: "Sarah Wei", role: "CMO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Bio coming soon." },
                   { name: "Jayden", role: "PR", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%204.12.07%E2%80%AFPM-JfiOct7BJkPCuAiGb6CQAeIUJLZ4XW.png", bio: "Bio coming soon." },
                   { name: "Rebecca", role: "Secretary", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HNo9A5RtbF42GIGPo9atJeWrM0mFWe.png", bio: "Bio coming soon." },
                 ].map((member, index) => (
                   <div key={index} className="group relative text-center">
-                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/20 mb-4 aspect-square">
+                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square">
                       {member.image ? (
                         <img 
                           src={member.image} 
@@ -196,17 +406,17 @@ export default function HomePage() {
                           className="w-full h-full object-cover"
                         />
                       ) : (
-                        <div className="w-full h-full bg-white/10 flex items-center justify-center">
-                          <span className="text-white/40 text-sm">Photo</span>
+                        <div className="w-full h-full bg-secondary flex items-center justify-center">
+                          <span className="text-muted-foreground text-sm">Photo</span>
                         </div>
                       )}
                       {/* Hover overlay with bio */}
-                      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                        <p className="text-sm text-white/90 text-center">{member.bio}</p>
+                      <div className="absolute inset-0 bg-primary/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                        <p className="text-sm text-primary-foreground text-center">{member.bio}</p>
                       </div>
                     </div>
-                    <p className="font-semibold text-lg">{member.name}</p>
-                    <p className="text-sm text-white/60">{member.role}</p>
+                    <p className="font-semibold text-lg text-foreground">{member.name}</p>
+                    <p className="text-sm text-primary font-medium">{member.role}</p>
                   </div>
                 ))}
               </div>
@@ -215,20 +425,19 @@ export default function HomePage() {
             {/* Members */}
             <div>
               <h3 className="text-2xl font-semibold mb-8 text-center">Members</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-5xl mx-auto">
+              <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
                 {[
                   { name: "Sahasra Chada", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i3x4jch72QxWk8iSBvMLPCM0ALqDrH.png", bio: "Bio coming soon." },
                   { name: "Haatim Ali", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1Wx6bqjxa0WHMso3cqmHwIcCbYAbXO.png", bio: "Bio coming soon." },
                   { name: "Eobii Brow", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MN8Ct7WKXWYD6iLVfK4GdN597wcTGr.png", bio: "Bio coming soon." },
-                  { name: "Kyle Bradford", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bxQMOuHVseWpvXVUfU1ILNyCGdq3zA.png", bio: "Bio coming soon." },
                   { name: "Jose Nunez", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Cmakfn9BSyL8wvMFnOHMWzxsendIlz.png", bio: "Bio coming soon." },
                   { name: "Adam Lee", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CmpDb42N1s9J5zTct9u8LG98n4uJQX.png", bio: "Bio coming soon." },
                   { name: "Chintan Patwardhan", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TwWOvcPMprlkf9qpizrPpyMGClJ8Ar.png", bio: "Bio coming soon." },
                   { name: "Sanika Yadav", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yIlFYbaN1nVv78P3JoT5jkL37kaAnc.png", bio: "Bio coming soon." },
                   { name: "Iryna Monastyrska", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Bio coming soon." },
                 ].map((member, index) => (
-                  <div key={index} className="group relative text-center">
-                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-white/20 mb-4 aspect-square">
+                  <div key={index} className="group relative text-center w-36 md:w-40">
+                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square">
                       {member.image ? (
                         <img 
                           src={member.image} 
@@ -236,16 +445,16 @@ export default function HomePage() {
                           className="w-full h-full object-cover"
                         />
                       ) : (
-                        <div className="w-full h-full bg-white/10 flex items-center justify-center">
-                          <span className="text-white/40 text-sm">Photo</span>
+                        <div className="w-full h-full bg-secondary flex items-center justify-center">
+                          <span className="text-muted-foreground text-sm">Photo</span>
                         </div>
                       )}
                       {/* Hover overlay with bio */}
-                      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                        <p className="text-sm text-white/90 text-center">{member.bio}</p>
+                      <div className="absolute inset-0 bg-primary/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+                        <p className="text-sm text-primary-foreground text-center">{member.bio}</p>
                       </div>
                     </div>
-                    <p className="font-bold text-lg text-white mt-2">{member.name}</p>
+                    <p className="font-bold text-lg text-foreground mt-2">{member.name}</p>
                   </div>
                 ))}
               </div>
@@ -254,208 +463,94 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Journey Section */}
-      <section className="relative z-10 py-24 px-6">
+      {/* FAQ & Contact Section */}
+      <section id="faq" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
+          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
             {/* Section Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Your Epic Journey</h2>
-              <p className="text-xl text-white/80 max-w-3xl mx-auto text-pretty">
-                From jungle treks to underground camps, here's what to expect.
+            <div className="text-center mb-12">
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">
+                FAQ & Contact
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+                Everything you need to know about joining Cruzlings, and how to get in touch with us.
               </p>
             </div>
 
-            {/* Journey Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-              {/* Phase 1: Briefing & Prep */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">01.</div>
-                  <h3 className="text-xl font-semibold mb-4">Briefing & Prep</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
-                    Your adventure begins in Phong Nha with a full safety briefing and equipment check to ensure you're
-                    ready for the trek.
-                  </p>
-                </div>
-              </div>
-
-              {/* Phase 2: The Trek */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">02.</div>
-                  <h3 className="text-xl font-semibold mb-4">The Trek</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
-                    Hike through pristine jungle, cross rivers, and camp in remote locations on your way to the entrance
-                    of Son Doong.
-                  </p>
-                </div>
-              </div>
-
-              {/* Phase 3: Caving */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">03.</div>
-                  <h3 className="text-xl font-semibold mb-4">Caving</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
-                    Descend into the cave to witness colossal stalagmites, explore vast chambers, and see the unique
-                    underground jungle.
-                  </p>
-                </div>
-              </div>
-
-              {/* Phase 4: Base Camp */}
-              <div className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-8 h-80 flex flex-col">
-                <div className="flex-1">
-                  <div className="text-3xl font-bold text-white/60 mb-4">04.</div>
-                  <h3 className="text-xl font-semibold mb-4">Base Camp</h3>
-                  <p className="text-white/80 leading-relaxed text-sm">
-                    Spend nights at breathtaking campsites inside the cave, sharing stories with your group before
-                    trekking back.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Check Availability Button */}
-            <div className="text-center">
-              <Button
-                size="lg"
-                className="bg-white text-black hover:bg-white/90 rounded-full px-12 py-4 text-lg font-semibold"
-              >
-                Check Availability
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section id="faq" className="relative z-10 py-24 px-6 scroll-mt-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              {/* Left Column - Title and Description */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Left Column - FAQ Accordion */}
               <div>
-                <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">
-                  Frequently Asked Questions
-                </h2>
-                <p className="text-xl text-white/80 leading-relaxed text-pretty">
-                  Everything you need to know about the expedition, from physical requirements to booking your spot on
-                  this exclusive adventure.
-                </p>
-              </div>
-
-              {/* Right Column - FAQ Accordion */}
-              <div className="space-y-4">
-                {faqs.map((faq, index) => (
-                  <div
-                    key={index}
-                    className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur overflow-hidden"
-                  >
-                    <button
-                      onClick={() => toggleFaq(index)}
-                      className="w-full p-6 text-left flex items-center justify-between hover:bg-white/5 transition-colors"
+                <h3 className="text-2xl font-bold mb-6 text-foreground">Frequently Asked Questions</h3>
+                <div className="space-y-4">
+                  {faqs.map((faq, index) => (
+                    <div
+                      key={index}
+                      className="rounded-2xl bg-secondary ring-1 ring-border overflow-hidden hover:shadow-md transition-shadow duration-300"
                     >
-                      <h3 className="text-lg font-semibold pr-4">{faq.question}</h3>
-                      {openFaq === index ? (
-                        <Minus className="w-5 h-5 flex-shrink-0" />
-                      ) : (
-                        <Plus className="w-5 h-5 flex-shrink-0" />
+                      <button
+                        onClick={() => toggleFaq(index)}
+                        className="w-full p-6 text-left flex items-center justify-between hover:bg-primary/10 transition-colors"
+                      >
+                        <h3 className="text-lg font-semibold pr-4 text-foreground">{faq.question}</h3>
+                        {openFaq === index ? (
+                          <Minus className="w-5 h-5 flex-shrink-0 text-primary" />
+                        ) : (
+                          <Plus className="w-5 h-5 flex-shrink-0 text-primary" />
+                        )}
+                      </button>
+                      {openFaq === index && (
+                        <div className="px-6 pb-6">
+                          <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                        </div>
                       )}
-                    </button>
-                    {openFaq === index && (
-                      <div className="px-6 pb-6">
-                        <p className="text-white/80 leading-relaxed">{faq.answer}</p>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="relative z-10 py-24 px-6 scroll-mt-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-black/20 ring-1 ring-white/15 backdrop-blur p-12">
-            {/* Section Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance">Contact Our Team</h2>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              {/* Left Column - Contact Form */}
-              <div className="rounded-2xl bg-white/95 text-black p-8 shadow-2xl">
-                <h3 className="text-2xl font-bold mb-6">Send an Inquiry</h3>
-                <form className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      rows={5}
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                      placeholder="Tell us about your expedition interests..."
-                    />
-                  </div>
-                  <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg py-3 font-normal text-base">
-                    Send Message
-                  </Button>
-                </form>
-              </div>
-
-              {/* Right Column - Contact Info */}
-              <div className="space-y-8">
-                <div>
-                  <p className="text-xl text-white/90 leading-relaxed text-pretty">
-                    For questions about private tours, partnerships, or media inquiries, please get in touch. We reply
-                    within one business day.
-                  </p>
-                </div>
-
-                {/* Profile Card */}
-                <div className="rounded-2xl bg-white/95 text-black p-6 shadow-2xl">
-                  <div className="flex items-center gap-4 mb-4">
-                    <img
-                      src="https://www.elledecoration.vn/wp-content/uploads/2025/03/edam-garden.jpg"
-                      alt="David Luong"
-                      className="w-16 h-16 rounded-full object-cover"
-                    />
-                    <div>
-                      <h4 className="text-lg font-semibold">David Luong</h4>
-                      <p className="text-gray-600">Lead Expedition Guide</p>
                     </div>
-                  </div>
-                  <Button className="w-full bg-black text-white hover:bg-gray-800 rounded-lg flex items-center justify-center gap-2">
-                    <Mail className="w-4 h-4" />
-                    Email
-                  </Button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Column - Contact Form */}
+              <div id="contact" className="scroll-mt-20">
+                <h3 className="text-2xl font-bold mb-6 text-foreground">Contact Us</h3>
+                <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 shadow-lg">
+                  <form className="space-y-6">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
+                        Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        className="w-full px-4 py-3 rounded-lg bg-card ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+                        placeholder="Your full name"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        className="w-full px-4 py-3 rounded-lg bg-card ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
+                        placeholder="your.email@example.com"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
+                        Message
+                      </label>
+                      <textarea
+                        id="message"
+                        rows={4}
+                        className="w-full px-4 py-3 rounded-lg bg-card ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none resize-none"
+                        placeholder="How can we help you?"
+                      />
+                    </div>
+                    <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg py-3 font-normal text-base flex items-center justify-center gap-2">
+                      <Mail className="w-4 h-4" />
+                      Send Message
+                    </Button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -466,27 +561,27 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="relative z-10 py-24 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-white/[0.03] backdrop-blur-2xl ring-1 ring-white/10 p-12">
+          <div className="rounded-3xl bg-primary/5 ring-1 ring-primary/20 shadow-xl p-12">
             {/* Main Footer Content */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
               {/* Brand Section */}
               <div className="lg:col-span-2">
                 <div className="flex items-center gap-2 mb-6">
-                  <Leaf className="w-6 h-6" />
-                  <span className="text-xl font-semibold">Cruzlings</span>
+                  <Leaf className="w-6 h-6 text-primary" />
+                  <span className="text-xl font-semibold text-foreground">Cruzlings</span>
                 </div>
-                <p className="text-white/80 leading-relaxed text-pretty">
+                <p className="text-muted-foreground leading-relaxed text-pretty">
                   A UCSC gardening club dedicated to connecting the community with nature through planter boxes and environmental education.
                 </p>
               </div>
 
               {/* Quick Links */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">QUICK LINKS</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-primary">QUICK LINKS</h3>
                 <ul className="space-y-3">
                   {["About Us", "Our Goal", "Meet the Team", "Contact"].map((item) => (
                     <li key={item}>
-                      <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
+                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm leading-relaxed">
                         {item}
                       </a>
                     </li>
@@ -496,11 +591,11 @@ export default function HomePage() {
 
               {/* Get Involved */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">GET INVOLVED</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-primary">GET INVOLVED</h3>
                 <ul className="space-y-3">
                   {["Donate", "Volunteer", "Join Us", "Events"].map((item) => (
                     <li key={item}>
-                      <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
+                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm leading-relaxed">
                         {item}
                       </a>
                     </li>
@@ -510,11 +605,11 @@ export default function HomePage() {
 
               {/* Resources Links */}
               <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6">RESOURCES</h3>
+                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-primary">RESOURCES</h3>
                 <ul className="space-y-3">
                   {["Help Center", "Contact Us", "FAQ", "Terms & Conditions"].map((item) => (
                     <li key={item}>
-                      <a href="#" className="text-white/70 hover:text-white transition-colors text-sm leading-relaxed">
+                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm leading-relaxed">
                         {item}
                       </a>
                     </li>
@@ -524,23 +619,23 @@ export default function HomePage() {
             </div>
 
             {/* Newsletter Section */}
-            <div className="border-t border-white/10 pt-12 mb-12">
+            <div className="border-t border-border pt-12 mb-12">
               <div className="max-w-md">
-                <h3 className="text-lg font-semibold mb-4">Get Expedition Updates</h3>
+                <h3 className="text-lg font-semibold mb-4 text-foreground">Get Cruzlings Updates</h3>
                 <div className="flex gap-3">
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="flex-1 px-4 py-3 rounded-lg bg-white/5 ring-1 ring-white/20 backdrop-blur border-0 text-white placeholder:text-white/50 focus:ring-2 focus:ring-white/30 focus:outline-none"
+                    className="flex-1 px-4 py-3 rounded-lg bg-secondary ring-1 ring-border backdrop-blur border-0 text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
                   />
-                  <Button className="bg-white text-black hover:bg-white/90 rounded-lg px-6 h-[50px]">Subscribe</Button>
+                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-6 h-[50px]">Subscribe</Button>
                 </div>
               </div>
             </div>
 
             {/* Sub-footer */}
-            <div className="border-t border-white/10 pt-8">
-              <p className="text-white/60 text-sm text-center">© 2025 Son Doong Expeditions</p>
+            <div className="border-t border-border pt-8">
+              <p className="text-muted-foreground text-sm text-center">© 2025 Cruzlings</p>
             </div>
           </div>
         </div>
