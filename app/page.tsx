@@ -390,12 +390,12 @@ export default function HomePage() {
               <h3 className="text-2xl font-semibold mb-8 text-center">Executive Board</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
                 {[
-                  { name: "Surabhi Kuchibhotla", role: "CEO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Leading Cruzlings with passion for environmental education." },
-                  { name: "Kyle Bradford", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bxQMOuHVseWpvXVUfU1ILNyCGdq3zA.png", bio: "Managing finances and resources for Cruzlings." },
-                  { name: "Chelsi Vaghela", role: "CTO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SAM_0346-dUGNKhySHTtqBLiS1ynuv00rZwkcVg.jpg", bio: "Leading technology initiatives for Cruzlings." },
-                  { name: "Sarah Wei", role: "CMO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Bio coming soon." },
-                  { name: "Jayden", role: "PR", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%204.12.07%E2%80%AFPM-JfiOct7BJkPCuAiGb6CQAeIUJLZ4XW.png", bio: "Bio coming soon." },
-                  { name: "Rebecca", role: "Secretary", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HNo9A5RtbF42GIGPo9atJeWrM0mFWe.png", bio: "Bio coming soon." },
+                  { name: "Surabhi Kuchibhotla", role: "CEO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Surabhi Kuchibhotla is a first-year Business Management and Economics student. She enjoys going to the gym, hiking, and swimming at the beach." },
+                  { name: "Kyle Bradford", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bxQMOuHVseWpvXVUfU1ILNyCGdq3zA.png", bio: "Kyle Bradford is a first-year Business Management and Economics student. He enjoys tennis, video games, and soccer." },
+                  { name: "Chelsi Vaghela", role: "CTO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SAM_0346-dUGNKhySHTtqBLiS1ynuv00rZwkcVg.jpg", bio: "Chelsi Vaghela is a first-year Business Management and Economics student. She enjoys soccer, running, and hiking." },
+                  { name: "Sarah Wei", role: "CMO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Sarah Wei is a first-year Business Management and Economics student with a concentration in Accounting. She enjoys playing basketball and volleyball, going to the beach, going on drives, and working out." },
+                  { name: "Jayden Luu", role: "PR", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%204.12.07%E2%80%AFPM-JfiOct7BJkPCuAiGb6CQAeIUJLZ4XW.png", bio: "Jayden Luu is a first-year Business Management and Economics student. He enjoys tennis, football, basketball, and spikeball." },
+                  { name: "Rebecca Abraham", role: "Secretary", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HNo9A5RtbF42GIGPo9atJeWrM0mFWe.png", bio: "Rebecca Abraham is a first-year Business Management and Economics student. She enjoys soccer, going to the beach, and going on drives." },
                 ].map((member, index) => (
                   <div key={index} className="group relative text-center">
                     <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square">
@@ -427,14 +427,14 @@ export default function HomePage() {
               <h3 className="text-2xl font-semibold mb-8 text-center">Members</h3>
               <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
                 {[
-                  { name: "Sahasra Chada", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i3x4jch72QxWk8iSBvMLPCM0ALqDrH.png", bio: "Bio coming soon." },
-                  { name: "Haatim Ali", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1Wx6bqjxa0WHMso3cqmHwIcCbYAbXO.png", bio: "Bio coming soon." },
-                  { name: "Eobii Brow", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MN8Ct7WKXWYD6iLVfK4GdN597wcTGr.png", bio: "Bio coming soon." },
-                  { name: "Jose Nunez", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Cmakfn9BSyL8wvMFnOHMWzxsendIlz.png", bio: "Bio coming soon." },
-                  { name: "Adam Lee", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CmpDb42N1s9J5zTct9u8LG98n4uJQX.png", bio: "Bio coming soon." },
-                  { name: "Chintan Patwardhan", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TwWOvcPMprlkf9qpizrPpyMGClJ8Ar.png", bio: "Bio coming soon." },
-                  { name: "Sanika Yadav", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yIlFYbaN1nVv78P3JoT5jkL37kaAnc.png", bio: "Bio coming soon." },
-                  { name: "Iryna Monastyrska", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Bio coming soon." },
+                  { name: "Sahasra Chada", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i3x4jch72QxWk8iSBvMLPCM0ALqDrH.png", bio: "Sahasra Chada is a first-year Business Management and Economics student. She enjoys badminton, henna, music, going to the beach, and exploring downtown." },
+                  { name: "Haatim Ali", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1Wx6bqjxa0WHMso3cqmHwIcCbYAbXO.png", bio: "Haatim Ali is a first-year Business Management and Economics student. He enjoys soccer, hiking, and watching anime." },
+                  { name: "Eobii Brown", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MN8Ct7WKXWYD6iLVfK4GdN597wcTGr.png", bio: "Eobii Brown is a first-year Business Management and Economics student. He enjoys tennis, basketball, and gaming." },
+                  { name: "Jose Nunez", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Cmakfn9BSyL8wvMFnOHMWzxsendIlz.png", bio: "Jose Nunez is a first-year Business Management and Economics student. He enjoys ping pong, going to the gym, and playing mahjong." },
+                  { name: "Adam Lee", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CmpDb42N1s9J5zTct9u8LG98n4uJQX.png", bio: "Adam Lee is a first-year Business Management and Economics student. He enjoys going to the gym, playing basketball, gaming, and hiking." },
+                  { name: "Chintan Patwardhan", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TwWOvcPMprlkf9qpizrPpyMGClJ8Ar.png", bio: "Chintan Patwardhan is a first-year Business Management and Economics student. He enjoys soccer, skiing, and skateboarding." },
+                  { name: "Sanika Yadav", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yIlFYbaN1nVv78P3JoT5jkL37kaAnc.png", bio: "Sanika Yadav is a first-year Business Management and Economics student. She enjoys dancing, listening to music, going to the beach, and anything adventurous." },
+                  { name: "Iryna Monastyrska", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Iryna Monastyrska is a first-year Business Management and Economics student. She enjoys sewing, thrifting, and collecting magnets" },
                 ].map((member, index) => (
                   <div key={index} className="group relative text-center w-36 md:w-40">
                     <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square">
