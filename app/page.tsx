@@ -451,6 +451,10 @@ export default function HomePage() {
                           <span className="text-muted-foreground text-sm">Photo</span>
                         </div>
                       )}
+                      {/* Hover overlay */}
+                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span className="text-white font-medium text-sm">View Bio</span>
+                      </div>
                     </div>
                     <p className="font-semibold text-lg text-foreground">{member.name}</p>
                     <p className="text-sm text-primary font-medium">{member.role}</p>
@@ -490,6 +494,10 @@ export default function HomePage() {
                           <span className="text-muted-foreground text-sm">Photo</span>
                         </div>
                       )}
+                      {/* Hover overlay */}
+                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span className="text-white font-medium text-sm">View Bio</span>
+                      </div>
                     </div>
                     <p className="font-bold text-lg text-foreground mt-2">{member.name}</p>
                   </div>
