@@ -172,12 +172,13 @@ export default function HomePage() {
 
         {/* Navigation */}
         <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-[#e8f0e8]/95 backdrop-blur-sm shadow-sm">
-          {/* Site Title - Top Left */}
+          {/* Logo - Top Left */}
           <div className="flex items-center">
-            <div>
-              <span className="text-xl md:text-2xl font-bold text-[#2d5a2d]">Cruzlings</span>
-              <p className="text-xs text-[#4a7c4a]">UCSC Gardening Club</p>
-            </div>
+            <img 
+              src="/images/logo.jpeg" 
+              alt="Cruzlings Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Navigation Links */}
@@ -393,9 +394,9 @@ export default function HomePage() {
                   { name: "Surabhi Kuchibhotla", role: "CEO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Leading Cruzlings with passion for environmental education." },
                   { name: "Kyle Bradford", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bxQMOuHVseWpvXVUfU1ILNyCGdq3zA.png", bio: "Managing finances and resources for Cruzlings." },
                   { name: "Chelsi Vaghela", role: "CTO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SAM_0346-dUGNKhySHTtqBLiS1ynuv00rZwkcVg.jpg", bio: "Leading technology initiatives for Cruzlings." },
-                  { name: "Sarah Wei", role: "CMO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Bio coming soon." },
-                  { name: "Jayden", role: "PR", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%204.12.07%E2%80%AFPM-JfiOct7BJkPCuAiGb6CQAeIUJLZ4XW.png", bio: "Bio coming soon." },
-                  { name: "Rebecca", role: "Secretary", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HNo9A5RtbF42GIGPo9atJeWrM0mFWe.png", bio: "Bio coming soon." },
+                  { name: "Eobii Brown", role: "CMO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Bio coming soon." },
+                  { name: "Jayden Luu", role: "PR", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%204.12.07%E2%80%AFPM-JfiOct7BJkPCuAiGb6CQAeIUJLZ4XW.png", bio: "Bio coming soon." },
+                  { name: "Rebecca Abraham", role: "Secretary", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HNo9A5RtbF42GIGPo9atJeWrM0mFWe.png", bio: "Bio coming soon." },
                 ].map((member, index) => (
                   <div key={index} className="group relative text-center">
                     <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square">
