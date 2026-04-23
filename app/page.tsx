@@ -78,16 +78,14 @@ export default function HomePage() {
             <line x1="50" y1="270" x2="50" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
             <line x1="80" y1="270" x2="80" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
             <line x1="110" y1="270" x2="110" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
-            {/* Fern-like plant */}
-            <path d="M70,250 Q65,200 70,150" stroke="#4a7a4a" strokeWidth="3" fill="none" />
-            <path d="M70,230 Q50,225 40,235 Q55,225 70,230" fill="#6b9a6b" />
-            <path d="M70,210 Q90,205 100,215 Q85,205 70,210" fill="#7aa87a" />
-            <path d="M70,190 Q45,182 35,195 Q50,182 70,190" fill="#6b9a6b" />
-            <path d="M70,170 Q95,165 105,175 Q90,165 70,170" fill="#8ab88a" />
-            {/* Monstera-style leaf */}
-            <path d="M110,250 Q115,210 110,170" stroke="#4a7a4a" strokeWidth="2.5" fill="none" />
-            <path d="M110,200 Q130,180 140,190 Q130,195 125,210 Q120,195 110,200" fill="#6b9a6b" />
-            <path d="M110,180 Q90,160 85,175 Q95,170 100,185 Q105,175 110,180" fill="#7aa87a" />
+            {/* Plants in box 1 - oval leaves */}
+            <path d="M70,250 Q65,200 70,150" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="50" cy="200" rx="20" ry="10" fill="#6b9a6b" opacity="0.9" transform="rotate(-25, 50, 200)" />
+            <ellipse cx="90" cy="180" rx="18" ry="9" fill="#7aa87a" opacity="0.85" transform="rotate(20, 90, 180)" />
+            <ellipse cx="55" cy="160" rx="16" ry="8" fill="#8ab88a" opacity="0.8" transform="rotate(-20, 55, 160)" />
+            <path d="M110,250 Q115,210 110,170" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
+            <ellipse cx="125" cy="200" rx="15" ry="8" fill="#6b9a6b" opacity="0.85" transform="rotate(25, 125, 200)" />
+            <ellipse cx="100" cy="185" rx="14" ry="7" fill="#7aa87a" opacity="0.8" transform="rotate(-15, 100, 185)" />
             
             {/* Planter box 2 - center */}
             <rect x="180" y="270" width="90" height="60" fill="#8B7355" rx="4" />
@@ -123,31 +121,23 @@ export default function HomePage() {
             <line x1="340" y1="260" x2="340" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
             <line x1="385" y1="260" x2="385" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
             <line x1="430" y1="260" x2="430" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
-            {/* Tall tropical plant with varied leaves */}
-            <path d="M350,240 Q345,180 350,120" stroke="#4a7a4a" strokeWidth="3" fill="none" />
-            {/* Heart-shaped leaf */}
-            <path d="M350,200 Q330,180 340,160 Q350,175 360,160 Q370,180 350,200" fill="#6b9a6b" />
-            {/* Pointed leaf */}
-            <path d="M350,170 Q365,150 380,140 Q365,155 360,175 Q355,155 350,170" fill="#7aa87a" />
-            {/* Serrated leaf */}
-            <path d="M350,145 Q330,130 320,115 Q328,125 335,120 Q340,130 350,145" fill="#8ab88a" />
-            
-            <path d="M410,240 Q415,190 410,140" stroke="#4a7a4a" strokeWidth="3" fill="none" />
-            {/* Fan-shaped leaf */}
-            <path d="M410,190 Q430,175 445,180 Q435,185 440,195 Q425,185 410,190" fill="#6b9a6b" />
-            {/* Oval with pointed tip */}
-            <path d="M410,165 Q390,150 380,130 Q395,145 405,140 Q400,155 410,165" fill="#7aa87a" />
-            {/* Round leaf */}
-            <path d="M410,145 Q425,130 435,135 Q425,140 420,150 Q415,140 410,145" fill="#8ab88a" />
+            {/* Tall plants in box 3 - oval leaves */}
+            <path d="M350,240 Q345,180 350,120" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="330" cy="180" rx="22" ry="11" fill="#6b9a6b" opacity="0.9" transform="rotate(-30, 330, 180)" />
+            <ellipse cx="370" cy="160" rx="20" ry="10" fill="#7aa87a" opacity="0.85" transform="rotate(25, 370, 160)" />
+            <ellipse cx="340" cy="140" rx="18" ry="9" fill="#8ab88a" opacity="0.8" transform="rotate(-20, 340, 140)" />
+            <ellipse cx="365" cy="125" rx="15" ry="7" fill="#9ac89a" opacity="0.75" transform="rotate(15, 365, 125)" />
+            <path d="M410,240 Q415,190 410,140" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="430" cy="190" rx="20" ry="10" fill="#6b9a6b" opacity="0.85" transform="rotate(30, 430, 190)" />
+            <ellipse cx="395" cy="170" rx="18" ry="9" fill="#7aa87a" opacity="0.8" transform="rotate(-25, 395, 170)" />
+            <ellipse cx="420" cy="155" rx="16" ry="8" fill="#8ab88a" opacity="0.75" transform="rotate(20, 420, 155)" />
             
             {/* Small pot on ground */}
             <ellipse cx="290" cy="330" rx="20" ry="8" fill="#c4846a" />
             <ellipse cx="290" cy="320" rx="18" ry="12" fill="#d49a7a" />
-            <path d="M290,320 L290,295" stroke="#4a7a4a" strokeWidth="2" />
-            {/* Small succulent */}
-            <path d="M290,300 Q280,290 275,280 Q285,290 290,285 Q295,290 305,280 Q300,290 290,300" fill="#7aa87a" />
-            <path d="M290,295 Q283,288 280,280" fill="#8ab88a" />
-            <path d="M290,295 Q297,288 300,280" fill="#8ab88a" />
+            <path d="M290,320 L290,295" stroke="#5a8a5a" strokeWidth="2" />
+            <ellipse cx="280" cy="295" rx="10" ry="6" fill="#7aa87a" opacity="0.9" transform="rotate(-30, 280, 295)" />
+            <ellipse cx="300" cy="292" rx="10" ry="6" fill="#6b9a6b" opacity="0.85" transform="rotate(30, 300, 292)" />
             
             {/* Watering can */}
             <ellipse cx="160" cy="325" rx="20" ry="10" fill="#7eb87e" />
