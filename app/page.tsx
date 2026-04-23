@@ -160,36 +160,25 @@ export default function HomePage() {
         {/* Decorative plants - bottom left */}
         <div className="absolute bottom-0 left-0 w-40 md:w-56 lg:w-64">
           <svg viewBox="0 0 200 250" className="w-full h-auto">
-            {/* Tall plant with varied leaf shapes */}
-            <path d="M100,250 Q98,150 100,50" stroke="#4a7a4a" strokeWidth="3" fill="none" />
-            {/* Fern frond - left */}
-            <path d="M100,220 Q70,210 55,225 Q75,210 100,220" fill="#7aa87a" opacity="0.9" />
-            <path d="M75,215 Q65,210 60,218" fill="#6b9a6b" opacity="0.8" />
-            {/* Heart leaf - right */}
-            <path d="M100,190 Q130,170 140,180 Q130,185 125,200 Q115,185 100,190" fill="#6b9a6b" opacity="0.85" />
-            {/* Maple-style leaf - left */}
-            <path d="M100,160 Q65,145 50,155 Q60,148 55,135 Q70,145 75,138 Q80,150 100,160" fill="#7aa87a" opacity="0.8" />
-            {/* Pointed elongated leaf - right */}
-            <path d="M100,130 Q135,115 150,100 Q135,120 130,140 Q115,120 100,130" fill="#8ab88a" opacity="0.75" />
-            {/* Small rounded leaf - left */}
-            <path d="M100,100 Q70,90 60,75 Q75,85 85,80 Q80,92 100,100" fill="#7aa87a" opacity="0.7" />
-            {/* Teardrop leaf - right */}
-            <path d="M100,75 Q125,60 130,45 Q120,60 115,75 Q110,60 100,75" fill="#9ac89a" opacity="0.65" />
+            {/* Tall plant with alternating leaves */}
+            <path d="M100,250 L100,50" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="70" cy="200" rx="25" ry="12" fill="#7aa87a" opacity="0.9" transform="rotate(-20, 70, 200)" />
+            <ellipse cx="130" cy="170" rx="22" ry="10" fill="#6b9a6b" opacity="0.85" transform="rotate(20, 130, 170)" />
+            <ellipse cx="65" cy="140" rx="22" ry="10" fill="#7aa87a" opacity="0.8" transform="rotate(-25, 65, 140)" />
+            <ellipse cx="135" cy="110" rx="20" ry="9" fill="#8ab88a" opacity="0.75" transform="rotate(25, 135, 110)" />
+            <ellipse cx="70" cy="80" rx="18" ry="8" fill="#7aa87a" opacity="0.7" transform="rotate(-20, 70, 80)" />
+            <ellipse cx="125" cy="55" rx="15" ry="7" fill="#9ac89a" opacity="0.65" transform="rotate(20, 125, 55)" />
           </svg>
         </div>
 
         {/* Decorative plants - bottom right corner */}
         <div className="absolute bottom-0 right-0 w-24 md:w-32">
           <svg viewBox="0 0 100 150" className="w-full h-auto">
-            <path d="M50,150 Q48,100 50,60" stroke="#4a7a4a" strokeWidth="2.5" fill="none" />
-            {/* Serrated leaf */}
-            <path d="M50,130 Q25,120 15,130 Q22,122 18,115 Q30,120 50,130" fill="#6b9a6b" opacity="0.8" />
-            {/* Spade-shaped leaf */}
-            <path d="M50,105 Q75,90 85,95 Q75,98 70,110 Q65,98 50,105" fill="#7aa87a" opacity="0.75" />
-            {/* Arrow-shaped leaf */}
-            <path d="M50,85 Q30,70 25,55 Q35,65 40,60 Q38,75 50,85" fill="#8ab88a" opacity="0.7" />
-            {/* Small oval with point */}
-            <path d="M50,68 Q65,55 70,45 Q62,55 58,70 Q55,58 50,68" fill="#9ac89a" opacity="0.65" />
+            <path d="M50,150 L50,60" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
+            <ellipse cx="30" cy="120" rx="18" ry="9" fill="#6b9a6b" opacity="0.8" transform="rotate(-30, 30, 120)" />
+            <ellipse cx="70" cy="100" rx="16" ry="8" fill="#7aa87a" opacity="0.75" transform="rotate(30, 70, 100)" />
+            <ellipse cx="35" cy="80" rx="14" ry="7" fill="#8ab88a" opacity="0.7" transform="rotate(-25, 35, 80)" />
+            <ellipse cx="65" cy="65" rx="12" ry="6" fill="#9ac89a" opacity="0.65" transform="rotate(25, 65, 65)" />
           </svg>
         </div>
 
