@@ -154,9 +154,9 @@ export default function HomePage() {
           {/* Logo - Top Left */}
           <div className="flex items-center">
             <img 
-              src="/images/logo.jpeg" 
+              src="/images/logo.png" 
               alt="Cruzlings Logo" 
-              className="h-12 w-auto mix-blend-multiply"
+              className="h-12 w-auto"
             />
           </div>
 
