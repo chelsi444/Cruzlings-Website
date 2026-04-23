@@ -74,78 +74,122 @@ export default function HomePage() {
             {/* Planter box 1 - left */}
             <rect x="40" y="260" width="100" height="70" fill="#8B7355" rx="4" />
             <rect x="35" y="250" width="110" height="15" fill="#A08060" rx="3" />
-            {/* Plants in box 1 - tall leafy plants */}
-            <path d="M70,250 Q65,200 70,150" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="50" cy="200" rx="20" ry="10" fill="#6b9a6b" opacity="0.9" transform="rotate(-25, 50, 200)" />
-            <ellipse cx="90" cy="180" rx="18" ry="9" fill="#7aa87a" opacity="0.85" transform="rotate(20, 90, 180)" />
-            <ellipse cx="55" cy="160" rx="16" ry="8" fill="#8ab88a" opacity="0.8" transform="rotate(-20, 55, 160)" />
-            <path d="M110,250 Q115,210 110,170" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
-            <ellipse cx="125" cy="200" rx="15" ry="8" fill="#6b9a6b" opacity="0.85" transform="rotate(25, 125, 200)" />
-            <ellipse cx="100" cy="185" rx="14" ry="7" fill="#7aa87a" opacity="0.8" transform="rotate(-15, 100, 185)" />
+            {/* Wood grain details */}
+            <line x1="50" y1="270" x2="50" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
+            <line x1="80" y1="270" x2="80" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
+            <line x1="110" y1="270" x2="110" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
+            {/* Fern-like plant */}
+            <path d="M70,250 Q65,200 70,150" stroke="#4a7a4a" strokeWidth="3" fill="none" />
+            <path d="M70,230 Q50,225 40,235 Q55,225 70,230" fill="#6b9a6b" />
+            <path d="M70,210 Q90,205 100,215 Q85,205 70,210" fill="#7aa87a" />
+            <path d="M70,190 Q45,182 35,195 Q50,182 70,190" fill="#6b9a6b" />
+            <path d="M70,170 Q95,165 105,175 Q90,165 70,170" fill="#8ab88a" />
+            {/* Monstera-style leaf */}
+            <path d="M110,250 Q115,210 110,170" stroke="#4a7a4a" strokeWidth="2.5" fill="none" />
+            <path d="M110,200 Q130,180 140,190 Q130,195 125,210 Q120,195 110,200" fill="#6b9a6b" />
+            <path d="M110,180 Q90,160 85,175 Q95,170 100,185 Q105,175 110,180" fill="#7aa87a" />
             
             {/* Planter box 2 - center */}
             <rect x="180" y="270" width="90" height="60" fill="#8B7355" rx="4" />
             <rect x="175" y="260" width="100" height="15" fill="#A08060" rx="3" />
-            {/* Flowers in box 2 */}
-            <path d="M210,260 L210,210" stroke="#5a8a5a" strokeWidth="2.5" />
-            <circle cx="210" cy="200" r="12" fill="#e8a0a0" />
-            <circle cx="210" cy="200" r="5" fill="#d4d86a" />
-            <path d="M245,260 L245,220" stroke="#5a8a5a" strokeWidth="2.5" />
-            <circle cx="245" cy="210" r="10" fill="#a0c8e8" />
-            <circle cx="245" cy="210" r="4" fill="#d4d86a" />
-            <path d="M225,260 L225,230" stroke="#5a8a5a" strokeWidth="2" />
-            <circle cx="225" cy="222" r="8" fill="#c8a0e8" />
-            <circle cx="225" cy="222" r="3" fill="#d4d86a" />
+            {/* Flowers in box 2 - varied petal shapes */}
+            <path d="M210,260 L210,210" stroke="#4a7a4a" strokeWidth="2.5" />
+            {/* Rose-like flower */}
+            <circle cx="210" cy="200" r="14" fill="#e8a0a0" />
+            <path d="M200,200 Q210,190 220,200 Q210,195 200,200" fill="#d88080" />
+            <path d="M205,195 Q210,185 215,195" fill="#c86060" />
+            <circle cx="210" cy="200" r="4" fill="#d4d86a" />
+            {/* Small leaves */}
+            <path d="M210,230 Q195,225 190,235" fill="#6b9a6b" />
+            <path d="M210,230 Q225,225 230,235" fill="#6b9a6b" />
+            
+            <path d="M245,260 L245,218" stroke="#4a7a4a" strokeWidth="2.5" />
+            {/* Daisy-like flower */}
+            <ellipse cx="245" cy="210" rx="4" ry="10" fill="#a0c8e8" />
+            <ellipse cx="245" cy="210" rx="10" ry="4" fill="#a0c8e8" />
+            <ellipse cx="245" cy="210" rx="4" ry="10" fill="#90b8d8" transform="rotate(45, 245, 210)" />
+            <ellipse cx="245" cy="210" rx="10" ry="4" fill="#90b8d8" transform="rotate(45, 245, 210)" />
+            <circle cx="245" cy="210" r="5" fill="#f4d86a" />
+            
+            <path d="M225,260 L225,232" stroke="#4a7a4a" strokeWidth="2" />
+            {/* Tulip-like flower */}
+            <path d="M225,225 Q218,210 222,200 Q225,215 228,200 Q232,210 225,225" fill="#c8a0e8" />
+            <circle cx="225" cy="205" r="3" fill="#d4d86a" />
             
             {/* Planter box 3 - right, larger */}
             <rect x="320" y="250" width="130" height="80" fill="#8B7355" rx="4" />
             <rect x="315" y="240" width="140" height="15" fill="#A08060" rx="3" />
-            {/* Tall plants in box 3 */}
-            <path d="M350,240 Q345,180 350,120" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="330" cy="180" rx="22" ry="11" fill="#6b9a6b" opacity="0.9" transform="rotate(-30, 330, 180)" />
-            <ellipse cx="370" cy="160" rx="20" ry="10" fill="#7aa87a" opacity="0.85" transform="rotate(25, 370, 160)" />
-            <ellipse cx="340" cy="140" rx="18" ry="9" fill="#8ab88a" opacity="0.8" transform="rotate(-20, 340, 140)" />
-            <ellipse cx="365" cy="125" rx="15" ry="7" fill="#9ac89a" opacity="0.75" transform="rotate(15, 365, 125)" />
-            <path d="M410,240 Q415,190 410,140" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="430" cy="190" rx="20" ry="10" fill="#6b9a6b" opacity="0.85" transform="rotate(30, 430, 190)" />
-            <ellipse cx="395" cy="170" rx="18" ry="9" fill="#7aa87a" opacity="0.8" transform="rotate(-25, 395, 170)" />
-            <ellipse cx="420" cy="155" rx="16" ry="8" fill="#8ab88a" opacity="0.75" transform="rotate(20, 420, 155)" />
+            {/* Wood grain details */}
+            <line x1="340" y1="260" x2="340" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
+            <line x1="385" y1="260" x2="385" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
+            <line x1="430" y1="260" x2="430" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
+            {/* Tall tropical plant with varied leaves */}
+            <path d="M350,240 Q345,180 350,120" stroke="#4a7a4a" strokeWidth="3" fill="none" />
+            {/* Heart-shaped leaf */}
+            <path d="M350,200 Q330,180 340,160 Q350,175 360,160 Q370,180 350,200" fill="#6b9a6b" />
+            {/* Pointed leaf */}
+            <path d="M350,170 Q365,150 380,140 Q365,155 360,175 Q355,155 350,170" fill="#7aa87a" />
+            {/* Serrated leaf */}
+            <path d="M350,145 Q330,130 320,115 Q328,125 335,120 Q340,130 350,145" fill="#8ab88a" />
+            
+            <path d="M410,240 Q415,190 410,140" stroke="#4a7a4a" strokeWidth="3" fill="none" />
+            {/* Fan-shaped leaf */}
+            <path d="M410,190 Q430,175 445,180 Q435,185 440,195 Q425,185 410,190" fill="#6b9a6b" />
+            {/* Oval with pointed tip */}
+            <path d="M410,165 Q390,150 380,130 Q395,145 405,140 Q400,155 410,165" fill="#7aa87a" />
+            {/* Round leaf */}
+            <path d="M410,145 Q425,130 435,135 Q425,140 420,150 Q415,140 410,145" fill="#8ab88a" />
             
             {/* Small pot on ground */}
             <ellipse cx="290" cy="330" rx="20" ry="8" fill="#c4846a" />
             <ellipse cx="290" cy="320" rx="18" ry="12" fill="#d49a7a" />
-            <path d="M290,320 L290,295" stroke="#5a8a5a" strokeWidth="2" />
-            <ellipse cx="290" cy="292" rx="10" ry="6" fill="#7aa87a" />
+            <path d="M290,320 L290,295" stroke="#4a7a4a" strokeWidth="2" />
+            {/* Small succulent */}
+            <path d="M290,300 Q280,290 275,280 Q285,290 290,285 Q295,290 305,280 Q300,290 290,300" fill="#7aa87a" />
+            <path d="M290,295 Q283,288 280,280" fill="#8ab88a" />
+            <path d="M290,295 Q297,288 300,280" fill="#8ab88a" />
             
             {/* Watering can */}
-            <ellipse cx="160" cy="325" rx="20" ry="10" fill="#a8c8a8" />
-            <rect x="145" y="305" width="30" height="20" fill="#b8d8b8" rx="3" />
-            <path d="M175,310 Q190,305 200,315" stroke="#a8c8a8" strokeWidth="3" fill="none" />
+            <ellipse cx="160" cy="325" rx="20" ry="10" fill="#7eb87e" />
+            <rect x="145" y="305" width="30" height="20" fill="#8ec88e" rx="3" />
+            <path d="M175,310 Q190,305 200,315" stroke="#7eb87e" strokeWidth="3" fill="none" />
+            <ellipse cx="200" cy="315" rx="8" ry="4" fill="#7eb87e" />
           </svg>
         </div>
 
         {/* Decorative plants - bottom left */}
         <div className="absolute bottom-0 left-0 w-40 md:w-56 lg:w-64">
           <svg viewBox="0 0 200 250" className="w-full h-auto">
-            {/* Tall plant with alternating leaves */}
-            <path d="M100,250 L100,50" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="70" cy="200" rx="25" ry="12" fill="#7aa87a" opacity="0.9" transform="rotate(-20, 70, 200)" />
-            <ellipse cx="130" cy="170" rx="22" ry="10" fill="#6b9a6b" opacity="0.85" transform="rotate(20, 130, 170)" />
-            <ellipse cx="65" cy="140" rx="22" ry="10" fill="#7aa87a" opacity="0.8" transform="rotate(-25, 65, 140)" />
-            <ellipse cx="135" cy="110" rx="20" ry="9" fill="#8ab88a" opacity="0.75" transform="rotate(25, 135, 110)" />
-            <ellipse cx="70" cy="80" rx="18" ry="8" fill="#7aa87a" opacity="0.7" transform="rotate(-20, 70, 80)" />
-            <ellipse cx="125" cy="55" rx="15" ry="7" fill="#9ac89a" opacity="0.65" transform="rotate(20, 125, 55)" />
+            {/* Tall plant with varied leaf shapes */}
+            <path d="M100,250 Q98,150 100,50" stroke="#4a7a4a" strokeWidth="3" fill="none" />
+            {/* Fern frond - left */}
+            <path d="M100,220 Q70,210 55,225 Q75,210 100,220" fill="#7aa87a" opacity="0.9" />
+            <path d="M75,215 Q65,210 60,218" fill="#6b9a6b" opacity="0.8" />
+            {/* Heart leaf - right */}
+            <path d="M100,190 Q130,170 140,180 Q130,185 125,200 Q115,185 100,190" fill="#6b9a6b" opacity="0.85" />
+            {/* Maple-style leaf - left */}
+            <path d="M100,160 Q65,145 50,155 Q60,148 55,135 Q70,145 75,138 Q80,150 100,160" fill="#7aa87a" opacity="0.8" />
+            {/* Pointed elongated leaf - right */}
+            <path d="M100,130 Q135,115 150,100 Q135,120 130,140 Q115,120 100,130" fill="#8ab88a" opacity="0.75" />
+            {/* Small rounded leaf - left */}
+            <path d="M100,100 Q70,90 60,75 Q75,85 85,80 Q80,92 100,100" fill="#7aa87a" opacity="0.7" />
+            {/* Teardrop leaf - right */}
+            <path d="M100,75 Q125,60 130,45 Q120,60 115,75 Q110,60 100,75" fill="#9ac89a" opacity="0.65" />
           </svg>
         </div>
 
         {/* Decorative plants - bottom right corner */}
         <div className="absolute bottom-0 right-0 w-24 md:w-32">
           <svg viewBox="0 0 100 150" className="w-full h-auto">
-            <path d="M50,150 L50,60" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
-            <ellipse cx="30" cy="120" rx="18" ry="9" fill="#6b9a6b" opacity="0.8" transform="rotate(-30, 30, 120)" />
-            <ellipse cx="70" cy="100" rx="16" ry="8" fill="#7aa87a" opacity="0.75" transform="rotate(30, 70, 100)" />
-            <ellipse cx="35" cy="80" rx="14" ry="7" fill="#8ab88a" opacity="0.7" transform="rotate(-25, 35, 80)" />
-            <ellipse cx="65" cy="65" rx="12" ry="6" fill="#9ac89a" opacity="0.65" transform="rotate(25, 65, 65)" />
+            <path d="M50,150 Q48,100 50,60" stroke="#4a7a4a" strokeWidth="2.5" fill="none" />
+            {/* Serrated leaf */}
+            <path d="M50,130 Q25,120 15,130 Q22,122 18,115 Q30,120 50,130" fill="#6b9a6b" opacity="0.8" />
+            {/* Spade-shaped leaf */}
+            <path d="M50,105 Q75,90 85,95 Q75,98 70,110 Q65,98 50,105" fill="#7aa87a" opacity="0.75" />
+            {/* Arrow-shaped leaf */}
+            <path d="M50,85 Q30,70 25,55 Q35,65 40,60 Q38,75 50,85" fill="#8ab88a" opacity="0.7" />
+            {/* Small oval with point */}
+            <path d="M50,68 Q65,55 70,45 Q62,55 58,70 Q55,58 50,68" fill="#9ac89a" opacity="0.65" />
           </svg>
         </div>
 
@@ -196,17 +240,9 @@ export default function HomePage() {
           </p>
 
           {/* Description */}
-          <p className="text-base md:text-lg lg:text-xl text-[#3d6b3d] mb-8 leading-relaxed max-w-2xl">
+          <p className="text-base md:text-lg lg:text-xl text-[#3d6b3d] leading-relaxed max-w-2xl">
             We are a gardening club dedicated to connecting our community with nature. Building planter boxes for UCSC students and the greater Santa Cruz community.
           </p>
-
-          {/* CTA Button */}
-          <a
-            href="#about-us"
-            className="inline-flex items-center px-10 py-4 bg-[#2d5a2d] text-white font-medium text-lg rounded-full hover:bg-[#1a3a1a] transition-colors shadow-lg"
-          >
-            Learn More
-          </a>
         </div>
       </div>
 
