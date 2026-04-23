@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="50" cy="50" r="48" />
+    </clipPath>
+  </defs>
+  <circle cx="50" cy="50" r="50" fill="white" />
+  <image 
+    href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-20%20at%2011.26.39%E2%80%AFPM-CNBbBSusiyIM10AQfzjRkw0EBirCfZ.png" 
+    x="5" 
+    y="5" 
+    width="90" 
+    height="90" 
+    clip-path="url(#circleClip)"
+  />
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#4a7c4a" stroke-width="3" />
+</svg>
