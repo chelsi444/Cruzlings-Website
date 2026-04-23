@@ -1,8 +1,7 @@
 "use client"
 
 // Cruzlings - UCSC Gardening Club Website
-import { ShieldCheck, Wallet, Leaf, Plus, Minus, Mail, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Wallet, Leaf, X } from "lucide-react"
 import { useState } from "react"
 
 type TeamMember = {
@@ -13,35 +12,7 @@ type TeamMember = {
 }
 
 export default function HomePage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null)
-
-  const toggleFaq = (index: number) => {
-    setOpenFaq(openFaq === index ? null : index)
-  }
-
-  const faqs = [
-    {
-      question: "How do I join Cruzlings?",
-      answer:
-        "Currently we're not onboarding new members, but if you want to get involved feel free to email or DM us!",
-    },
-    {
-      question: "Do I need gardening experience?",
-      answer:
-        "Not at all! We welcome complete beginners and experienced gardeners alike. Our workshops cover everything from basic plant care to advanced sustainable gardening techniques. Learning together is what makes our community special.",
-    },
-    {
-      question: "What kind of plants do you grow?",
-      answer:
-        "We grow a variety of vegetables, herbs, and flowers suited to the Santa Cruz climate. Popular choices include tomatoes, lettuce, basil, succulents, and native California plants. Members can suggest new plants to try each season.",
-    },
-    {
-      question: "How are the funds used?",
-      answer:
-        "Your donations go directly toward building planter boxes, purchasing seeds and soil, acquiring gardening tools, and hosting educational workshops. We provide full transparency on how every dollar supports our community garden initiatives.",
-    },
-  ]
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -195,8 +166,6 @@ export default function HomePage() {
               { label: "About", href: "#about-us" },
               { label: "Fundraising", href: "#fundraising-goal" },
               { label: "Team", href: "#meet-the-team" },
-              { label: "FAQ", href: "#faq" },
-              { label: "Contact", href: "#contact" },
             ].map((item) => (
               <a
                 key={item.label}
@@ -306,7 +275,7 @@ export default function HomePage() {
             <div className="max-w-3xl mx-auto mb-12">
               <div className="flex justify-between items-end mb-3">
                 <div>
-                  <span className="text-3xl font-bold text-primary">$1,305</span>
+                  <span className="text-3xl font-bold text-primary">$1,402</span>
                   <span className="text-muted-foreground ml-2">raised</span>
                 </div>
                 <div className="text-right">
@@ -317,10 +286,10 @@ export default function HomePage() {
               <div className="h-6 bg-secondary rounded-full ring-1 ring-border overflow-hidden">
                 <div 
                   className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-500"
-                  style={{ width: '21.3%', minWidth: '20px' }}
+                  style={{ width: '22.9%', minWidth: '20px' }}
                 />
               </div>
-              <p className="text-center text-muted-foreground mt-3 text-sm">21% of our goal reached</p>
+              <p className="text-center text-muted-foreground mt-3 text-sm">23% of our goal reached</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -356,12 +325,9 @@ export default function HomePage() {
                   TikTok
                 </a>
                 <a
-                  href="instagram://user?username=cruzlings.ucsc"
-                  onClick={(e) => {
-                    setTimeout(() => {
-                      window.location.href = "https://www.instagram.com/cruzlings.ucsc";
-                    }, 500);
-                  }}
+                  href="https://www.instagram.com/cruzlings.ucsc"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-white font-medium rounded-full hover:opacity-90 transition-opacity shadow-lg"
                 >
                   <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
@@ -475,181 +441,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ & Contact Section */}
-      <section id="faq" className="relative z-10 py-24 px-6 scroll-mt-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12">
-            {/* Section Header */}
-            <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">
-                FAQ & Contact
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-                Everything you need to know about joining Cruzlings, and how to get in touch with us.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Left Column - FAQ Accordion */}
-              <div>
-                <h3 className="text-2xl font-bold mb-6 text-foreground">Frequently Asked Questions</h3>
-                <div className="space-y-4">
-                  {faqs.map((faq, index) => (
-                    <div
-                      key={index}
-                      className="rounded-2xl bg-secondary ring-1 ring-border overflow-hidden hover:shadow-md transition-shadow duration-300"
-                    >
-                      <button
-                        onClick={() => toggleFaq(index)}
-                        className="w-full p-6 text-left flex items-center justify-between hover:bg-primary/10 transition-colors"
-                      >
-                        <h3 className="text-lg font-semibold pr-4 text-foreground">{faq.question}</h3>
-                        {openFaq === index ? (
-                          <Minus className="w-5 h-5 flex-shrink-0 text-primary" />
-                        ) : (
-                          <Plus className="w-5 h-5 flex-shrink-0 text-primary" />
-                        )}
-                      </button>
-                      {openFaq === index && (
-                        <div className="px-6 pb-6">
-                          <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Right Column - Contact Form */}
-              <div id="contact" className="scroll-mt-20">
-                <h3 className="text-2xl font-bold mb-6 text-foreground">Contact Us</h3>
-                <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 shadow-lg">
-                  <form className="space-y-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        className="w-full px-4 py-3 rounded-lg bg-card ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
-                        placeholder="Your full name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        className="w-full px-4 py-3 rounded-lg bg-card ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
-                        placeholder="your.email@example.com"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
-                        Message
-                      </label>
-                      <textarea
-                        id="message"
-                        rows={4}
-                        className="w-full px-4 py-3 rounded-lg bg-card ring-1 ring-border text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none resize-none"
-                        placeholder="How can we help you?"
-                      />
-                    </div>
-                    <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg py-3 font-normal text-base flex items-center justify-center gap-2">
-                      <Mail className="w-4 h-4" />
-                      Send Message
-                    </Button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
-      <footer className="relative z-10 py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-primary/5 ring-1 ring-primary/20 shadow-xl p-12">
-            {/* Main Footer Content */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
-              {/* Brand Section */}
-              <div className="lg:col-span-2">
-                <div className="flex items-center gap-2 mb-6">
-                  <Leaf className="w-6 h-6 text-primary" />
-                  <span className="text-xl font-semibold text-foreground">Cruzlings</span>
-                </div>
-                <p className="text-muted-foreground leading-relaxed text-pretty">
-                  A UCSC gardening club dedicated to connecting the community with nature through planter boxes and environmental education.
-                </p>
-              </div>
-
-              {/* Quick Links */}
-              <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-primary">QUICK LINKS</h3>
-                <ul className="space-y-3">
-                  {["About Us", "Our Goal", "Meet the Team", "Contact"].map((item) => (
-                    <li key={item}>
-                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm leading-relaxed">
-                        {item}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Get Involved */}
-              <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-primary">GET INVOLVED</h3>
-                <ul className="space-y-3">
-                  {["Donate", "Volunteer", "Join Us", "Events"].map((item) => (
-                    <li key={item}>
-                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm leading-relaxed">
-                        {item}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Resources Links */}
-              <div>
-                <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-primary">RESOURCES</h3>
-                <ul className="space-y-3">
-                  {["Help Center", "Contact Us", "FAQ", "Terms & Conditions"].map((item) => (
-                    <li key={item}>
-                      <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm leading-relaxed">
-                        {item}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
-            {/* Newsletter Section */}
-            <div className="border-t border-border pt-12 mb-12">
-              <div className="max-w-md">
-                <h3 className="text-lg font-semibold mb-4 text-foreground">Get Cruzlings Updates</h3>
-                <div className="flex gap-3">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="flex-1 px-4 py-3 rounded-lg bg-secondary ring-1 ring-border backdrop-blur border-0 text-foreground placeholder:text-muted-foreground focus:ring-2 focus:ring-primary focus:outline-none"
-                  />
-                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg px-6 h-[50px]">Subscribe</Button>
-                </div>
-              </div>
-            </div>
-
-            {/* Sub-footer */}
-            <div className="border-t border-border pt-8">
-              <p className="text-muted-foreground text-sm text-center">© 2025 Cruzlings</p>
-            </div>
-          </div>
+      <footer className="relative z-10 py-12 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-lg text-muted-foreground">
+            Help Cruzlings educate people about the environment.
+          </p>
         </div>
       </footer>
 
