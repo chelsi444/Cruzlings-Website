@@ -38,7 +38,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <div className="relative min-h-screen overflow-hidden">
+      <div className="relative min-h-screen overflow-hidden pt-20">
         {/* Soft Green Background with Gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#e8f0e8] via-[#dceadc] to-[#c5d8c5]" />
         
@@ -171,7 +171,7 @@ export default function HomePage() {
         </div>
 
         {/* Navigation */}
-        <nav className="relative z-20 flex items-center justify-between px-6 md:px-12 py-6">
+        <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-[#e8f0e8]/95 backdrop-blur-sm shadow-sm">
           {/* Site Title - Top Left */}
           <div className="flex items-center">
             <div>
