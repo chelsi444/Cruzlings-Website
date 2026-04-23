@@ -1,12 +1,20 @@
 "use client"
 
 // Cruzlings - UCSC Gardening Club Website
-import { ShieldCheck, Wallet, Leaf, Plus, Minus, Mail } from "lucide-react"
+import { ShieldCheck, Wallet, Leaf, Plus, Minus, Mail, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 
+type TeamMember = {
+  name: string
+  role?: string
+  image: string
+  bio: string
+}
+
 export default function HomePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null)
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
@@ -177,7 +185,7 @@ export default function HomePage() {
             <img 
               src="/images/logo.jpeg" 
               alt="Cruzlings Logo" 
-              className="h-12 w-auto"
+              className="h-12 w-auto mix-blend-multiply"
             />
           </div>
 
@@ -263,7 +271,7 @@ export default function HomePage() {
             {/* Team Group Photo */}
             <div className="mb-12 flex justify-center">
               <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7662.JPG-qcb6hUb7HnDmBR9Th76u1Ki1mFSneU.jpeg" 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-c0VYJXnPxrpPVcvi69hbk6IhAs3wCA.png" 
                 alt="Cruzlings team group photo"
                 className="w-full max-w-4xl h-auto rounded-2xl ring-1 ring-border shadow-lg"
               />
@@ -337,7 +345,7 @@ export default function HomePage() {
               <p className="text-lg text-muted-foreground mb-6">Follow us on social media to stay updated!</p>
               <div className="flex justify-center gap-4">
                 <a
-                  href="https://www.tiktok.com/@cruzlings"
+                  href="https://www.tiktok.com/@cruzlings.ucsc?_r=1&_t=ZT-95m3Kw0hcVB"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#000000] text-white font-medium rounded-full hover:bg-[#1a1a1a] transition-colors shadow-lg"
@@ -348,9 +356,12 @@ export default function HomePage() {
                   TikTok
                 </a>
                 <a
-                  href="https://www.instagram.com/cruzlings"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="instagram://user?username=cruzlings.ucsc"
+                  onClick={(e) => {
+                    setTimeout(() => {
+                      window.location.href = "https://www.instagram.com/cruzlings.ucsc";
+                    }, 500);
+                  }}
                   className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-white font-medium rounded-full hover:opacity-90 transition-opacity shadow-lg"
                 >
                   <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
@@ -359,7 +370,7 @@ export default function HomePage() {
                   Instagram
                 </a>
                 <a
-                  href="https://linktr.ee/cruzlings.ucsc?utm_source=linktree_profile_share&ltsid=dcbdf735-b880-426f-8e1f-0c7a4b78a348"
+                  href="https://linktr.ee/cruzlings.ucsc?utm_source=linktree_profile_share&ltsid=63462361-ab0d-428c-9901-c8e0d7039a70"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#43e660] text-black font-medium rounded-full hover:bg-[#3bd456] transition-colors shadow-lg"
@@ -398,8 +409,12 @@ export default function HomePage() {
                   { name: "Jayden Luu", role: "PR", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%204.12.07%E2%80%AFPM-JfiOct7BJkPCuAiGb6CQAeIUJLZ4XW.png", bio: "Bio coming soon." },
                   { name: "Rebecca Abraham", role: "Secretary", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HNo9A5RtbF42GIGPo9atJeWrM0mFWe.png", bio: "Bio coming soon." },
                 ].map((member, index) => (
-                  <div key={index} className="group relative text-center">
-                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square">
+                  <div 
+                    key={index} 
+                    className="group relative text-center cursor-pointer"
+                    onClick={() => setSelectedMember(member)}
+                  >
+                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square hover:ring-2 hover:ring-primary transition-all">
                       {member.image ? (
                         <img 
                           src={member.image} 
@@ -411,10 +426,6 @@ export default function HomePage() {
                           <span className="text-muted-foreground text-sm">Photo</span>
                         </div>
                       )}
-                      {/* Hover overlay with bio */}
-                      <div className="absolute inset-0 bg-primary/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                        <p className="text-sm text-primary-foreground text-center">{member.bio}</p>
-                      </div>
                     </div>
                     <p className="font-semibold text-lg text-foreground">{member.name}</p>
                     <p className="text-sm text-primary font-medium">{member.role}</p>
@@ -437,8 +448,12 @@ export default function HomePage() {
                   { name: "Sanika Yadav", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yIlFYbaN1nVv78P3JoT5jkL37kaAnc.png", bio: "Bio coming soon." },
                   { name: "Iryna Monastyrska", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Bio coming soon." },
                 ].map((member, index) => (
-                  <div key={index} className="group relative text-center w-36 md:w-40">
-                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square">
+                  <div 
+                    key={index} 
+                    className="group relative text-center w-36 md:w-40 cursor-pointer"
+                    onClick={() => setSelectedMember(member)}
+                  >
+                    <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square hover:ring-2 hover:ring-primary transition-all">
                       {member.image ? (
                         <img 
                           src={member.image} 
@@ -450,10 +465,6 @@ export default function HomePage() {
                           <span className="text-muted-foreground text-sm">Photo</span>
                         </div>
                       )}
-                      {/* Hover overlay with bio */}
-                      <div className="absolute inset-0 bg-primary/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
-                        <p className="text-sm text-primary-foreground text-center">{member.bio}</p>
-                      </div>
                     </div>
                     <p className="font-bold text-lg text-foreground mt-2">{member.name}</p>
                   </div>
@@ -641,6 +652,50 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+
+      {/* Team Member Sidebar Panel */}
+      {selectedMember && (
+        <>
+          {/* Backdrop */}
+          <div 
+            className="fixed inset-0 bg-black/50 z-50 transition-opacity"
+            onClick={() => setSelectedMember(null)}
+          />
+          {/* Sidebar */}
+          <div className="fixed top-0 right-0 h-full w-full max-w-md bg-card z-50 shadow-2xl transform transition-transform duration-300 overflow-y-auto">
+            {/* Close button */}
+            <button 
+              onClick={() => setSelectedMember(null)}
+              className="absolute top-4 right-4 p-2 hover:bg-secondary rounded-full transition-colors"
+            >
+              <X className="w-6 h-6 text-foreground" />
+            </button>
+
+            {/* Content */}
+            <div className="p-8 pt-16">
+              {/* Member Image */}
+              <div className="mb-6">
+                <img 
+                  src={selectedMember.image} 
+                  alt={selectedMember.name}
+                  className="w-full aspect-square object-cover rounded-2xl ring-1 ring-border"
+                />
+              </div>
+
+              {/* Member Info */}
+              <h3 className="text-2xl font-bold text-foreground mb-2">{selectedMember.name}</h3>
+              {selectedMember.role && (
+                <p className="text-lg font-medium text-primary mb-6">{selectedMember.role}</p>
+              )}
+
+              {/* Bio */}
+              <div className="border-t border-border pt-6">
+                <p className="text-muted-foreground leading-relaxed">{selectedMember.bio}</p>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   )
 }
