@@ -18,9 +18,9 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Son Doong Expeditions — Journey to the World's Largest Cave",
+  title: "Cruzlings",
   description:
-    "Book a once-in-a-lifetime expedition into Son Doong, the world's largest cave. Discover a lost world of giant stalagmites, underground rivers, and a unique jungle ecosystem.",
+    " ",
   generator: "v0.app",
 }
 
