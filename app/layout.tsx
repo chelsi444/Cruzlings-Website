@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "A UCSC gardening club dedicated to connecting the community with nature through planter boxes and environmental education.",
   generator: "v0.app",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.png",
     apple: "/favicon.png",
   },
 }
