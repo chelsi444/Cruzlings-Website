@@ -240,7 +240,7 @@ export default function HomePage() {
             {/* Team Group Photo */}
             <div className="mb-12 flex justify-center">
               <img 
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-c0VYJXnPxrpPVcvi69hbk6IhAs3wCA.png" 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7671-te9yiieJ65qmJRfUmzHydKQgryC7gp.jpeg" 
                 alt="Cruzlings team group photo"
                 className="w-full max-w-4xl h-auto rounded-2xl ring-1 ring-border shadow-lg"
               />
