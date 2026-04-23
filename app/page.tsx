@@ -78,41 +78,30 @@ export default function HomePage() {
             <line x1="50" y1="270" x2="50" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
             <line x1="80" y1="270" x2="80" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
             <line x1="110" y1="270" x2="110" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
-            {/* Plants in box 1 - oval leaves */}
-            <path d="M70,250 Q65,200 70,150" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="50" cy="200" rx="20" ry="10" fill="#6b9a6b" opacity="0.9" transform="rotate(-25, 50, 200)" />
-            <ellipse cx="90" cy="180" rx="18" ry="9" fill="#7aa87a" opacity="0.85" transform="rotate(20, 90, 180)" />
-            <ellipse cx="55" cy="160" rx="16" ry="8" fill="#8ab88a" opacity="0.8" transform="rotate(-20, 55, 160)" />
-            <path d="M110,250 Q115,210 110,170" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
-            <ellipse cx="125" cy="200" rx="15" ry="8" fill="#6b9a6b" opacity="0.85" transform="rotate(25, 125, 200)" />
-            <ellipse cx="100" cy="185" rx="14" ry="7" fill="#7aa87a" opacity="0.8" transform="rotate(-15, 100, 185)" />
+            {/* Plants in box 1 - leaves connected to stem */}
+            <path d="M70,250 L70,160" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="70" cy="220" rx="18" ry="9" fill="#6b9a6b" transform="translate(-15, 0) rotate(-30, 70, 220)" />
+            <ellipse cx="70" cy="195" rx="16" ry="8" fill="#7aa87a" transform="translate(12, 0) rotate(25, 70, 195)" />
+            <ellipse cx="70" cy="170" rx="14" ry="7" fill="#8ab88a" transform="translate(-12, 0) rotate(-25, 70, 170)" />
+            <path d="M110,250 L110,180" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
+            <ellipse cx="110" cy="225" rx="14" ry="7" fill="#6b9a6b" transform="translate(10, 0) rotate(30, 110, 225)" />
+            <ellipse cx="110" cy="200" rx="12" ry="6" fill="#7aa87a" transform="translate(-10, 0) rotate(-30, 110, 200)" />
             
             {/* Planter box 2 - center */}
             <rect x="180" y="270" width="90" height="60" fill="#8B7355" rx="4" />
             <rect x="175" y="260" width="100" height="15" fill="#A08060" rx="3" />
-            {/* Flowers in box 2 - varied petal shapes */}
-            <path d="M210,260 L210,210" stroke="#4a7a4a" strokeWidth="2.5" />
-            {/* Rose-like flower */}
-            <circle cx="210" cy="200" r="14" fill="#e8a0a0" />
-            <path d="M200,200 Q210,190 220,200 Q210,195 200,200" fill="#d88080" />
-            <path d="M205,195 Q210,185 215,195" fill="#c86060" />
-            <circle cx="210" cy="200" r="4" fill="#d4d86a" />
-            {/* Small leaves */}
-            <path d="M210,230 Q195,225 190,235" fill="#6b9a6b" />
-            <path d="M210,230 Q225,225 230,235" fill="#6b9a6b" />
+            {/* Simple flowers */}
+            <path d="M200,260 L200,215" stroke="#5a8a5a" strokeWidth="2" />
+            <circle cx="200" cy="205" r="10" fill="#e8a0a0" />
+            <circle cx="200" cy="205" r="4" fill="#f4d86a" />
             
-            <path d="M245,260 L245,218" stroke="#4a7a4a" strokeWidth="2.5" />
-            {/* Daisy-like flower */}
-            <ellipse cx="245" cy="210" rx="4" ry="10" fill="#a0c8e8" />
-            <ellipse cx="245" cy="210" rx="10" ry="4" fill="#a0c8e8" />
-            <ellipse cx="245" cy="210" rx="4" ry="10" fill="#90b8d8" transform="rotate(45, 245, 210)" />
-            <ellipse cx="245" cy="210" rx="10" ry="4" fill="#90b8d8" transform="rotate(45, 245, 210)" />
-            <circle cx="245" cy="210" r="5" fill="#f4d86a" />
+            <path d="M225,260 L225,225" stroke="#5a8a5a" strokeWidth="2" />
+            <circle cx="225" cy="215" r="8" fill="#a0c8e8" />
+            <circle cx="225" cy="215" r="3" fill="#f4d86a" />
             
-            <path d="M225,260 L225,232" stroke="#4a7a4a" strokeWidth="2" />
-            {/* Tulip-like flower */}
-            <path d="M225,225 Q218,210 222,200 Q225,215 228,200 Q232,210 225,225" fill="#c8a0e8" />
-            <circle cx="225" cy="205" r="3" fill="#d4d86a" />
+            <path d="M250,260 L250,220" stroke="#5a8a5a" strokeWidth="2" />
+            <circle cx="250" cy="210" r="9" fill="#c8a0e8" />
+            <circle cx="250" cy="210" r="3.5" fill="#f4d86a" />
             
             {/* Planter box 3 - right, larger */}
             <rect x="320" y="250" width="130" height="80" fill="#8B7355" rx="4" />
@@ -121,23 +110,23 @@ export default function HomePage() {
             <line x1="340" y1="260" x2="340" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
             <line x1="385" y1="260" x2="385" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
             <line x1="430" y1="260" x2="430" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
-            {/* Tall plants in box 3 - oval leaves */}
-            <path d="M350,240 Q345,180 350,120" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="330" cy="180" rx="22" ry="11" fill="#6b9a6b" opacity="0.9" transform="rotate(-30, 330, 180)" />
-            <ellipse cx="370" cy="160" rx="20" ry="10" fill="#7aa87a" opacity="0.85" transform="rotate(25, 370, 160)" />
-            <ellipse cx="340" cy="140" rx="18" ry="9" fill="#8ab88a" opacity="0.8" transform="rotate(-20, 340, 140)" />
-            <ellipse cx="365" cy="125" rx="15" ry="7" fill="#9ac89a" opacity="0.75" transform="rotate(15, 365, 125)" />
-            <path d="M410,240 Q415,190 410,140" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="430" cy="190" rx="20" ry="10" fill="#6b9a6b" opacity="0.85" transform="rotate(30, 430, 190)" />
-            <ellipse cx="395" cy="170" rx="18" ry="9" fill="#7aa87a" opacity="0.8" transform="rotate(-25, 395, 170)" />
-            <ellipse cx="420" cy="155" rx="16" ry="8" fill="#8ab88a" opacity="0.75" transform="rotate(20, 420, 155)" />
+            {/* Tall plants - leaves connected to stem */}
+            <path d="M360,240 L360,130" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="360" cy="210" rx="20" ry="10" fill="#6b9a6b" transform="translate(-16, 0) rotate(-25, 360, 210)" />
+            <ellipse cx="360" cy="180" rx="18" ry="9" fill="#7aa87a" transform="translate(14, 0) rotate(25, 360, 180)" />
+            <ellipse cx="360" cy="155" rx="16" ry="8" fill="#8ab88a" transform="translate(-14, 0) rotate(-25, 360, 155)" />
+            <ellipse cx="360" cy="135" rx="14" ry="7" fill="#9ac89a" transform="translate(12, 0) rotate(20, 360, 135)" />
+            <path d="M410,240 L410,150" stroke="#5a8a5a" strokeWidth="3" fill="none" />
+            <ellipse cx="410" cy="215" rx="18" ry="9" fill="#6b9a6b" transform="translate(14, 0) rotate(30, 410, 215)" />
+            <ellipse cx="410" cy="190" rx="16" ry="8" fill="#7aa87a" transform="translate(-12, 0) rotate(-25, 410, 190)" />
+            <ellipse cx="410" cy="165" rx="14" ry="7" fill="#8ab88a" transform="translate(12, 0) rotate(25, 410, 165)" />
             
             {/* Small pot on ground */}
             <ellipse cx="290" cy="330" rx="20" ry="8" fill="#c4846a" />
             <ellipse cx="290" cy="320" rx="18" ry="12" fill="#d49a7a" />
-            <path d="M290,320 L290,295" stroke="#5a8a5a" strokeWidth="2" />
-            <ellipse cx="280" cy="295" rx="10" ry="6" fill="#7aa87a" opacity="0.9" transform="rotate(-30, 280, 295)" />
-            <ellipse cx="300" cy="292" rx="10" ry="6" fill="#6b9a6b" opacity="0.85" transform="rotate(30, 300, 292)" />
+            <path d="M290,320 L290,300" stroke="#5a8a5a" strokeWidth="2" />
+            <ellipse cx="290" cy="305" rx="8" ry="5" fill="#7aa87a" transform="translate(-6, 0) rotate(-30, 290, 305)" />
+            <ellipse cx="290" cy="305" rx="8" ry="5" fill="#6b9a6b" transform="translate(6, 0) rotate(30, 290, 305)" />
             
             {/* Watering can */}
             <ellipse cx="160" cy="325" rx="20" ry="10" fill="#7eb87e" />
@@ -150,14 +139,14 @@ export default function HomePage() {
         {/* Decorative plants - bottom left */}
         <div className="absolute bottom-0 left-0 w-40 md:w-56 lg:w-64">
           <svg viewBox="0 0 200 250" className="w-full h-auto">
-            {/* Tall plant with alternating leaves */}
+            {/* Tall plant with connected leaves */}
             <path d="M100,250 L100,50" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="70" cy="200" rx="25" ry="12" fill="#7aa87a" opacity="0.9" transform="rotate(-20, 70, 200)" />
-            <ellipse cx="130" cy="170" rx="22" ry="10" fill="#6b9a6b" opacity="0.85" transform="rotate(20, 130, 170)" />
-            <ellipse cx="65" cy="140" rx="22" ry="10" fill="#7aa87a" opacity="0.8" transform="rotate(-25, 65, 140)" />
-            <ellipse cx="135" cy="110" rx="20" ry="9" fill="#8ab88a" opacity="0.75" transform="rotate(25, 135, 110)" />
-            <ellipse cx="70" cy="80" rx="18" ry="8" fill="#7aa87a" opacity="0.7" transform="rotate(-20, 70, 80)" />
-            <ellipse cx="125" cy="55" rx="15" ry="7" fill="#9ac89a" opacity="0.65" transform="rotate(20, 125, 55)" />
+            <ellipse cx="100" cy="210" rx="22" ry="10" fill="#7aa87a" opacity="0.9" transform="translate(-18, 0) rotate(-25, 100, 210)" />
+            <ellipse cx="100" cy="175" rx="20" ry="9" fill="#6b9a6b" opacity="0.85" transform="translate(16, 0) rotate(25, 100, 175)" />
+            <ellipse cx="100" cy="140" rx="18" ry="8" fill="#7aa87a" opacity="0.8" transform="translate(-16, 0) rotate(-25, 100, 140)" />
+            <ellipse cx="100" cy="105" rx="16" ry="7" fill="#8ab88a" opacity="0.75" transform="translate(14, 0) rotate(25, 100, 105)" />
+            <ellipse cx="100" cy="75" rx="14" ry="6" fill="#7aa87a" opacity="0.7" transform="translate(-12, 0) rotate(-20, 100, 75)" />
+            <ellipse cx="100" cy="50" rx="12" ry="5" fill="#9ac89a" opacity="0.65" transform="translate(10, 0) rotate(20, 100, 50)" />
           </svg>
         </div>
 
@@ -165,10 +154,10 @@ export default function HomePage() {
         <div className="absolute bottom-0 right-0 w-24 md:w-32">
           <svg viewBox="0 0 100 150" className="w-full h-auto">
             <path d="M50,150 L50,60" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
-            <ellipse cx="30" cy="120" rx="18" ry="9" fill="#6b9a6b" opacity="0.8" transform="rotate(-30, 30, 120)" />
-            <ellipse cx="70" cy="100" rx="16" ry="8" fill="#7aa87a" opacity="0.75" transform="rotate(30, 70, 100)" />
-            <ellipse cx="35" cy="80" rx="14" ry="7" fill="#8ab88a" opacity="0.7" transform="rotate(-25, 35, 80)" />
-            <ellipse cx="65" cy="65" rx="12" ry="6" fill="#9ac89a" opacity="0.65" transform="rotate(25, 65, 65)" />
+            <ellipse cx="50" cy="130" rx="16" ry="8" fill="#6b9a6b" opacity="0.8" transform="translate(-12, 0) rotate(-30, 50, 130)" />
+            <ellipse cx="50" cy="105" rx="14" ry="7" fill="#7aa87a" opacity="0.75" transform="translate(10, 0) rotate(30, 50, 105)" />
+            <ellipse cx="50" cy="82" rx="12" ry="6" fill="#8ab88a" opacity="0.7" transform="translate(-10, 0) rotate(-25, 50, 82)" />
+            <ellipse cx="50" cy="62" rx="10" ry="5" fill="#9ac89a" opacity="0.65" transform="translate(8, 0) rotate(25, 50, 62)" />
           </svg>
         </div>
 
