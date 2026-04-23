@@ -156,7 +156,7 @@ export default function HomePage() {
             <img 
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-20%20at%2011.26.39%E2%80%AFPM-CNBbBSusiyIM10AQfzjRkw0EBirCfZ.png" 
               alt="Cruzlings Logo" 
-              className="h-12 w-auto mix-blend-multiply"
+              className="h-12 w-auto bg-white rounded-lg p-1"
             />
           </div>
 
@@ -210,6 +210,17 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* Decorative Divider - Leaf Pattern */}
+      <div className="relative z-10 py-8 px-6 bg-gradient-to-b from-[#c5d8c5] to-background">
+        <div className="max-w-4xl mx-auto flex items-center justify-center gap-4">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent to-primary/30"></div>
+          <svg width="40" height="40" viewBox="0 0 40 40" className="text-primary/50">
+            <path d="M20,5 Q30,15 35,25 Q25,20 20,35 Q15,20 5,25 Q10,15 20,5" fill="currentColor" />
+          </svg>
+          <div className="h-px flex-1 bg-gradient-to-l from-transparent to-primary/30"></div>
+        </div>
+      </div>
+
       {/* About Us Section */}
       <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20 overflow-hidden">
         {/* Subtle leaf accent - top left */}
@@ -259,6 +270,37 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Decorative Divider - Flower Pattern */}
+      <div className="relative z-10 py-12 px-6">
+        <div className="max-w-4xl mx-auto flex items-center justify-center gap-6">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/20 to-primary/30"></div>
+          <div className="flex gap-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" className="text-primary/40">
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <circle cx="12" cy="4" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="12" cy="20" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="4" cy="12" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="20" cy="12" r="3" fill="currentColor" opacity="0.6" />
+            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" className="text-accent/40">
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <circle cx="12" cy="4" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="12" cy="20" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="4" cy="12" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="20" cy="12" r="3" fill="currentColor" opacity="0.6" />
+            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" className="text-primary/40">
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <circle cx="12" cy="4" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="12" cy="20" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="4" cy="12" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="20" cy="12" r="3" fill="currentColor" opacity="0.6" />
+            </svg>
+          </div>
+          <div className="h-px flex-1 bg-gradient-to-l from-transparent via-primary/20 to-primary/30"></div>
+        </div>
+      </div>
 
       {/* Our Fundraising Goal Section */}
       <section id="fundraising-goal" className="relative z-10 py-24 px-6 scroll-mt-20">
@@ -351,6 +393,23 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Decorative Divider - Vine Pattern */}
+      <div className="relative z-10 py-12 px-6">
+        <div className="max-w-5xl mx-auto">
+          <svg viewBox="0 0 400 40" className="w-full h-10 text-primary/30">
+            <path d="M0,20 Q50,5 100,20 T200,20 T300,20 T400,20" fill="none" stroke="currentColor" strokeWidth="2" />
+            <circle cx="50" cy="15" r="4" fill="currentColor" opacity="0.5" />
+            <circle cx="150" cy="25" r="4" fill="currentColor" opacity="0.5" />
+            <circle cx="250" cy="15" r="4" fill="currentColor" opacity="0.5" />
+            <circle cx="350" cy="25" r="4" fill="currentColor" opacity="0.5" />
+            <path d="M50,15 Q40,10 45,5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M150,25 Q160,30 155,35" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M250,15 Q240,10 245,5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            <path d="M350,25 Q360,30 355,35" fill="none" stroke="currentColor" strokeWidth="1.5" />
+          </svg>
+        </div>
+      </div>
 
       {/* Meet Our Team Section */}
       <section id="meet-the-team" className="relative z-10 py-24 px-6 scroll-mt-20">
