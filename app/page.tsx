@@ -162,13 +162,13 @@ export default function HomePage() {
         </div>
 
         {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-[#e8f0e8]/95 backdrop-blur-sm shadow-sm">
+        <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-2 bg-[#e8f0e8]/95 backdrop-blur-sm shadow-sm">
           {/* Logo - Top Left */}
           <div className="flex items-center">
             <img 
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-20%20at%2011.26.39%E2%80%AFPM-CNBbBSusiyIM10AQfzjRkw0EBirCfZ.png" 
               alt="Cruzlings Logo" 
-              className="h-20 w-auto bg-white rounded-lg p-2"
+              className="h-16 w-16 object-contain rounded-full"
             />
           </div>
 
