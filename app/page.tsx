@@ -214,17 +214,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Decorative Divider - Leaf Pattern */}
-      <div className="relative z-10 py-8 px-6 bg-gradient-to-b from-[#c5d8c5] to-background">
-        <div className="max-w-4xl mx-auto flex items-center justify-center gap-4">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent to-primary/30"></div>
-          <svg width="40" height="40" viewBox="0 0 40 40" className="text-primary/50">
-            <path d="M20,5 Q30,15 35,25 Q25,20 20,35 Q15,20 5,25 Q10,15 20,5" fill="currentColor" />
-          </svg>
-          <div className="h-px flex-1 bg-gradient-to-l from-transparent to-primary/30"></div>
-        </div>
-      </div>
-
       {/* About Us Section */}
       <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20 overflow-hidden">
         {/* Subtle leaf accent - top left */}
