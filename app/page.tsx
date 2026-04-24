@@ -168,7 +168,7 @@ export default function HomePage() {
             <img 
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-20%20at%2011.26.39%E2%80%AFPM-CNBbBSusiyIM10AQfzjRkw0EBirCfZ.png" 
               alt="Cruzlings Logo" 
-              className="h-12 w-auto bg-white rounded-lg p-1"
+              className="h-20 w-auto bg-white rounded-lg p-2"
             />
           </div>
 
