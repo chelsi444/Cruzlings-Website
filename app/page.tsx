@@ -66,12 +66,9 @@ export default function HomePage() {
         {/* Hero Content - Centered */}
         <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 md:px-12 lg:px-20 text-center pt-20">
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4 text-white drop-shadow-lg">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 text-white drop-shadow-lg">
             CRUZLINGS
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl font-medium text-white/90 mb-6 drop-shadow-md">
-            at University of California, Santa Cruz
-          </p>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-white/85 leading-relaxed max-w-3xl drop-shadow-md">
