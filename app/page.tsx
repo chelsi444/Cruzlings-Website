@@ -554,11 +554,11 @@ export default function HomePage() {
             {/* Content */}
             <div className="p-8 pt-16">
               {/* Member Image */}
-              <div className="mb-6">
+              <div className="mb-6 overflow-hidden rounded-2xl ring-1 ring-border">
                 <img
                   src={selectedMember.image}
                   alt={selectedMember.name}
-                  className="w-full aspect-square object-cover rounded-2xl ring-1 ring-border"
+                  className={`w-full aspect-square object-cover ${selectedMember.rotate ? 'rotate-90 scale-150' : ''}`}
                 />
               </div>
 
