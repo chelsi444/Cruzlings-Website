@@ -155,7 +155,7 @@ export default function HomePage() {
       </div>
 
       {/* Fundraising Events Section */}
-      <div className="mb-12">
+      <div id="fundraising-goal" className="mb-12 scroll-mt-20">
         <div className="text-center mb-10">
           <h3 className="text-3xl md:text-4xl font-bold text-primary mb-3">Upcoming Fundraising Events</h3>
           <p className="text-muted-foreground max-w-2xl mx-auto">
