@@ -323,6 +323,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Decorative Divider - Flower Pattern */}
+      <div className="relative z-10 py-12 px-6">
+        <div className="max-w-4xl mx-auto flex items-center justify-center gap-6">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-primary/20 to-primary/30"></div>
+          <div className="flex gap-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" className="text-primary/40">
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <circle cx="12" cy="4" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="12" cy="20" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="4" cy="12" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="20" cy="12" r="3" fill="currentColor" opacity="0.6" />
+            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" className="text-accent/40">
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <circle cx="12" cy="4" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="12" cy="20" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="4" cy="12" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="20" cy="12" r="3" fill="currentColor" opacity="0.6" />
+            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" className="text-primary/40">
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
+              <circle cx="12" cy="4" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="12" cy="20" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="4" cy="12" r="3" fill="currentColor" opacity="0.6" />
+              <circle cx="20" cy="12" r="3" fill="currentColor" opacity="0.6" />
+            </svg>
+          </div>
+          <div className="h-px flex-1 bg-gradient-to-l from-transparent via-primary/20 to-primary/30"></div>
+        </div>
+      </div>
+
       {/* Meet Our Team Section */}
       <section id="meet-the-team" className="relative z-10 py-24 px-6 scroll-mt-20">
         <div className="max-w-7xl mx-auto">
