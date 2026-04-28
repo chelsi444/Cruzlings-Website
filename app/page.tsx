@@ -291,7 +291,7 @@ export default function HomePage() {
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
                   The Banksia Victoriae is a striking large shrub — sometimes considered a small tree — native to Western Australia.
-                  It's known for its dramatic orange-yellow Plant spikes wrapped in woolly grey foliage, making it a standout in any garden.
+                  It's known for its dramatic orange-yellow plant spikes wrapped in woolly grey foliage, making it a standout in any garden.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="rounded-xl bg-secondary ring-1 ring-border p-5">
@@ -300,11 +300,11 @@ export default function HomePage() {
                   </div>
                   <div className="rounded-xl bg-secondary ring-1 ring-border p-5">
                     <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1">Bloom Season</p>
-                    <p className="text-foreground font-medium">Late Summer – Autumn</p>
+                    <p className="text-foreground font-medium">Late Summer (Autumn)</p>
                   </div>
                   <div className="rounded-xl bg-secondary ring-1 ring-border p-5">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1">Sunlight</p>
-                    <p className="text-foreground font-medium">Full Sun</p>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1">Population Status</p>
+                    <p className="text-foreground font-medium">Not Endangered</p>
                   </div>
                   <div className="rounded-xl bg-secondary ring-1 ring-border p-5">
                     <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1">Water Needs</p>
