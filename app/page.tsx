@@ -444,7 +444,7 @@ export default function HomePage() {
             {/* Executive Board */}
             <div className="mb-16">
               <h3 className="text-2xl font-semibold mb-8 text-center">Executive Board</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 md:gap-8">
                 {[
                   { name: "Surabhi Kuchibhotla", role: "CEO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Surabhi is a third-year Technology and Information Management student. She enjoys going to the gym, hiking, and swimming at the beach.", rotate: false },
                   { name: "Kyle Bradford", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-dEp8NIxlxWA1I4sJBB7zTi77KXVfC8.jpeg", bio: "Kyle is a first-year Business Management and Economics student. He enjoys tennis, video games, and soccer.", rotate: true },
@@ -485,7 +485,7 @@ export default function HomePage() {
             {/* Members */}
             <div>
               <h3 className="text-2xl font-semibold mb-8 text-center">Members</h3>
-              <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto">
                 {[
                   { name: "Sahasra Chada", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i3x4jch72QxWk8iSBvMLPCM0ALqDrH.png", bio: "Sahasra is a first-year Bioengineering and Bioinformatics student. She enjoys badminton, henna, music, going to the beach, and exploring downtown." },
                   { name: "Haatim Ali", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1Wx6bqjxa0WHMso3cqmHwIcCbYAbXO.png", bio: "Haatim is a first-year Computer Science student. He enjoys soccer, hiking, and watching anime." },
@@ -498,7 +498,7 @@ export default function HomePage() {
                 ].map((member, index) => (
                   <div
                     key={index}
-                    className="group relative text-center w-36 md:w-40 cursor-pointer"
+                    className="group relative text-center cursor-pointer"
                     onClick={() => setSelectedMember(member)}
                   >
                     <div className="relative overflow-hidden rounded-2xl ring-1 ring-border mb-4 aspect-square hover:ring-2 hover:ring-primary transition-all">
