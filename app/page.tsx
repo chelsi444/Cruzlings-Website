@@ -17,163 +17,28 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
-      <div className="relative min-h-screen overflow-hidden pt-20">
-        {/* Soft Green Background with Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#e8f0e8] via-[#dceadc] to-[#c5d8c5]" />
-        
-        {/* Sun */}
-        <div className="absolute top-8 right-12 md:right-20 lg:right-28">
-          <svg width="160" height="160" viewBox="0 0 160 160" className="w-36 h-36 md:w-44 md:h-44 lg:w-52 lg:h-52">
-            {/* Sun rays - 16 rays around the sun */}
-            <line x1="80" y1="5" x2="80" y2="28" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
-            <line x1="80" y1="132" x2="80" y2="155" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
-            <line x1="5" y1="80" x2="28" y2="80" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
-            <line x1="132" y1="80" x2="155" y2="80" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
-            {/* Diagonal rays at 45 degrees */}
-            <line x1="22" y1="22" x2="40" y2="40" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
-            <line x1="120" y1="120" x2="138" y2="138" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
-            <line x1="22" y1="138" x2="40" y2="120" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
-            <line x1="120" y1="40" x2="138" y2="22" stroke="#f4d03f" strokeWidth="4" strokeLinecap="round" />
-            {/* Additional rays at 22.5 degree angles */}
-            <line x1="42" y1="10" x2="52" y2="30" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="118" y1="10" x2="108" y2="30" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="10" y1="42" x2="30" y2="52" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="150" y1="42" x2="130" y2="52" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="10" y1="118" x2="30" y2="108" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="150" y1="118" x2="130" y2="108" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="42" y1="150" x2="52" y2="130" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            <line x1="118" y1="150" x2="108" y2="130" stroke="#f4d03f" strokeWidth="3" strokeLinecap="round" />
-            {/* Sun circle */}
-            <circle cx="80" cy="80" r="42" fill="#f9e076" />
-            <circle cx="80" cy="80" r="34" fill="#f4d03f" />
-          </svg>
-        </div>
-
-        {/* Decorative clouds */}
-        <div className="absolute top-20 left-1/4 opacity-40">
-          <svg width="120" height="50" viewBox="0 0 120 50">
-            <ellipse cx="30" cy="30" rx="25" ry="15" fill="#b8d4b8" />
-            <ellipse cx="55" cy="25" rx="30" ry="18" fill="#b8d4b8" />
-            <ellipse cx="85" cy="30" rx="25" ry="15" fill="#b8d4b8" />
-          </svg>
-        </div>
-        <div className="absolute top-32 right-1/3 opacity-30">
-          <svg width="100" height="40" viewBox="0 0 100 40">
-            <ellipse cx="25" cy="25" rx="20" ry="12" fill="#c8dcc8" />
-            <ellipse cx="50" cy="20" rx="25" ry="15" fill="#c8dcc8" />
-            <ellipse cx="75" cy="25" rx="20" ry="12" fill="#c8dcc8" />
-          </svg>
-        </div>
-
-        {/* SVG Planter Boxes with Plants - Right side */}
-        <div className="absolute bottom-0 right-4 md:right-12 lg:right-20 w-[60%] md:w-[50%] lg:w-[45%] z-10">
-          <svg viewBox="0 0 500 350" className="w-full h-auto">
-            {/* Ground/grass area */}
-            <ellipse cx="250" cy="340" rx="240" ry="15" fill="#7a9a6a" opacity="0.4" />
-            
-            {/* Planter box 1 - left */}
-            <rect x="40" y="260" width="100" height="70" fill="#8B7355" rx="4" />
-            <rect x="35" y="250" width="110" height="15" fill="#A08060" rx="3" />
-            {/* Wood grain details */}
-            <line x1="50" y1="270" x2="50" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
-            <line x1="80" y1="270" x2="80" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
-            <line x1="110" y1="270" x2="110" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
-            {/* Plants in box 1 - leaves connected to stem */}
-            <path d="M70,250 L70,160" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="70" cy="220" rx="18" ry="9" fill="#6b9a6b" transform="translate(-15, 0) rotate(-30, 70, 220)" />
-            <ellipse cx="70" cy="195" rx="16" ry="8" fill="#7aa87a" transform="translate(12, 0) rotate(25, 70, 195)" />
-            <ellipse cx="70" cy="170" rx="14" ry="7" fill="#8ab88a" transform="translate(-12, 0) rotate(-25, 70, 170)" />
-            <path d="M110,250 L110,180" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
-            <ellipse cx="110" cy="225" rx="14" ry="7" fill="#6b9a6b" transform="translate(10, 0) rotate(30, 110, 225)" />
-            <ellipse cx="110" cy="200" rx="12" ry="6" fill="#7aa87a" transform="translate(-10, 0) rotate(-30, 110, 200)" />
-            
-            {/* Planter box 2 - center */}
-            <rect x="180" y="270" width="90" height="60" fill="#8B7355" rx="4" />
-            <rect x="175" y="260" width="100" height="15" fill="#A08060" rx="3" />
-            {/* Simple flowers */}
-            <path d="M200,260 L200,215" stroke="#5a8a5a" strokeWidth="2" />
-            <circle cx="200" cy="205" r="10" fill="#e8a0a0" />
-            <circle cx="200" cy="205" r="4" fill="#f4d86a" />
-            
-            <path d="M225,260 L225,225" stroke="#5a8a5a" strokeWidth="2" />
-            <circle cx="225" cy="215" r="8" fill="#a0c8e8" />
-            <circle cx="225" cy="215" r="3" fill="#f4d86a" />
-            
-            <path d="M250,260 L250,220" stroke="#5a8a5a" strokeWidth="2" />
-            <circle cx="250" cy="210" r="9" fill="#c8a0e8" />
-            <circle cx="250" cy="210" r="3.5" fill="#f4d86a" />
-            
-            {/* Planter box 3 - right, larger */}
-            <rect x="320" y="250" width="130" height="80" fill="#8B7355" rx="4" />
-            <rect x="315" y="240" width="140" height="15" fill="#A08060" rx="3" />
-            {/* Wood grain details */}
-            <line x1="340" y1="260" x2="340" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
-            <line x1="385" y1="260" x2="385" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
-            <line x1="430" y1="260" x2="430" y2="320" stroke="#7a6345" strokeWidth="1" opacity="0.3" />
-            {/* Tall plants - leaves connected to stem */}
-            <path d="M360,240 L360,130" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="360" cy="210" rx="20" ry="10" fill="#6b9a6b" transform="translate(-16, 0) rotate(-25, 360, 210)" />
-            <ellipse cx="360" cy="180" rx="18" ry="9" fill="#7aa87a" transform="translate(14, 0) rotate(25, 360, 180)" />
-            <ellipse cx="360" cy="155" rx="16" ry="8" fill="#8ab88a" transform="translate(-14, 0) rotate(-25, 360, 155)" />
-            <ellipse cx="360" cy="135" rx="14" ry="7" fill="#9ac89a" transform="translate(12, 0) rotate(20, 360, 135)" />
-            <path d="M410,240 L410,150" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="410" cy="215" rx="18" ry="9" fill="#6b9a6b" transform="translate(14, 0) rotate(30, 410, 215)" />
-            <ellipse cx="410" cy="190" rx="16" ry="8" fill="#7aa87a" transform="translate(-12, 0) rotate(-25, 410, 190)" />
-            <ellipse cx="410" cy="165" rx="14" ry="7" fill="#8ab88a" transform="translate(12, 0) rotate(25, 410, 165)" />
-            
-            {/* Small pot on ground */}
-            <ellipse cx="290" cy="330" rx="20" ry="8" fill="#c4846a" />
-            <ellipse cx="290" cy="320" rx="18" ry="12" fill="#d49a7a" />
-            <path d="M290,320 L290,300" stroke="#5a8a5a" strokeWidth="2" />
-            <ellipse cx="290" cy="305" rx="8" ry="5" fill="#7aa87a" transform="translate(-6, 0) rotate(-30, 290, 305)" />
-            <ellipse cx="290" cy="305" rx="8" ry="5" fill="#6b9a6b" transform="translate(6, 0) rotate(30, 290, 305)" />
-            
-            {/* Watering can */}
-            <ellipse cx="160" cy="325" rx="20" ry="10" fill="#7eb87e" />
-            <rect x="145" y="305" width="30" height="20" fill="#8ec88e" rx="3" />
-            <path d="M175,310 Q190,305 200,315" stroke="#7eb87e" strokeWidth="3" fill="none" />
-            <ellipse cx="200" cy="315" rx="8" ry="4" fill="#7eb87e" />
-          </svg>
-        </div>
-
-        {/* Decorative plants - bottom left */}
-        <div className="absolute bottom-0 left-0 w-40 md:w-56 lg:w-64">
-          <svg viewBox="0 0 200 250" className="w-full h-auto">
-            {/* Tall plant with connected leaves */}
-            <path d="M100,250 L100,50" stroke="#5a8a5a" strokeWidth="3" fill="none" />
-            <ellipse cx="100" cy="210" rx="22" ry="10" fill="#7aa87a" opacity="0.9" transform="translate(-18, 0) rotate(-25, 100, 210)" />
-            <ellipse cx="100" cy="175" rx="20" ry="9" fill="#6b9a6b" opacity="0.85" transform="translate(16, 0) rotate(25, 100, 175)" />
-            <ellipse cx="100" cy="140" rx="18" ry="8" fill="#7aa87a" opacity="0.8" transform="translate(-16, 0) rotate(-25, 100, 140)" />
-            <ellipse cx="100" cy="105" rx="16" ry="7" fill="#8ab88a" opacity="0.75" transform="translate(14, 0) rotate(25, 100, 105)" />
-            <ellipse cx="100" cy="75" rx="14" ry="6" fill="#7aa87a" opacity="0.7" transform="translate(-12, 0) rotate(-20, 100, 75)" />
-            <ellipse cx="100" cy="50" rx="12" ry="5" fill="#9ac89a" opacity="0.65" transform="translate(10, 0) rotate(20, 100, 50)" />
-          </svg>
-        </div>
-
-        {/* Decorative plants - bottom right corner */}
-        <div className="absolute bottom-0 right-0 w-24 md:w-32">
-          <svg viewBox="0 0 100 150" className="w-full h-auto">
-            <path d="M50,150 L50,60" stroke="#5a8a5a" strokeWidth="2.5" fill="none" />
-            <ellipse cx="50" cy="130" rx="16" ry="8" fill="#6b9a6b" opacity="0.8" transform="translate(-12, 0) rotate(-30, 50, 130)" />
-            <ellipse cx="50" cy="105" rx="14" ry="7" fill="#7aa87a" opacity="0.75" transform="translate(10, 0) rotate(30, 50, 105)" />
-            <ellipse cx="50" cy="82" rx="12" ry="6" fill="#8ab88a" opacity="0.7" transform="translate(-10, 0) rotate(-25, 50, 82)" />
-            <ellipse cx="50" cy="62" rx="10" ry="5" fill="#9ac89a" opacity="0.65" transform="translate(8, 0) rotate(25, 50, 62)" />
-          </svg>
-        </div>
+      <div className="relative min-h-screen overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UiRRCHJO0VGPExsa69M5PSn7irPoG5.png')" }}
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/30" />
 
         {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-2 bg-[#e8f0e8]/95 backdrop-blur-sm shadow-sm">
+        <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-3 bg-white/95 backdrop-blur-sm shadow-sm">
           {/* Logo - Top Left */}
           <div className="flex items-center">
             <img 
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-20%20at%2011.26.39%E2%80%AFPM-CNBbBSusiyIM10AQfzjRkw0EBirCfZ.png" 
               alt="Cruzlings Logo" 
-              className="h-20 w-20 object-contain rounded-full mix-blend-multiply"
+              className="h-16 w-16 object-contain rounded-full"
             />
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-8">
             {[
               { label: "About", href: "#about-us" },
               { label: "Fundraising", href: "#fundraising-goal" },
@@ -198,67 +63,60 @@ export default function HomePage() {
         </nav>
 
         {/* Hero Content - Centered */}
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-200px)] px-6 md:px-12 lg:px-20 text-center">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 md:px-12 lg:px-20 text-center pt-20">
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4 text-[#2d5a2d]">
-            Cruzlings
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4 text-white drop-shadow-lg">
+            CRUZLINGS
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl font-medium text-[#4a7c4a] mb-6 italic">
-            Where Education Takes Root
+          <p className="text-xl md:text-2xl lg:text-3xl font-medium text-white/90 mb-6 drop-shadow-md">
+            at University of California, Santa Cruz
           </p>
 
           {/* Description */}
-          <p className="text-base md:text-lg lg:text-xl text-[#3d6b3d] leading-relaxed max-w-2xl">
-            We are a gardening club dedicated to connecting our community with nature. Building planter boxes for UCSC students and the greater Santa Cruz community.
+          <p className="text-lg md:text-xl text-white/85 leading-relaxed max-w-3xl drop-shadow-md">
+            Where Education Takes Root. We are a gardening club dedicated to connecting our community with nature through planter boxes and environmental education.
           </p>
         </div>
       </div>
 
       {/* About Us Section */}
-      <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20 overflow-hidden">
-        {/* Subtle leaf accent - top left */}
-        <div className="absolute top-8 left-8 opacity-20">
-          <svg width="120" height="80" viewBox="0 0 120 80" className="text-primary">
-            <path d="M60,70 Q30,50 20,20 Q50,35 60,70" fill="currentColor" />
-            <path d="M60,70 Q40,45 20,20" fill="none" stroke="currentColor" strokeWidth="1" />
-          </svg>
-        </div>
-
-        {/* Subtle leaf accent - top right */}
-        <div className="absolute top-8 right-8 opacity-20">
-          <svg width="120" height="80" viewBox="0 0 120 80" className="text-primary">
-            <path d="M60,70 Q90,50 100,20 Q70,35 60,70" fill="currentColor" />
-            <path d="M60,70 Q80,45 100,20" fill="none" stroke="currentColor" strokeWidth="1" />
-          </svg>
-        </div>
-
+      <section id="about-us" className="relative z-10 py-24 px-6 scroll-mt-20 bg-[#f5f5f0]">
         <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-card ring-1 ring-border shadow-xl p-12 relative">
-            <div className="text-center mb-12">
-              <h2 className="text-5xl md:text-6xl font-bold tracking-tight mb-6 text-balance text-primary">About Us</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-                We are a gardening club dedicated to connecting our community with nature. We&apos;re building planter boxes so UCSC students and the greater Santa Cruz community can plant, grow, and learn about environmental sustainability.
-              </p>
-            </div>
-
-            {/* Team Group Photo */}
-            <div className="mb-12 flex justify-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Group Photo - Left Side */}
+            <div className="relative">
               <img 
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7671-te9yiieJ65qmJRfUmzHydKQgryC7gp.jpeg" 
                 alt="Cruzlings team group photo"
-                className="w-full max-w-4xl h-auto rounded-2xl ring-1 ring-border shadow-lg"
+                className="w-full h-auto rounded-2xl shadow-xl"
               />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Our Mission</h3>
-                <p className="text-muted-foreground leading-relaxed">We aim to foster a love for gardening and environmental stewardship by providing hands-on opportunities for students and community members to engage with nature.</p>
+            {/* Mission Content - Right Side */}
+            <div className="flex flex-col justify-center">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-[#2d5a2d] flex items-center justify-center">
+                  <Leaf className="w-6 h-6 text-white" />
+                </div>
               </div>
-              <div className="rounded-2xl bg-secondary ring-1 ring-border p-8 hover:shadow-lg transition-shadow duration-300">
-                <h3 className="text-xl font-semibold mb-4 text-foreground">Our Values</h3>
-                <p className="text-muted-foreground leading-relaxed">Sustainability, education, and community are at the heart of everything we do. We believe in nurturing both plants and people through meaningful environmental experiences.</p>
-              </div>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#2d5a2d]">
+                About Cruzlings
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                We are a student-run gardening club dedicated to connecting our community with nature. Through hands-on projects, we build planter boxes for UCSC students and the greater Santa Cruz community, fostering environmental education and sustainable living.
+              </p>
+              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+                Our mission is to create lasting initiatives that empower and educate others to implement sustainability at UCSC through student-run projects.
+              </p>
+              <a 
+                href="/about"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#2d5a2d] text-white font-medium rounded-lg hover:bg-[#1a3a1a] transition-colors w-fit"
+              >
+                Learn More
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
