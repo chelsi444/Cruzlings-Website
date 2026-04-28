@@ -23,6 +23,9 @@ export default function AboutPage() {
           <Link href="/#fundraising-goal" className="text-[#2d5a2d] hover:text-[#1a3a1a] font-medium transition-colors">
             Fundraising
           </Link>
+          <Link href="/#fotw" className="text-[#2d5a2d] hover:text-[#1a3a1a] font-medium transition-colors">
+            Plant of The Week
+          </Link>
           <Link href="/#meet-the-team" className="text-[#2d5a2d] hover:text-[#1a3a1a] font-medium transition-colors">
             Team
           </Link>
@@ -38,15 +41,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="w-14 h-14 rounded-2xl bg-[#2d5a2d] flex items-center justify-center">
-              <Leaf className="w-7 h-7 text-white" />
-            </div>
-            <div className="w-14 h-14 rounded-2xl bg-[#f4d03f] flex items-center justify-center">
-              <Sprout className="w-7 h-7 text-[#2d5a2d]" />
-            </div>
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-[#2d5a2d] mb-6 italic">
+          <h1 className="text-5xl md:text-6xl font-bold text-[#2d5a2d] mb-6">
             We&apos;re On A Mission
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">
@@ -78,52 +73,6 @@ export default function AboutPage() {
               <p>
                 Beyond just planting, we host workshops on sustainable gardening practices, composting, and environmental stewardship. We believe in hands-on learning that connects classroom concepts to real-world action.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why We're Fundraising Section */}
-      <section className="py-16 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-3xl shadow-lg ring-1 ring-[#2d5a2d]/10 p-8 md:p-12">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-[#f4d03f] flex items-center justify-center flex-shrink-0">
-                <Heart className="w-6 h-6 text-[#2d5a2d]" />
-              </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Why We&apos;re Fundraising</h3>
-            </div>
-            <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
-              <p>
-                Building quality planter boxes requires materials—wood, soil, seeds, tools, and irrigation supplies. Each planter box costs approximately $150-200 to construct, and we&apos;re aiming to install 30+ new boxes across campus this year.
-              </p>
-              <p>
-                Your support helps us purchase sustainable, long-lasting materials that will benefit students for years to come. We prioritize eco-friendly options like recycled lumber and organic soil amendments.
-              </p>
-              <p>
-                Beyond materials, funds go toward educational programming, guest speakers from the local farming community, and field trips to sustainable farms in the Santa Cruz area. Every dollar directly impacts student learning and campus sustainability.
-              </p>
-            </div>
-
-            {/* Fundraising Progress */}
-            <div className="mt-8 p-6 bg-[#f5f5f0] rounded-2xl">
-              <div className="flex justify-between items-end mb-3">
-                <div>
-                  <span className="text-3xl font-bold text-[#2d5a2d]">$1,402</span>
-                  <span className="text-gray-500 ml-2">raised</span>
-                </div>
-                <div className="text-right">
-                  <span className="text-gray-500">Goal: </span>
-                  <span className="text-xl font-semibold text-gray-800">$6,125</span>
-                </div>
-              </div>
-              <div className="h-4 bg-gray-200 rounded-full overflow-hidden">
-                <div 
-                  className="h-full bg-gradient-to-r from-[#2d5a2d] to-[#4a7c4a] rounded-full"
-                  style={{ width: "23%" }}
-                />
-              </div>
-              <p className="text-sm text-gray-500 mt-2">23% of our goal reached</p>
             </div>
           </div>
         </div>

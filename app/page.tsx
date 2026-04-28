@@ -95,19 +95,14 @@ export default function HomePage() {
 
             {/* Mission Content - Right Side */}
             <div className="flex flex-col justify-center">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-[#2d5a2d] flex items-center justify-center">
-                  <Leaf className="w-6 h-6 text-white" />
-                </div>
-              </div>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-[#2d5a2d]">
                 About Cruzlings
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                We are a student-run gardening club dedicated to connecting our community with nature. Through hands-on projects, we build planter boxes for UCSC students and the greater Santa Cruz community, fostering environmental education and sustainable living.
+                We are a student-run gardening club dedicated to connecting our community with nature. Through fundraising efforts, we plan to build planter boxes for students at UCSC and the greater Santa Cruz community, fostering environmental education and promoting sustainable living.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Our mission is to create lasting initiatives that empower and educate others to implement sustainability at UCSC through student-run projects.
+                Our mission is to develop lasting initiatives that empower and educate others to incorporate sustainability into their daily lives at UCSC through our club&apos;s efforts.
               </p>
               <a
                 href="/about"
