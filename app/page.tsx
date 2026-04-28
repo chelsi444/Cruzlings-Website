@@ -277,7 +277,7 @@ export default function HomePage() {
               {/* Image */}
               <div className="rounded-2xl overflow-hidden ring-1 ring-border shadow-lg aspect-square max-w-md mx-auto w-full">
                 <img
-                  src="/vercel/share/v0-project/public/images/Woolly Orange Banksia.jpeg"
+                  src="https://upload.wikimedia.org/wikipedia/commons/1/16/Banksia_victoriae_-_UC_Santa_Cruz_Arboretum_-_DSC07517.JPG"
                   //src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Banksia_victoriae_gnangarra.jpg/800px-Banksia_victoriae_gnangarra.jpg"
                   alt="Banksia Victoriae"
                   className="w-full h-full object-cover"
