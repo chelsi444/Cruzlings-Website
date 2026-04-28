@@ -87,7 +87,7 @@ export default function HomePage() {
             {/* Group Photo - Left Side */}
             <div className="relative">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7671-te9yiieJ65qmJRfUmzHydKQgryC7gp.jpeg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9961_004-4IQOg3NuQeUzqe1A8X3igque1Xs0GP.jpg"
                 alt="Cruzlings team group photo"
                 className="w-full h-auto rounded-2xl shadow-xl"
               />
@@ -117,6 +117,46 @@ export default function HomePage() {
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
+              </a>
+            </div>
+          </div>
+
+          {/* Social Media Buttons */}
+          <div className="text-center mt-16">
+            <p className="text-lg text-gray-600 mb-6">Follow us on social media to stay updated!</p>
+            <div className="flex justify-center gap-4 flex-wrap">
+              <a
+                href="https://www.tiktok.com/@cruzlings"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#000000] text-white font-medium rounded-full hover:bg-[#1a1a1a] transition-colors shadow-lg"
+              >
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+                TikTok
+              </a>
+              <a
+                href="https://www.instagram.com/cruzlings"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-white font-medium rounded-full hover:opacity-90 transition-opacity shadow-lg"
+              >
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                Instagram
+              </a>
+              <a
+                href="https://linktr.ee/cruzlings.ucsc?utm_source=linktree_profile_share&ltsid=dcbdf735-b880-426f-8e1f-0c7a4b78a348"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#43e660] text-black font-medium rounded-full hover:bg-[#3bd456] transition-colors shadow-lg"
+              >
+                <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
+                  <path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.517.316.97.712 1.345.317.243.633.324 1.029.324.554 0 1.029-.243 1.345-.649.23-.405.23-.81.08-1.296-.08-.243-.237-.405-.396-.567-.237-.163-.396-.324-.634-.405l-.554-.243c-.158-.081-.316-.162-.395-.324-.08-.162-.08-.405 0-.567.079-.163.237-.324.475-.324.316 0 .554.161.633.567h1.108c-.079-.486-.237-.891-.554-1.135-.316-.243-.712-.405-1.187-.405-.475 0-.87.162-1.187.405-.316.243-.554.73-.554 1.216 0 .405.08.729.317 1.053.158.243.396.486.712.648l.87.405c.158.081.316.162.475.324.158.162.237.324.237.567s-.079.486-.316.648c-.158.163-.396.244-.633.244-.237 0-.554-.081-.712-.325-.08-.162-.158-.405-.158-.648l-1.187.081zm-3.478-5.676L6.448 7.02l1.108 1.107.87-.891L7.24 6.048l1.265-1.107-.87-.81L6.368 5.32 5.34 4.212l-.87.81 1.108 1.188L4.395 7.34l.87.891.87-.891.08.08-.87 1.78h1.187l.395-1.053 1.345 1.053v-1.377l-1.029-.81.632-1.053.158-.243c.08-.081.08-.162.08-.243 0-.162-.08-.243-.158-.324-.08-.082-.237-.163-.396-.163-.316 0-.633.163-.87.405l-.158.162c-.08.162-.158.324-.237.486v.081l-.08.162-.871 1.377-1.503-1.377-.554.567 1.978 1.862v2.269h1.029v-1.62l.949.729h1.266l-1.345-1.053.633-1.053.158-.243c.08-.081.08-.162.08-.243 0-.162-.08-.243-.158-.324-.08-.082-.237-.163-.396-.163-.158 0-.316.081-.475.162l-1.424 2.269H4.554l-.08.081zm11.139.081l1.029-1.62V6.534l1.503 1.377.554-.567-1.978-1.862v-.729h-1.03v1.135l-.79-.73h-1.424l1.503 1.135-.633 1.053-.158.243c-.08.081-.08.162-.08.324 0 .081.08.243.158.324.08.081.237.162.396.162.158 0 .316-.081.475-.162l.395-.567.316.243v.891h-3.557v1.135h1.424l-.712 1.944h1.187l.712-1.944h1.503v.648c0 .162-.08.324-.237.405-.08.081-.316.162-.475.162H14.73v1.053h.87c.396 0 .792-.081 1.108-.324.316-.243.554-.567.633-.972l.08-.162v-.81h1.503v-1.135h-3.636l.396-1.134z"/>
+                </svg>
+                Linktree
               </a>
             </div>
           </div>
@@ -165,22 +205,22 @@ export default function HomePage() {
           </div>
 
           {/* Progress Bar */}
-          <div className="max-w-2xl mx-auto mb-12">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-sm font-medium text-muted-foreground">Fundraising Progress</span>
-              <span className="text-sm font-semibold text-primary">$1,700 / $3,000</span>
+          <div className="max-w-3xl mx-auto mb-12">
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-base font-medium text-muted-foreground">Fundraising Progress</span>
+              <span className="text-base font-semibold text-primary">$1,700 / $6,125</span>
             </div>
-            <div className="h-4 bg-secondary ring-1 ring-border rounded-full overflow-hidden">
+            <div className="h-6 bg-secondary ring-1 ring-border rounded-full overflow-hidden">
               <div 
                 className="h-full bg-gradient-to-r from-[#2d5a2d] to-[#4a8a4a] rounded-full transition-all duration-500"
-                style={{ width: '56.67%' }}
+                style={{ width: '27.76%' }}
               />
             </div>
-            <div className="flex items-center justify-between mt-2">
-              <span className="text-xs text-muted-foreground">56.67% of goal reached</span>
-              <div className="flex items-center gap-1 text-xs text-primary">
-                <Wallet className="w-3 h-3" />
-                <span>$1,300 to go</span>
+            <div className="flex items-center justify-between mt-3">
+              <span className="text-sm text-muted-foreground">27.76% of goal reached</span>
+              <div className="flex items-center gap-1 text-sm text-primary">
+                <Wallet className="w-4 h-4" />
+                <span>$4,425 to go</span>
               </div>
             </div>
           </div>
@@ -205,7 +245,7 @@ export default function HomePage() {
                 image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5141-M5hBBz0Wsse1css4VMCo6IkBJhLlum.jpg",
                 title: "Boba Fundraiser",
                 description: "We switched it up with a refreshing boba sale! Students enjoyed a variety of flavors while learning about Cruzlings and our environmental initiatives. A sweet way to support sustainability on campus.",
-                location: "Science and Engineering Library",
+                location: "McHenry Library",
                 date: "April 16th, 2026",
               },
               {
