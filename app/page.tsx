@@ -42,7 +42,7 @@ export default function HomePage() {
             {[
               { label: "About", href: "#about-us" },
               { label: "Fundraising", href: "#fundraising-goal" },
-              { label: "Plant of The Week", href: "#potw" },
+              { label: "Plant of The Week", href: "#fotw" },
               { label: "Team", href: "#meet-the-team" },
             ].map((item) => (
               <a
