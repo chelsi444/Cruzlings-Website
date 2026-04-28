@@ -155,103 +155,134 @@ export default function HomePage() {
       </div>
 
       {/* Fundraising Events Section */}
-      <div id="fundraising-goal" className="mb-12 scroll-mt-20">
-        <div className="text-center mb-10">
-          <h3 className="text-3xl md:text-4xl font-bold text-primary mb-3">Upcoming Fundraising Events</h3>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Join us at our events to support Cruzlings and connect with our community.
-          </p>
-        </div>
+      <div id="fundraising-goal" className="mb-12 scroll-mt-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <h3 className="text-3xl md:text-4xl font-bold text-primary mb-3">Fundraising Events</h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Join us at our events to support Cruzlings and connect with our community.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            {
-              image: "",
-              title: "Event Title 1",
-              description: "Add a description of your event here. Talk about what attendees can expect, what activities will be available, and how their participation supports our mission.",
-              location: "Location TBD",
-              date: "Date TBD",
-            },
-            {
-              image: "",
-              title: "Event Title 2",
-              description: "Add a description of your event here. Talk about what attendees can expect, what activities will be available, and how their participation supports our mission.",
-              location: "Location TBD",
-              date: "Date TBD",
-            },
-            {
-              image: "",
-              title: "Event Title 3",
-              description: "Add a description of your event here. Talk about what attendees can expect, what activities will be available, and how their participation supports our mission.",
-              location: "Location TBD",
-              date: "Date TBD",
-            },
-            {
-              image: "",
-              title: "Event Title 4",
-              description: "Add a description of your event here. Talk about what attendees can expect, what activities will be available, and how their participation supports our mission.",
-              location: "Location TBD",
-              date: "Date TBD",
-            },
-            {
-              image: "",
-              title: "Event Title 5",
-              description: "Add a description of your event here. Talk about what attendees can expect, what activities will be available, and how their participation supports our mission.",
-              location: "Location TBD",
-              date: "Date TBD",
-            },
-          ].map((event, index) => (
-            <div
-              key={index}
-              className="rounded-2xl bg-secondary ring-1 ring-border overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
-            >
-              {/* Event Image */}
-              <div className="aspect-video bg-primary/5 ring-b ring-border flex items-center justify-center overflow-hidden">
-                {event.image ? (
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full h-full object-cover"
-                  />
-                ) : (
-                  <div className="flex flex-col items-center justify-center text-muted-foreground p-6">
-                    <Leaf className="w-10 h-10 mb-2 text-primary/40" />
-                    <span className="text-sm font-medium">Add event image</span>
-                  </div>
-                )}
+          {/* Progress Bar */}
+          <div className="max-w-2xl mx-auto mb-12">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-sm font-medium text-muted-foreground">Fundraising Progress</span>
+              <span className="text-sm font-semibold text-primary">$1,700 / $3,000</span>
+            </div>
+            <div className="h-4 bg-secondary ring-1 ring-border rounded-full overflow-hidden">
+              <div 
+                className="h-full bg-gradient-to-r from-[#2d5a2d] to-[#4a8a4a] rounded-full transition-all duration-500"
+                style={{ width: '56.67%' }}
+              />
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <span className="text-xs text-muted-foreground">56.67% of goal reached</span>
+              <div className="flex items-center gap-1 text-xs text-primary">
+                <Wallet className="w-3 h-3" />
+                <span>$1,300 to go</span>
               </div>
+            </div>
+          </div>
 
-              {/* Event Content */}
-              <div className="p-6 flex flex-col flex-1">
-                <h4 className="text-xl font-semibold text-foreground mb-3">{event.title}</h4>
-                <p className="text-muted-foreground leading-relaxed text-sm mb-5 flex-1">
-                  {event.description}
-                </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5136-EzJuLKiYylQ9zVpwakShPFkIxJMETc.jpg",
+                title: "Banh Mi Fundraiser",
+                description: "Our first banh mi sale of the quarter! We served delicious Vietnamese sandwiches with pork, chicken, and veggie options. Half sandwiches for $7 and full for $13 — all proceeds go toward building planter boxes for the UCSC community.",
+                location: "Science and Engineering Library",
+                date: "April 14th, 2026",
+              },
+              {
+                image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jose_btw-h1XttMcbpYQ7Zbr09qPtkWMBXQu1TZ.jpg",
+                title: "Banh Mi Fundraiser Day 2",
+                description: "Back by popular demand! Our second day of banh mi sales brought out even more hungry Slugs. The team came together to serve fresh sandwiches and spread the word about our gardening mission on campus.",
+                location: "Science and Engineering Library",
+                date: "April 15th, 2026",
+              },
+              {
+                image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5141-M5hBBz0Wsse1css4VMCo6IkBJhLlum.jpg",
+                title: "Boba Fundraiser",
+                description: "We switched it up with a refreshing boba sale! Students enjoyed a variety of flavors while learning about Cruzlings and our environmental initiatives. A sweet way to support sustainability on campus.",
+                location: "Science and Engineering Library",
+                date: "April 16th, 2026",
+              },
+              {
+                image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5140-ecC2gn4n5ylb4dbJP3fTWjJrgTyGtg.jpg",
+                title: "Banh Mi Fundraiser",
+                description: "Another successful banh mi fundraiser! Our dedicated team served up fresh sandwiches to hungry students and faculty. Every purchase helps us get closer to our goal of providing planter boxes across campus.",
+                location: "Science and Engineering Library",
+                date: "April 23rd, 2026",
+              },
+              {
+                image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5139-F3azx7vhFeBtaICdbrjI08lKTeYpeu.jpg",
+                title: "Spam Musubi Fundraiser",
+                description: "Aloha vibes at our spam musubi sale! The team prepared homemade musubi for the UCSC community. This Hawaiian-inspired treat was a hit with students looking for a quick, tasty snack between classes.",
+                location: "Science and Engineering Library",
+                date: "April 27th, 2026",
+              },
+            ].map((event, index) => (
+              <div
+                key={index}
+                className="rounded-2xl bg-secondary ring-1 ring-border overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
+              >
+                {/* Event Image */}
+                <div className="aspect-video bg-primary/5 ring-b ring-border flex items-center justify-center overflow-hidden">
+                  {event.image ? (
+                    <img
+                      src={event.image}
+                      alt={event.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center justify-center text-muted-foreground p-6">
+                      <Leaf className="w-10 h-10 mb-2 text-primary/40" />
+                      <span className="text-sm font-medium">Add event image</span>
+                    </div>
+                  )}
+                </div>
 
-                {/* Event Meta - Date & Location */}
-                <div className="space-y-3 pt-4 border-t border-border">
-                  <div className="flex items-center gap-3">
-                    <div className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 ring-1 ring-primary/30 flex-shrink-0">
-                      <time className="w-4 h-4 text-primary" />
+                {/* Event Content */}
+                <div className="p-6 flex flex-col flex-1">
+                  <h4 className="text-xl font-semibold text-foreground mb-3">{event.title}</h4>
+                  <p className="text-muted-foreground leading-relaxed text-sm mb-5 flex-1">
+                    {event.description}
+                  </p>
+
+                  {/* Event Meta - Date & Location */}
+                  <div className="space-y-3 pt-4 border-t border-border">
+                    <div className="flex items-center gap-3">
+                      <div className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 ring-1 ring-primary/30 flex-shrink-0">
+                        <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                          <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                          <line x1="16" y1="2" x2="16" y2="6" />
+                          <line x1="8" y1="2" x2="8" y2="6" />
+                          <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Date</p>
+                        <p className="text-sm text-foreground font-medium">{event.date}</p>
+                      </div>
                     </div>
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Date</p>
-                      <p className="text-sm text-foreground font-medium">{event.date}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 ring-1 ring-primary/30 flex-shrink-0">
-                      <map className="w-4 h-4 text-primary" />
-                    </div>
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Location</p>
-                      <p className="text-sm text-foreground font-medium">{event.location}</p>
+                    <div className="flex items-center gap-3">
+                      <div className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 ring-1 ring-primary/30 flex-shrink-0">
+                        <svg className="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                          <circle cx="12" cy="10" r="3" />
+                        </svg>
+                      </div>
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Location</p>
+                        <p className="text-sm text-foreground font-medium">{event.location}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 
