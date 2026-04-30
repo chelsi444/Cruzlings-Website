@@ -492,6 +492,7 @@ export default function HomePage() {
                   { name: "Chintan Patwardhan", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TwWOvcPMprlkf9qpizrPpyMGClJ8Ar.png", bio: "Chintan is a first-year Robotics Engineering student. He enjoys soccer, skiing, and skateboarding." },
                   { name: "Sanika Yadav", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yIlFYbaN1nVv78P3JoT5jkL37kaAnc.png", bio: "Sanika is a first-year Business Management and Economics student. She enjoys dancing, listening to music, going to the beach, and anything adventurous." },
                   { name: "Iryna Monastyrska", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Iryna is a second-year Business Management and Economics student with a concentration in Accounting. She enjoys sewing." },
+                  { name: "Jason Ma", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-72ArCHKbeJxPTs7VWuy7mKlSEkKQn7.png", bio: "Jason is a second-year Business Economic Major with a concentration in Accounting. He enjoys Climbing, hiking, and camping." },
                 ].map((member, index) => (
                   <div
                     key={index}
