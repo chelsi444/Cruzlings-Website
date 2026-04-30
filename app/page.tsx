@@ -81,13 +81,13 @@ export default function HomePage() {
         {/* Navigation */}
         <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-3 bg-white/95 backdrop-blur-sm shadow-sm">
           {/* Logo - Top Left */}
-          <div className="flex items-center">
+          <a href="/" className="flex items-center">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-20%20at%2011.26.39%E2%80%AFPM-CNBbBSusiyIM10AQfzjRkw0EBirCfZ.png"
               alt="Cruzlings Logo"
               className="h-16 w-16 object-contain rounded-full"
             />
-          </div>
+          </a>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center gap-8">
@@ -285,19 +285,19 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto mb-12">
             <div className="flex items-center justify-between mb-3">
               <span className="text-sm sm:text-base font-medium text-muted-foreground">Fundraising Progress</span>
-              <span className="text-sm sm:text-base font-semibold text-primary">$1,700 / $6,125</span>
+              <span className="text-sm sm:text-base font-semibold text-primary">$2,300 / $6,125</span>
             </div>
             <div className="h-6 bg-secondary ring-1 ring-border rounded-full overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-[#2d5a2d] to-[#4a8a4a] rounded-full transition-all duration-500"
-                style={{ width: '27.76%' }}
+                style={{ width: '37.55%' }}
               />
             </div>
             <div className="flex items-center justify-between mt-3">
-              <span className="text-xs sm:text-sm text-muted-foreground">27.76% of goal reached</span>
+              <span className="text-xs sm:text-sm text-muted-foreground">37.55% of goal reached</span>
               <div className="flex items-center gap-1 text-xs sm:text-sm text-primary">
                 <Wallet className="w-4 h-4" />
-                <span>$4,425 to go</span>
+                <span>$3,825 to go</span>
               </div>
             </div>
           </div>
@@ -525,7 +525,7 @@ export default function HomePage() {
               <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-8">
                 {[
                   { name: "Surabhi Kuchibhotla", role: "CEO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Surabhi is a third-year Technology and Information Management student. She enjoys going to the gym, hiking, and swimming at the beach.", rotate: false },
-                  { name: "Kyle Bradford", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-dEp8NIxlxWA1I4sJBB7zTi77KXVfC8.jpeg", bio: "Kyle is a first-year Business Management and Economics student. He enjoys tennis, video games, and soccer.", rotate: true },
+                  { name: "Kyle Bradford", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Icw08DOZDDhYGENz6gXt4TUuqCifPX.png", bio: "Kyle is a first-year Business Management and Economics student. He enjoys tennis, video games, and soccer." },
                   { name: "Chelsi Vaghela", role: "CTO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7QaKbRjfEvyUKgCXPKzCN08ejkUCcp.png", bio: "Chelsi is a first-year Computer Science and Game Design student. She enjoys soccer, running, and hiking." },
                   { name: "Sarah Wei", role: "CMO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Sarah is a first-year Business Management and Economics student with a concentration in Accounting. She enjoys playing basketball and volleyball, going to the beach, going on drives, and working out." },
                   { name: "Jayden Luu", role: "PR", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%204.12.07%E2%80%AFPM-JfiOct7BJkPCuAiGb6CQAeIUJLZ4XW.png", bio: "Jayden is a first-year Technology and Information Management student. He enjoys tennis, football, basketball, and spikeball." },
