@@ -1,7 +1,7 @@
 "use client"
 
 // Cruzlings - UCSC Gardening Club Website
-import { Wallet, Leaf, X } from "lucide-react"
+import { Wallet, Leaf, X, ChevronLeft, ChevronRight } from "lucide-react"
 import { useState } from "react"
 
 type TeamMember = {
@@ -15,6 +15,56 @@ type TeamMember = {
 export default function HomePage() {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const events = [
+    {
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5136-EzJuLKiYylQ9zVpwakShPFkIxJMETc.jpg",
+      title: "Banh Mi Fundraiser",
+      description: "Our first banh mi sale of the quarter! We served delicious Vietnamese sandwiches with pork, chicken, and veggie options. Half sandwiches for $7 and full for $13 — all proceeds go toward building planter boxes for the UCSC community.",
+      location: "Science and Engineering Library",
+      date: "April 14th, 2026",
+    },
+    {
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jose_btw-h1XttMcbpYQ7Zbr09qPtkWMBXQu1TZ.jpg",
+      title: "Banh Mi Fundraiser Day 2",
+      description: "Back by popular demand! Our second day of banh mi sales brought out even more hungry Slugs. The team came together to serve fresh sandwiches and spread the word about our gardening mission on campus.",
+      location: "Science and Engineering Library",
+      date: "April 15th, 2026",
+    },
+    {
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5141-M5hBBz0Wsse1css4VMCo6IkBJhLlum.jpg",
+      title: "Boba Fundraiser",
+      description: "We switched it up with a refreshing boba sale! Students enjoyed a variety of flavors while learning about Cruzlings and our environmental initiatives. A sweet way to support sustainability on campus.",
+      location: "McHenry Library",
+      date: "April 16th, 2026",
+    },
+    {
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5140-ecC2gn4n5ylb4dbJP3fTWjJrgTyGtg.jpg",
+      title: "Banh Mi Fundraiser",
+      description: "Another successful banh mi fundraiser! Our dedicated team served up fresh sandwiches to hungry students and faculty. Every purchase helps us get closer to our goal of providing planter boxes across campus.",
+      location: "Science and Engineering Library",
+      date: "April 23rd, 2026",
+    },
+    {
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5139-F3azx7vhFeBtaICdbrjI08lKTeYpeu.jpg",
+      title: "Spam Musubi Fundraiser",
+      description: "Aloha vibes at our spam musubi sale! The team prepared homemade musubi for the UCSC community. This Hawaiian-inspired treat was a hit with students looking for a quick, tasty snack between classes.",
+      location: "Science and Engineering Library",
+      date: "April 27th, 2026",
+    },
+  ]
+
+  const [currentEventIndex, setCurrentEventIndex] = useState(events.length - 1)
+
+  const goToPrevious = () => {
+    setCurrentEventIndex((prev) => (prev + 1) % events.length)
+  }
+
+  const goToNext = () => {
+    setCurrentEventIndex((prev) => (prev - 1 + events.length) % events.length)
+  }
+
+  const currentEvent = events[currentEventIndex]
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -47,7 +97,7 @@ export default function HomePage() {
               { label: "Plant of The Week", href: "#fotw" },
               { label: "Team", href: "#meet-the-team" },
             ].map((item) => (
-              <a
+              
                 key={item.label}
                 href={item.href}
                 className="text-[#2d5a2d] hover:text-[#1a3a1a] font-medium transition-colors"
@@ -85,7 +135,7 @@ export default function HomePage() {
                 { label: "Plant of The Week", href: "#fotw" },
                 { label: "Team", href: "#meet-the-team" },
               ].map((item) => (
-                <a
+                
                   key={item.label}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
@@ -136,7 +186,7 @@ export default function HomePage() {
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 Our mission is to develop lasting initiatives that empower and educate others to incorporate sustainability into their daily lives at UCSC through our club&apos;s efforts.
               </p>
-              <a
+              
                 href="/about"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#2d5a2d] text-white font-medium rounded-lg hover:bg-[#1a3a1a] transition-colors w-fit"
               >
@@ -152,7 +202,7 @@ export default function HomePage() {
           <div className="text-center mt-16">
             <p className="text-lg text-gray-600 mb-6">Follow us on social media to stay updated!</p>
             <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
-              <a
+              
                 href="https://www.tiktok.com/@cruzlings"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -163,7 +213,7 @@ export default function HomePage() {
                 </svg>
                 TikTok
               </a>
-              <a
+              
                 href="https://www.instagram.com/cruzlings"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -174,7 +224,7 @@ export default function HomePage() {
                 </svg>
                 Instagram
               </a>
-              <a
+              
                 href="https://linktr.ee/cruzlings.ucsc?utm_source=linktree_profile_share&ltsid=dcbdf735-b880-426f-8e1f-0c7a4b78a348"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -252,54 +302,26 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {[
-              {
-                image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5136-EzJuLKiYylQ9zVpwakShPFkIxJMETc.jpg",
-                title: "Banh Mi Fundraiser",
-                description: "Our first banh mi sale of the quarter! We served delicious Vietnamese sandwiches with pork, chicken, and veggie options. Half sandwiches for $7 and full for $13 — all proceeds go toward building planter boxes for the UCSC community.",
-                location: "Science and Engineering Library",
-                date: "April 14th, 2026",
-              },
-              {
-                image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jose_btw-h1XttMcbpYQ7Zbr09qPtkWMBXQu1TZ.jpg",
-                title: "Banh Mi Fundraiser Day 2",
-                description: "Back by popular demand! Our second day of banh mi sales brought out even more hungry Slugs. The team came together to serve fresh sandwiches and spread the word about our gardening mission on campus.",
-                location: "Science and Engineering Library",
-                date: "April 15th, 2026",
-              },
-              {
-                image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5141-M5hBBz0Wsse1css4VMCo6IkBJhLlum.jpg",
-                title: "Boba Fundraiser",
-                description: "We switched it up with a refreshing boba sale! Students enjoyed a variety of flavors while learning about Cruzlings and our environmental initiatives. A sweet way to support sustainability on campus.",
-                location: "McHenry Library",
-                date: "April 16th, 2026",
-              },
-              {
-                image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5140-ecC2gn4n5ylb4dbJP3fTWjJrgTyGtg.jpg",
-                title: "Banh Mi Fundraiser",
-                description: "Another successful banh mi fundraiser! Our dedicated team served up fresh sandwiches to hungry students and faculty. Every purchase helps us get closer to our goal of providing planter boxes across campus.",
-                location: "Science and Engineering Library",
-                date: "April 23rd, 2026",
-              },
-              {
-                image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5139-F3azx7vhFeBtaICdbrjI08lKTeYpeu.jpg",
-                title: "Spam Musubi Fundraiser",
-                description: "Aloha vibes at our spam musubi sale! The team prepared homemade musubi for the UCSC community. This Hawaiian-inspired treat was a hit with students looking for a quick, tasty snack between classes.",
-                location: "Science and Engineering Library",
-                date: "April 27th, 2026",
-              },
-            ].map((event, index) => (
-              <div
-                key={index}
-                className="rounded-2xl bg-secondary ring-1 ring-border overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col"
+          {/* Carousel */}
+          <div className="relative max-w-3xl mx-auto">
+            <div className="flex items-center gap-4">
+              {/* Left Arrow */}
+              <button
+                onClick={goToPrevious}
+                aria-label="Previous fundraiser"
+                className="flex-shrink-0 p-3 rounded-full bg-primary/10 hover:bg-primary/20 ring-1 ring-border transition-colors"
               >
+                <ChevronLeft className="w-6 h-6 text-primary" />
+              </button>
+
+              {/* Event Card */}
+              <div className="flex-1 rounded-2xl bg-secondary ring-1 ring-border overflow-hidden shadow-lg flex flex-col">
                 {/* Event Image */}
                 <div className="aspect-video bg-primary/5 ring-b ring-border flex items-center justify-center overflow-hidden">
-                  {event.image ? (
+                  {currentEvent.image ? (
                     <img
-                      src={event.image}
-                      alt={event.title}
+                      src={currentEvent.image}
+                      alt={currentEvent.title}
                       className="w-full h-full object-cover"
                     />
                   ) : (
@@ -312,9 +334,9 @@ export default function HomePage() {
 
                 {/* Event Content */}
                 <div className="p-5 sm:p-6 flex flex-col flex-1">
-                  <h4 className="text-lg sm:text-xl font-semibold text-foreground mb-3">{event.title}</h4>
+                  <h4 className="text-lg sm:text-xl font-semibold text-foreground mb-3">{currentEvent.title}</h4>
                   <p className="text-muted-foreground leading-relaxed text-sm mb-5 flex-1">
-                    {event.description}
+                    {currentEvent.description}
                   </p>
 
                   {/* Event Meta - Date & Location */}
@@ -330,7 +352,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Date</p>
-                        <p className="text-sm text-foreground font-medium">{event.date}</p>
+                        <p className="text-sm text-foreground font-medium">{currentEvent.date}</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -342,13 +364,38 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Location</p>
-                        <p className="text-sm text-foreground font-medium">{event.location}</p>
+                        <p className="text-sm text-foreground font-medium">{currentEvent.location}</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            ))}
+
+              {/* Right Arrow */}
+              <button
+                onClick={goToNext}
+                aria-label="Next fundraiser"
+                className="flex-shrink-0 p-3 rounded-full bg-primary/10 hover:bg-primary/20 ring-1 ring-border transition-colors"
+              >
+                <ChevronRight className="w-6 h-6 text-primary" />
+              </button>
+            </div>
+
+            {/* Dot Indicators */}
+            <div className="flex justify-center gap-2 mt-6">
+              {events.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentEventIndex(index)}
+                  aria-label={`Go to fundraiser ${index + 1}`}
+                  className={`w-2.5 h-2.5 rounded-full transition-all ${
+                    index === currentEventIndex
+                      ? 'bg-primary w-8'
+                      : 'bg-primary/30 hover:bg-primary/50'
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
