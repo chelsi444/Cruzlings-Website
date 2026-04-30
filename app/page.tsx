@@ -72,7 +72,7 @@ export default function HomePage() {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-white/85 leading-relaxed max-w-3xl drop-shadow-md">
-            Where Education Takes Root. We are a gardening club dedicated to connecting our community with nature through planter boxes, educating them on environmental sustainability.
+            Where testing takes place. We are a gardening club dedicated to connecting our community with nature through planter boxes, educating them on environmental sustainability.
           </p>
         </div>
       </div>
