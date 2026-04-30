@@ -439,13 +439,13 @@ export default function HomePage() {
               {/* Info */}
               <div className="flex flex-col gap-5 sm:gap-6">
                 <div>
-                  <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-3">This Week&apos;s Pick</span>
+                  <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-3">This Week's Pick</span>
                   <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-1">Banksia Victoriae</h3>
                   <p className="text-muted-foreground italic text-base sm:text-lg">Woolly Orange Banksia</p>
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
                   The Banksia Victoriae is a striking large shrub — sometimes considered a small tree — native to Western Australia.
-                  It&apos;s known for its dramatic orange-yellow plant spikes wrapped in woolly grey foliage, making it a standout in any garden.
+                  It's known for its dramatic orange-yellow plant spikes wrapped in woolly grey foliage, making it a standout in any garden.
                 </p>
                 <div className="grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="rounded-xl bg-secondary ring-1 ring-border p-4 sm:p-5">
@@ -466,7 +466,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="rounded-xl bg-primary/5 ring-1 ring-primary/20 p-4 sm:p-5">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">Fun Fact</p>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">🌿 Fun Fact</p>
                   <p className="text-muted-foreground leading-relaxed text-sm">
                     Banksias are named after botanist Sir Joseph Banks, who sailed with Captain Cook on the <em>Endeavour</em> in 1770. Their large cones can hold seeds for years and only release them after fire — a survival strategy called serotiny.
                   </p>
@@ -572,9 +572,9 @@ export default function HomePage() {
                   { name: "Adam Lee", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CmpDb42N1s9J5zTct9u8LG98n4uJQX.png", bio: "Adam is a second-year Business Management and Economics student. He enjoys going to the gym, playing basketball, gaming, and hiking." },
                   { name: "Chintan Patwardhan", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-TwWOvcPMprlkf9qpizrPpyMGClJ8Ar.png", bio: "Chintan is a first-year Robotics Engineering student. He enjoys soccer, skiing, and skateboarding." },
                   { name: "Sanika Yadav", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yIlFYbaN1nVv78P3JoT5jkL37kaAnc.png", bio: "Sanika is a first-year Business Management and Economics student. She enjoys dancing, listening to music, going to the beach, and anything adventurous." },
-                  { name: "Iryna Monastyrska", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Iryna is a second-year Business Management and Economics student with a concentration in Accounting. She enjoys sewing." },
-                  { name: "Jason Ma", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-72ArCHKbeJxPTs7VWuy7mKlSEkKQn7.png", bio: "Jason is a second-year Business Economic Major with a concentration in Accounting. He enjoys Climbing, hiking, and camping." },
-                ].map((member, index) => (
+  { name: "Iryna Monastyrska", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dhCGQcZR9VMPX9u9JLX2m8UBOzSimj.png", bio: "Iryna is a second-year Business Management and Economics student with a concentration in Accounting. She enjoys sewing." },
+  { name: "Jason Ma", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-72ArCHKbeJxPTs7VWuy7mKlSEkKQn7.png", bio: "Jason is a second-year Business Economic Major with a concentration in Accounting. He enjoys Climbing, hiking, and camping." },
+  ].map((member, index) => (
                   <div
                     key={index}
                     className="group relative text-center cursor-pointer"
@@ -661,3 +661,4 @@ export default function HomePage() {
     </div>
   )
 }
+
