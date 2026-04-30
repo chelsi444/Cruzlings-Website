@@ -277,7 +277,7 @@ export default function HomePage() {
             Cruzlings
           </h1>
           <p className="text-xl md:text-2xl font-medium text-[#4a7c4a] mb-6 italic">
-            Where Education Takes Root
+            where testing takes place
           </p>
           <p className="text-base md:text-lg text-[#3d6b3d] mb-8 leading-relaxed max-w-md">
             We are a gardening club dedicated to connecting our community with nature. Building planter boxes for UCSC students and the greater Santa Cruz community.
