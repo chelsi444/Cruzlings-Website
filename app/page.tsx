@@ -563,17 +563,17 @@ export default function HomePage() {
             {/* Members */}
             <div>
               <h3 className="text-2xl font-semibold mb-6 sm:mb-8 text-center">Members</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto">
+              <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
                 {[
-                  { name: "Surabhi Kuchibhotla", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Surabhi is a third-year Technology and Information Management student. She enjoys going to the gym, hiking, and swimming at the beach." },
+                  { name: "Adam Lee", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CmpDb42N1s9J5zTct9u8LG98n4uJQX.png", bio: "Adam is a second-year Business Management and Economics student. He enjoys going to the gym, playing basketball, gaming, and hiking." },
+                  { name: "Haatim Ali", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1Wx6bqjxa0WHMso3cqmHwIcCbYAbXO.png", bio: "Haatim is a first-year Computer Science student. He enjoys soccer, hiking, and watching anime." },
+                  { name: "Jason Ma", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-72ArCHKbeJxPTs7VWuy7mKlSEkKQn7.png", bio: "Jason is a second-year Business Economic Major with a concentration in Accounting. He enjoys Climbing, hiking, and camping." },
+                  { name: "Jose Nunez", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Cmakfn9BSyL8wvMFnOHMWzxsendIlz.png", bio: "Jose is a second-year Business Management and Economics student. He enjoys ping pong, going to the gym, and playing mahjong." },
                   { name: "Kyle Bradford", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Icw08DOZDDhYGENz6gXt4TUuqCifPX.png", bio: "Kyle is a first-year Business Management and Economics student. He enjoys tennis, video games, and soccer." },
-                  { name: "Sarah Wei", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Sarah is a first-year Business Management and Economics student with a concentration in Accounting. She enjoys playing basketball and volleyball, going to the beach, going on drives, and working out." },
                   { name: "Rebecca Abraham", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HNo9A5RtbF42GIGPo9atJeWrM0mFWe.png", bio: "Rebecca is a second-year Bioengineering and Bioinformatics student. She enjoys soccer, going to the beach, and going on drives." },
                   { name: "Sahasra Chada", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-i3x4jch72QxWk8iSBvMLPCM0ALqDrH.png", bio: "Sahasra is a first-year Bioengineering and Bioinformatics student. She enjoys badminton, henna, music, going to the beach, and exploring downtown." },
-                  { name: "Haatim Ali", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1Wx6bqjxa0WHMso3cqmHwIcCbYAbXO.png", bio: "Haatim is a first-year Computer Science student. He enjoys soccer, hiking, and watching anime." },
-                  { name: "Jose Nunez", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Cmakfn9BSyL8wvMFnOHMWzxsendIlz.png", bio: "Jose is a second-year Business Management and Economics student. He enjoys ping pong, going to the gym, and playing mahjong." },
-                  { name: "Adam Lee", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CmpDb42N1s9J5zTct9u8LG98n4uJQX.png", bio: "Adam is a second-year Business Management and Economics student. He enjoys going to the gym, playing basketball, gaming, and hiking." },
-                  { name: "Jason Ma", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-72ArCHKbeJxPTs7VWuy7mKlSEkKQn7.png", bio: "Jason is a second-year Business Economic Major with a concentration in Accounting. He enjoys Climbing, hiking, and camping." },
+                  { name: "Sarah Wei", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2W98sr6iwmDFoXog3XkOr7TlwXJupJ.png", bio: "Sarah is a first-year Business Management and Economics student with a concentration in Accounting. She enjoys playing basketball and volleyball, going to the beach, going on drives, and working out." },
+                  { name: "Surabhi Kuchibhotla", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QetsM8Ww8WFw1Pe7QNYdI9rtKShpVN.png", bio: "Surabhi is a third-year Technology and Information Management student. She enjoys going to the gym, hiking, and swimming at the beach." },
                 ].map((member, index) => (
                   <div
                     key={index}
