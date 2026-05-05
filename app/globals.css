@@ -5,7 +5,7 @@
 
 /* Force light mode - no dark variant */
 :root, .dark {
-  --background: oklch(0.985 0.002 110);
+  --background: oklch(0.95 0.03 145);
   --foreground: oklch(0.205 0.02 150);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.205 0.02 150);
