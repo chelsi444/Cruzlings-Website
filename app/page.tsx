@@ -18,25 +18,18 @@ export default function HomePage() {
 
   const events = [
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5136-EzJuLKiYylQ9zVpwakShPFkIxJMETc.jpg",
-      title: "Banh Mi Fundraiser",
-      description: "Our first banh mi sale of the quarter! We served delicious Vietnamese sandwiches with pork, chicken, and veggie options. Half sandwiches for $7 and full for $13 — all proceeds go toward building planter boxes for the UCSC community.",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-Xygf9DcqFkfTCID6snlORL1gNCygmy.jpeg",
+      title: "Banh Mi & Boba Fundraiser",
+      description: "A double feature! We combined our popular banh mi sandwiches with refreshing boba drinks for the ultimate combo. The team had a blast serving the UCSC community at Science and Engineering Library.",
       location: "Science and Engineering Library",
-      date: "April 14th, 2026",
+      date: "May 5th, 2026",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jose_btw-h1XttMcbpYQ7Zbr09qPtkWMBXQu1TZ.jpg",
-      title: "Banh Mi Fundraiser Day 2",
-      description: "Back by popular demand! Our second day of banh mi sales brought out even more hungry Slugs. The team came together to serve fresh sandwiches and spread the word about our gardening mission on campus.",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5139-F3azx7vhFeBtaICdbrjI08lKTeYpeu.jpg",
+      title: "Spam Musubi Fundraiser",
+      description: "Aloha vibes at our spam musubi sale! The team prepared homemade musubi for the UCSC community. This Hawaiian-inspired treat was a hit with students looking for a quick, tasty snack between classes.",
       location: "Science and Engineering Library",
-      date: "April 15th, 2026",
-    },
-    {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5141-M5hBBz0Wsse1css4VMCo6IkBJhLlum.jpg",
-      title: "Boba Fundraiser",
-      description: "We switched it up with a refreshing boba sale! Students enjoyed a variety of flavors while learning about Cruzlings and our environmental initiatives. A sweet way to support sustainability on campus.",
-      location: "McHenry Library",
-      date: "April 16th, 2026",
+      date: "April 27th, 2026",
     },
     {
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5140-ecC2gn4n5ylb4dbJP3fTWjJrgTyGtg.jpg",
@@ -46,22 +39,36 @@ export default function HomePage() {
       date: "April 23rd, 2026",
     },
     {
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5139-F3azx7vhFeBtaICdbrjI08lKTeYpeu.jpg",
-      title: "Spam Musubi Fundraiser",
-      description: "Aloha vibes at our spam musubi sale! The team prepared homemade musubi for the UCSC community. This Hawaiian-inspired treat was a hit with students looking for a quick, tasty snack between classes.",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5141-M5hBBz0Wsse1css4VMCo6IkBJhLlum.jpg",
+      title: "Boba Fundraiser",
+      description: "We switched it up with a refreshing boba sale! Students enjoyed a variety of flavors while learning about Cruzlings and our environmental initiatives. A sweet way to support sustainability on campus.",
+      location: "McHenry Library",
+      date: "April 16th, 2026",
+    },
+    {
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jose_btw-h1XttMcbpYQ7Zbr09qPtkWMBXQu1TZ.jpg",
+      title: "Banh Mi Fundraiser Day 2",
+      description: "Back by popular demand! Our second day of banh mi sales brought out even more hungry Slugs. The team came together to serve fresh sandwiches and spread the word about our gardening mission on campus.",
       location: "Science and Engineering Library",
-      date: "April 27th, 2026",
+      date: "April 15th, 2026",
+    },
+    {
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5136-EzJuLKiYylQ9zVpwakShPFkIxJMETc.jpg",
+      title: "Banh Mi Fundraiser",
+      description: "Our first banh mi sale of the quarter! We served delicious Vietnamese sandwiches with pork, chicken, and veggie options. Half sandwiches for $7 and full for $13 — all proceeds go toward building planter boxes for the UCSC community.",
+      location: "Science and Engineering Library",
+      date: "April 14th, 2026",
     },
   ]
 
-  const [currentEventIndex, setCurrentEventIndex] = useState(events.length - 1)
+  const [currentEventIndex, setCurrentEventIndex] = useState(0)
 
   const goToPrevious = () => {
-    setCurrentEventIndex((prev) => (prev + 1) % events.length)
+    setCurrentEventIndex((prev) => (prev - 1 + events.length) % events.length)
   }
 
   const goToNext = () => {
-    setCurrentEventIndex((prev) => (prev - 1 + events.length) % events.length)
+    setCurrentEventIndex((prev) => (prev + 1) % events.length)
   }
 
   const currentEvent = events[currentEventIndex]
@@ -522,7 +529,7 @@ export default function HomePage() {
             {/* Executive Board */}
             <div className="mb-12 sm:mb-16">
               <h3 className="text-2xl font-semibold mb-6 sm:mb-8 text-center">Executive Board</h3>
-              <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-8">
+              <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
                 {[
                   { name: "Jayden Luu", role: "CEO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%204.12.07%E2%80%AFPM-JfiOct7BJkPCuAiGb6CQAeIUJLZ4XW.png", bio: "Jayden is a first-year Technology and Information Management student. He enjoys tennis, football, basketball, and spikeball." },
                   { name: "Eobii Brown", role: "CFO", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-MN8Ct7WKXWYD6iLVfK4GdN597wcTGr.png", bio: "Eobii is a second-year Business Management and Economics student. He enjoys tennis, basketball, and gaming." },
