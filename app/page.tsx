@@ -18,7 +18,7 @@ export default function HomePage() {
 
   const events = [
     {
-      image: "https://cdn.discordapp.com/attachments/899878311000420412/1501843289572114583/IMG_7319.jpg?ex=69fd8c0f&is=69fc3a8f&hm=5fd7cf81699d7b6f043b8f31939209dd2bed2bfe45f519a409a95770eff52267&",
+      image: "https://cdn.discordapp.com/attachments/899878311000420412/1501843908693463060/unnamed.jpg?ex=69fd8ca2&is=69fc3b22&hm=3edb69f72f48cac92589b4902f7a1c412d6b4cd1b0a2a52bed755d0bcb99c2ec&",
       title: "Banh Mi & Redbull Fundraiser",
       description: "Another double feature! The banh mi continues to grow in popularity and satiate the student body at Santa Cruz. Additionally, we sold Redbull to keep students energized during the midterm season.",
       location: "Science and Engineering Library",
