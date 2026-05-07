@@ -18,6 +18,13 @@ export default function HomePage() {
 
   const events = [
     {
+      image: "https://imgur.com/a/Y0VKh5R",
+      title: "Banh Mi & Redbull Fundraiser",
+      description: "Another double feature! The banh mi continues to grow in popularity and satiate the student body at Santa Cruz. Additionally, we sold Redbull to keep students energized during the midterm season.",
+      location: "Science and Engineering Library",
+      date: "May 6th, 2026",
+    },
+    {
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image.png-Xygf9DcqFkfTCID6snlORL1gNCygmy.jpeg",
       title: "Banh Mi & Boba Fundraiser",
       description: "A double feature! We combined our popular banh mi sandwiches with refreshing boba drinks for the ultimate combo. The team had a blast serving the UCSC community at Science and Engineering Library.",
