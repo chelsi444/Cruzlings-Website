@@ -18,6 +18,13 @@ export default function HomePage() {
 
   const events = [
     {
+      image: "https://cdn.discordapp.com/attachments/899878311000420412/1502154207380377661/IMG_2543.jpg?ex=69fead9f&is=69fd5c1f&hm=e2976735a35c31e451b1419fa24d6488007396849372f8ac48976eda1482e0cd&",
+      title: "Banh Mi, Boba, & Redbull",
+      description: "An all new triple feature! Selling banh mi, boba, and Redbull to students and facaulty. Our booth continues to be a hotbed of hungry students between classes. On a hot day like today, ice-cold boba and Redbull was just was the doctor ordered.",
+      location: "Science and Engineering Library",
+      date: "May 7th, 2026",
+    },
+    {
       image: "https://cdn.discordapp.com/attachments/899878311000420412/1501843908693463060/unnamed.jpg?ex=69fd8ca2&is=69fc3b22&hm=3edb69f72f48cac92589b4902f7a1c412d6b4cd1b0a2a52bed755d0bcb99c2ec&",
       title: "Banh Mi & Redbull Fundraiser",
       description: "Another double feature! The banh mi continues to grow in popularity and satiate the student body at Santa Cruz. Additionally, we sold Redbull to keep students energized during the midterm season.",
@@ -299,19 +306,19 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto mb-12">
             <div className="flex items-center justify-between mb-3">
               <span className="text-sm sm:text-base font-medium text-muted-foreground">Fundraising Progress</span>
-              <span className="text-sm sm:text-base font-semibold text-primary">$3,218 / $6,125</span>
+              <span className="text-sm sm:text-base font-semibold text-primary">$3,555 / $6,125</span>
             </div>
             <div className="h-6 bg-secondary ring-1 ring-border rounded-full overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-[#2d5a2d] to-[#4a8a4a] rounded-full transition-all duration-500"
-                style={{ width: '52.54%' }}
+                style={{ width: '58.04%' }}
               />
             </div>
             <div className="flex items-center justify-between mt-3">
-              <span className="text-xs sm:text-sm text-muted-foreground">52.54% of goal reached</span>
+              <span className="text-xs sm:text-sm text-muted-foreground">58.04% of goal reached</span>
               <div className="flex items-center gap-1 text-xs sm:text-sm text-primary">
                 <Wallet className="w-4 h-4" />
-                <span>$2,907 to go</span>
+                <span>$2,570 to go</span>
               </div>
             </div>
           </div>
