@@ -445,8 +445,8 @@ export default function HomePage() {
               {/* Image */}
               <div className="rounded-2xl overflow-hidden ring-1 ring-border shadow-lg aspect-square max-w-sm sm:max-w-md mx-auto w-full">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/1/16/Banksia_victoriae_-_UC_Santa_Cruz_Arboretum_-_DSC07517.JPG"
-                  alt="Banksia Victoriae"
+                  src="https://static.wixstatic.com/media/4a20e8_ce6c811fb2b6410c99ac6f8943ec7034~mv2.webp/v1/fill/w_568,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4a20e8_ce6c811fb2b6410c99ac6f8943ec7034~mv2.webp"
+                  alt="Arbutus Andrachne"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -454,21 +454,20 @@ export default function HomePage() {
               <div className="flex flex-col gap-5 sm:gap-6">
                 <div>
                   <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-3">This Week's Pick</span>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-1">Banksia Victoriae</h3>
-                  <p className="text-muted-foreground italic text-base sm:text-lg">Woolly Orange Banksia</p>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-1">Arbutus Andrachne</h3>
+                  <p className="text-muted-foreground italic text-base sm:text-lg">Greek Stawberry Tree</p>
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
-                  The Banksia Victoriae is a striking large shrub — sometimes considered a small tree — native to Western Australia.
-                  It's known for its dramatic orange-yellow plant spikes wrapped in woolly grey foliage, making it a standout in any garden.
+                  Arbutus andrachne can reach a height of about 12 metres (39 ft). The smooth bark exfoliates during the summer, leaving a layer with a pistachio green colour, which changes gradually to an orange brown. The flowers bloom in spring and are white or yellowish green.
                 </p>
                 <div className="grid grid-cols-2 gap-3 sm:gap-4">
                   <div className="rounded-xl bg-secondary ring-1 ring-border p-4 sm:p-5">
                     <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1">Native To</p>
-                    <p className="text-foreground font-medium text-sm sm:text-base">Western Australia</p>
+                    <p className="text-foreground font-medium text-sm sm:text-base">Eastern Mediterranean region and Western Asia</p>
                   </div>
                   <div className="rounded-xl bg-secondary ring-1 ring-border p-4 sm:p-5">
                     <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1">Bloom Season</p>
-                    <p className="text-foreground font-medium text-sm sm:text-base">Late Summer (Autumn)</p>
+                    <p className="text-foreground font-medium text-sm sm:text-base">Early Summer (March)</p>
                   </div>
                   <div className="rounded-xl bg-secondary ring-1 ring-border p-4 sm:p-5">
                     <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1">Population Status</p>
@@ -476,13 +475,13 @@ export default function HomePage() {
                   </div>
                   <div className="rounded-xl bg-secondary ring-1 ring-border p-4 sm:p-5">
                     <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1">Water Needs</p>
-                    <p className="text-foreground font-medium text-sm sm:text-base">Low (Drought Tolerant)</p>
+                    <p className="text-foreground font-medium text-sm sm:text-base">Medium to Low</p>
                   </div>
                 </div>
                 <div className="rounded-xl bg-primary/5 ring-1 ring-primary/20 p-4 sm:p-5">
                   <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">🌿 Fun Fact</p>
                   <p className="text-muted-foreground leading-relaxed text-sm">
-                    Banksias are named after botanist Sir Joseph Banks, who sailed with Captain Cook on the <em>Endeavour</em> in 1770. Their large cones can hold seeds for years and only release them after fire — a survival strategy called serotiny.
+                    It boasts white, heather-like flower clusters in spring (March-April) and ripens fruit in autumn. While they taste best when fully ripe (or dried), the fruit is rich in vitamin C and polyphenols.
                   </p>
                 </div>
               </div>
