@@ -18,8 +18,22 @@ export default function HomePage() {
 
   const events = [
     {
+      image: "https://cdn.discordapp.com/attachments/899878311000420412/1503900220306493641/IMG_5299.jpeg?ex=6a0507b9&is=6a03b639&hm=e9b90434666ed19db0fcbb684c74eebda12263f4eeb4c8dbd654b649f898fb6b&",
+      title: "Banh Mi Fundraiser",
+      description: "Selling banh mi a second day during this week. From what we hear, students are extremely grateful of our hardwork selling banh mi every day. This keeps us motivated to serve the student body.",
+      location: "Science and Engineering Library",
+      date: "May 12th, 2026",
+    },
+    {
+      image: "https://cdn.discordapp.com/attachments/899878311000420412/1503900037028118659/IMG_5278.jpeg?ex=6a05078d&is=6a03b60d&hm=563f05de4a925df45ad99397d2133e29e7bba3428cfc799b2f18fd4449c0d8cb&",
+      title: "Banh Mi Fundraiser",
+      description: "Banh mi is still selling and winning the hearts of students and faculty on campus. The hardworking team picked up the banh mi fresh from San Jose and made sure customers were satisfied.",
+      location: "Science and Engineering Library",
+      date: "May 11th, 2026",
+    },
+    {
       image: "https://cdn.discordapp.com/attachments/899878311000420412/1502154207380377661/IMG_2543.jpg?ex=69fead9f&is=69fd5c1f&hm=e2976735a35c31e451b1419fa24d6488007396849372f8ac48976eda1482e0cd&",
-      title: "Banh Mi, Boba, & Redbull",
+      title: "Banh Mi, Boba, & Redbull Fundraiser",
       description: "An all new triple feature! Selling banh mi, boba, and Redbull to students and facaulty. Our booth continues to be a hotbed of hungry students between classes. On a hot day like today, ice-cold boba and Redbull was just was the doctor ordered.",
       location: "Science and Engineering Library",
       date: "May 7th, 2026",
