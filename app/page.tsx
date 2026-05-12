@@ -320,19 +320,19 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto mb-12">
             <div className="flex items-center justify-between mb-3">
               <span className="text-sm sm:text-base font-medium text-muted-foreground">Fundraising Progress</span>
-              <span className="text-sm sm:text-base font-semibold text-primary">$3,555 / $6,125</span>
+              <span className="text-sm sm:text-base font-semibold text-primary">$3,818 / $6,125</span>
             </div>
             <div className="h-6 bg-secondary ring-1 ring-border rounded-full overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-[#2d5a2d] to-[#4a8a4a] rounded-full transition-all duration-500"
-                style={{ width: '58.04%' }}
+                style={{ width: '62.33%' }}
               />
             </div>
             <div className="flex items-center justify-between mt-3">
-              <span className="text-xs sm:text-sm text-muted-foreground">58.04% of goal reached</span>
+              <span className="text-xs sm:text-sm text-muted-foreground">62.33% of goal reached</span>
               <div className="flex items-center gap-1 text-xs sm:text-sm text-primary">
                 <Wallet className="w-4 h-4" />
-                <span>$2,570 to go</span>
+                <span>$2,307 to go</span>
               </div>
             </div>
           </div>
