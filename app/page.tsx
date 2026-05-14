@@ -252,7 +252,7 @@ export default function HomePage() {
             <p className="text-lg text-gray-600 mb-6">Follow us on social media to stay updated!</p>
             <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
               <a
-                href="https://www.tiktok.com/@cruzlings"
+                href="https://www.tiktok.com/@cruzlings.ucsc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 sm:px-6 py-3 bg-[#000000] text-white font-medium rounded-full hover:bg-[#1a1a1a] transition-colors shadow-lg text-sm sm:text-base"
@@ -273,6 +273,9 @@ export default function HomePage() {
                 </svg>
                 Instagram
               </a>
+            </div>
+            <p className="text-xs text-gray-500 mt-2">We are currently experiencing technical difficulties with our Instagram. Thank you for your patience!</p>
+            <div className="flex justify-center gap-3 sm:gap-4 flex-wrap mt-4">
               <a
                 href="https://linktr.ee/cruzlings.ucsc?utm_source=linktree_profile_share&ltsid=dcbdf735-b880-426f-8e1f-0c7a4b78a348"
                 target="_blank"
