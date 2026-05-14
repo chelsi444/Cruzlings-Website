@@ -18,6 +18,20 @@ export default function HomePage() {
 
   const events = [
     {
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2658-o4pX8Vu0NMmah4fO9Fi3DEi1lPMvNH.jpeg",
+      title: "Banh Mi & Boba Fundraiser",
+      description: "Another successful combo sale! The team came together to serve delicious banh mi sandwiches and refreshing boba drinks. Students loved the pairing and we saw great turnout at Science and Engineering Library.",
+      location: "Science and Engineering Library",
+      date: "May 14th, 2026",
+    },
+    {
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0116-8VahIMBdPfLGYzfAqxtxuhOXEjtcJ9.jpeg",
+      title: "Spam Musubi & Boba Fundraiser",
+      description: "A delicious Hawaiian-inspired fundraiser! We paired our popular spam musubi with refreshing boba drinks. The team had a blast serving the UCSC community and spreading aloha vibes on campus.",
+      location: "Science and Engineering Library",
+      date: "May 13th, 2026",
+    },
+    {
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5299-qbRXgF430fT7Wyvy9tjLt4omutUH4D.jpeg",
       title: "Banh Mi Fundraiser",
       description: "Selling banh mi a second day during this week. From what we hear, students are extremely grateful of our hardwork selling banh mi every day. This keeps us motivated to serve the student body.",
@@ -320,19 +334,19 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto mb-12">
             <div className="flex items-center justify-between mb-3">
               <span className="text-sm sm:text-base font-medium text-muted-foreground">Fundraising Progress</span>
-              <span className="text-sm sm:text-base font-semibold text-primary">$3,818 / $6,125</span>
+              <span className="text-sm sm:text-base font-semibold text-primary">$4,300 / $6,125</span>
             </div>
             <div className="h-6 bg-secondary ring-1 ring-border rounded-full overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-[#2d5a2d] to-[#4a8a4a] rounded-full transition-all duration-500"
-                style={{ width: '62.33%' }}
+                style={{ width: '70.20%' }}
               />
             </div>
             <div className="flex items-center justify-between mt-3">
-              <span className="text-xs sm:text-sm text-muted-foreground">62.33% of goal reached</span>
-              <div className="flex items-center gap-1 text-xs sm:text-sm text-primary">
-                <Wallet className="w-4 h-4" />
-                <span>$2,307 to go</span>
+<span className="text-xs sm:text-sm text-muted-foreground">70.20% of goal reached</span>
+  <div className="flex items-center gap-1 text-xs sm:text-sm text-primary">
+  <Wallet className="w-4 h-4" />
+  <span>$1,825 to go</span>
               </div>
             </div>
           </div>
